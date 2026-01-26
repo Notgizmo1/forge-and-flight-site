@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Forge and Flight Holdings for aerospace manufacturing quotes and capability discussions. We respond within one business day.">
+    <title>Contact Us | Forge and Flight Holdings Aerospace Manufacturing</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 3rem;
+        }
+        
+        .contact-info {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        
+        .contact-info h3 {
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-detail {
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-detail strong {
+            display: block;
+            color: var(--primary-navy);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--primary-navy);
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid var(--metallic-silver);
+            border-radius: 4px;
+            font-family: var(--font-family);
+            font-size: 16px;
+            transition: var(--transition);
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+        }
+        
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .form-group.required label::after {
+            content: '*';
+            color: var(--accent-orange);
+            margin-left: 4px;
+        }
+        
+        /* Honeypot field - hidden from users but visible to bots */
+        .form-group.honeypot {
+            position: absolute;
+            left: -9999px;
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        .form-message {
+            padding: 1rem;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+            display: none;
+        }
+        
+        .form-message.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+            display: block;
+        }
+        
+        .form-message.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+            display: block;
+        }
+        
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="/">Forge and Flight Holdings</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section style="background: white;">
+        <div class="container">
+            <h1 style="text-align: center;">Contact Us</h1>
+            <p style="text-align: center; font-size: 18px; max-width: 600px; margin: 0 auto 3rem;">
+                Ready to discuss your aerospace manufacturing needs? Our team will respond within one business day.
+            </p>
+
+            <div class="contact-container">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    
+                    <div class="contact-detail">
+                        <strong>Email</strong>
+                        <p><a href="/cdn-cgi/l/email-protection#b9d0d7dfd6f9dfd6cbdedcd8d7dddfd5d0ded1cd97dad6d4"><span class="__cf_email__" data-cfemail="acc5c2cac3eccac3decbc9cdc2c8cac0c5cbc4d882cfc3c1">[email&#160;protected]</span></a></p>
+                    </div>
+                    
+                    <div class="contact-detail">
+                        <strong>Response Time</strong>
+                        <p>We respond to all inquiries within one business day.</p>
+                    </div>
+                    
+                    <div class="contact-detail">
+                        <strong>Business Hours</strong>
+                        <p>Monday - Friday: 8:00 AM - 5:00 PM EST</p>
+                    </div>
+                    
+                    <div class="contact-detail">
+                        <strong>Privacy</strong>
+                        <p>Your information is confidential and will not be shared with third parties. We respect your privacy and the proprietary nature of aerospace projects.</p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div>
+                    <form id="contact-form" style="background: var(--off-white); padding: 2rem; border-radius: 8px;">
+                        <div id="form-message" class="form-message"></div>
+                        
+                        <div class="form-group required">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group required">
+                            <label for="email">Business Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <!-- Honeypot field for spam prevention -->
+                        <div class="form-group honeypot">
+                            <label for="website">Website</label>
+                            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                        </div>
+                        
+                        <div class="form-group required">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" required placeholder="Please describe your project requirements, timeline, or any questions you have about our capabilities."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" id="submit-btn">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>Forge and Flight Holdings, Inc.</h4>
+                    <p>Vertically Integrated Aerospace Manufacturing</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d7beb9b1b897b1b8a5b0b2b6b9b3b1bbbeb0bfa3f9b4b8ba">[email&#160;protected]</a></p>
+                    <p>We respond within one business day</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Forge and Flight Holdings, Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        document.getElementById('contact-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const form = e.target;
+            const submitBtn = document.getElementById('submit-btn');
+            const messageDiv = document.getElementById('form-message');
+            
+            // Disable submit button
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+            
+            // Hide previous messages
+            messageDiv.className = 'form-message';
+            messageDiv.style.display = 'none';
+            
+            try {
+                const formData = new FormData(form);
+                
+                const response = await fetch('/api/contact', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    messageDiv.className = 'form-message success';
+                    messageDiv.textContent = result.message;
+                    messageDiv.style.display = 'block';
+                    form.reset();
+                } else {
+                    messageDiv.className = 'form-message error';
+                    messageDiv.textContent = result.error || 'An error occurred. Please try again.';
+                    messageDiv.style.display = 'block';
+                }
+            } catch (error) {
+                messageDiv.className = 'form-message error';
+                messageDiv.textContent = 'An error occurred. Please try emailing us directly at info@forgeandflight.com';
+                messageDiv.style.dis
