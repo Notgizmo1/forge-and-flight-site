@@ -26,28 +26,18 @@ export default {
 
 async function handleContactForm(request, env) {
   try {
-    const formData = await request.formData();
+    // Parse JSON body
+    const data = await request.json();
     
-    // Honeypot spam prevention - if this hidden field is filled, it's a bot
-    if (formData.get('website')) {
-      // Return success to the bot but don't actually send email
-      return new Response(JSON.stringify({ success: true }), {
-        headers: { 
-          'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': '*'
-        }
-      });
-    }
-    
-    // Extract and validate form fields
-    const name = formData.get('name')?.trim();
-    const email = formData.get('email')?.trim();
-    const company = formData.get('company')?.trim();
-    const phone = formData.get('phone')?.trim();
-    const message = formData.get('message')?.trim();
+    // Extract fields
+    const name = data.name?.trim();
+    const email = data.email?.trim();
+    const organization = data.organization?.trim();
+    const inquiryType = data.inquiryType?.trim();
+    const message = data.message?.trim();
     
     // Validate required fields
-    if (!name || !email || !message) {
+    if (!name || !email || !message || !inquiryType) {
       return new Response(JSON.stringify({ 
         success: false, 
         error: 'Please complete all required fields' 
@@ -75,6 +65,16 @@ async function handleContactForm(request, env) {
       });
     }
     
+    // Format inquiry type for display
+    const inquiryTypeLabels = {
+      'platform': 'UAS Platform Inquiry',
+      'partnership': 'Partnership / Investment',
+      'general': 'General Information',
+      'media': 'Media / Press',
+      'other': 'Other'
+    };
+    const inquiryTypeDisplay = inquiryTypeLabels[inquiryType] || inquiryType;
+    
     // Send email via Resend API
     const emailResponse = await fetch('https://api.resend.com/emails', {
       method: 'POST',
@@ -86,7 +86,7 @@ async function handleContactForm(request, env) {
         from: 'Contact Form <noreply@forgeandflight.com>',
         to: env.CONTACT_EMAIL,
         reply_to: email,
-        subject: `New Inquiry from ${name}${company ? ' at ' + company : ''}`,
+        subject: `${inquiryTypeDisplay}: ${name}${organization ? ' - ' + organization : ''}`,
         html: `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
             <h2 style="color: #0A1628; border-bottom: 2px solid #003366; padding-bottom: 10px;">
@@ -95,8 +95,8 @@ async function handleContactForm(request, env) {
             <div style="background: #F8F9FA; padding: 20px; margin: 20px 0; border-radius: 5px;">
               <p><strong>Name:</strong> ${name}</p>
               <p><strong>Email:</strong> <a href="mailto:${email}">${email}</a></p>
-              ${company ? `<p><strong>Company:</strong> ${company}</p>` : ''}
-              ${phone ? `<p><strong>Phone:</strong> ${phone}</p>` : ''}
+              ${organization ? `<p><strong>Organization:</strong> ${organization}</p>` : ''}
+              <p><strong>Inquiry Type:</strong> ${inquiryTypeDisplay}</p>
             </div>
             <div style="margin: 20px 0;">
               <p><strong>Message:</strong></p>
@@ -151,33 +151,4 @@ async function handleContactForm(request, env) {
       }
     });
   }
-}
-if (request.method === 'POST' && url.pathname === '/api/contact') {
-  const formData = await request.json();
-  
-  // Send email via Resend API (as shown in your structure)
-  const emailResponse = await fetch('https://api.resend.com/emails', {
-    method: 'POST',
-    headers: {
-      'Authorization': `Bearer ${RESEND_API_KEY}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      from: 'website@forgeandflight.com',
-      to: 'info@forgeandflight.com',
-      subject: `Contact Form: ${formData.inquiryType}`,
-      html: `
-        <p><strong>Name:</strong> ${formData.name}</p>
-        <p><strong>Email:</strong> ${formData.email}</p>
-        <p><strong>Organization:</strong> ${formData.organization}</p>
-        <p><strong>Inquiry Type:</strong> ${formData.inquiryType}</p>
-        <p><strong>Message:</strong></p>
-        <p>${formData.message}</p>
-      `
-    })
-  });
-  
-  return new Response(JSON.stringify({ success: true }), {
-    headers: { 'Content-Type': 'application/json' }
-  });
 }
