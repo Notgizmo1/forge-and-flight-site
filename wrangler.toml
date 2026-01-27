@@ -8,20 +8,6 @@ binding = "ASSETS"
 not_found_handling = "404-page"
 html_handling = "auto-trailing-slash"
 
-# Route contact form through Worker
-[[route_rules]]
-pattern = "/api/*"
-zone_name = "forgeandflight.com"
-
-# Custom domain setup
-[[routes]]
-pattern = "forgeandflight.com/*"
-custom_domain = true
-
-[[routes]]
-pattern = "www.forgeandflight.com/*"
-custom_domain = true
-
 # Environment variables
 [vars]
 ENVIRONMENT = "production"

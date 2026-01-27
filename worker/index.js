@@ -152,3 +152,32 @@ async function handleContactForm(request, env) {
     });
   }
 }
+if (request.method === 'POST' && url.pathname === '/api/contact') {
+  const formData = await request.json();
+  
+  // Send email via Resend API (as shown in your structure)
+  const emailResponse = await fetch('https://api.resend.com/emails', {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${RESEND_API_KEY}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      from: 'website@forgeandflight.com',
+      to: 'info@forgeandflight.com',
+      subject: `Contact Form: ${formData.inquiryType}`,
+      html: `
+        <p><strong>Name:</strong> ${formData.name}</p>
+        <p><strong>Email:</strong> ${formData.email}</p>
+        <p><strong>Organization:</strong> ${formData.organization}</p>
+        <p><strong>Inquiry Type:</strong> ${formData.inquiryType}</p>
+        <p><strong>Message:</strong></p>
+        <p>${formData.message}</p>
+      `
+    })
+  });
+  
+  return new Response(JSON.stringify({ success: true }), {
+    headers: { 'Content-Type': 'application/json' }
+  });
+}
