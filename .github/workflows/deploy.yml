@@ -1,31 +1,22 @@
-name: Deploy to Cloudflare Workers
+name: Deploy Website to Cloudflare Pages
 
 on:
   push:
-    branches: [main]
-  pull_request:
     branches: [main]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    name: Deploy
+    name: Deploy Website
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
       
-      - name: Deploy to Production
-        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-        uses: cloudflare/wrangler-action@v3
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: deploy
-      
-      - name: Deploy Preview
-        if: github.event_name == 'pull_request'
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: deploy --env staging
+          projectName: forge-and-flight-site
+          directory: public
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
