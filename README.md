@@ -1,236 +1,114 @@
-# Forge and Flight Holdings Corporate Website
+# Forge & Flight Holdings Website
 
-Professional aerospace manufacturing website built with Cloudflare Workers and deployed via GitHub Actions.
+Official website for Forge & Flight Holdings, Inc. - American Aerospace Integration
 
-## 🚀 Tech Stack
+## About
 
-- **Hosting**: Cloudflare Workers
-- **Deployment**: GitHub Actions CI/CD
-- **Email Service**: Resend API
-- **Frontend**: Pure HTML/CSS/JavaScript (no build step)
-- **Domain**: forgeandflight.com
+This is the corporate website for Forge & Flight Holdings, Inc., a North Carolina-based aerospace holding company providing strategic management and governance across vertically integrated unmanned aircraft systems, electronics manufacturing, flight test operations, and technical training capabilities.
 
-## 📁 Project Structure
+**Website:** www.forgeandflight.com
+
+## Features
+
+- Modern, responsive design optimized for all devices
+- Bold aerospace aesthetic with dark theme
+- Complete NDAA Section 848 compliance messaging
+- Comprehensive information about all four operating companies
+- Browser tab icon (favicon) with company logo
+- Contact form for inquiries
+- Legal compliance pages (Privacy Policy, Terms of Use, Export Control)
+- Google Analytics integration
+- Mobile-friendly navigation
+
+## Site Structure
 
 ```
-forge-and-flight-site/
-├── .github/workflows/
-│   └── deploy.yml          # GitHub Actions deployment workflow
-├── public/
-│   ├── index.html          # Homepage
-│   ├── about.html          # About page
-│   ├── contact.html        # Contact page with form
-│   ├── 404.html            # Error page
-│   └── css/
-│       └── styles.css      # Main stylesheet
-├── worker/
-│   └── index.js            # Cloudflare Worker (contact form handler)
-├── wrangler.toml           # Cloudflare configuration
-├── package.json            # Node.js dependencies
-├── .gitignore
-└── README.md
+index.html                  - Homepage
+about.html                  - Corporate overview and leadership
+operating-companies.html    - Detailed subsidiary information
+contact.html                - Contact form and information
+privacy.html                - Privacy policy
+terms.html                  - Terms of use
+cookies.html                - Cookie policy
+accessibility.html          - Accessibility statement
+export-control.html         - ITAR and export control notice
+css/styles.css              - Main stylesheet
+js/main.js                  - JavaScript functionality
+images/logo.png             - Company logo
 ```
 
-## 🛠️ Setup Instructions
+## Operating Companies
 
-### Prerequisites
+The website provides information about our four wholly-owned subsidiaries:
 
-- Node.js 20+ installed
-- Cloudflare account with forgeandflight.com domain
-- GitHub account
-- Resend account (free tier)
+1. **Forge and Flight Labs, LLC** - UAS Design & Manufacturing
+   - Website: www.forgeandflightlabs.com
+   
+2. **Forge and Flight Academy, LLC** - Training & Professional Development
+   - Website: www.forgeandflightacademy.com
+   
+3. **Forge and Flight Avionics, LLC** - Electronics & Avionics Manufacturing
+   - Website launching 2026
+   
+4. **Forge and Flight Test Systems, LLC** - Flight Test & Validation Services
+   - Website launching 2026
 
-### 1. Clone and Install
+## Technologies Used
 
-```bash
-git clone https://github.com/YOUR_USERNAME/forge-and-flight-site.git
-cd forge-and-flight-site
-npm install
-```
+- HTML5
+- CSS3 (Custom design, no frameworks)
+- Vanilla JavaScript
+- Google Analytics
+- Google Fonts (Inter)
 
-### 2. Configure Cloudflare
+## Design Philosophy
 
-1. Get your Cloudflare Account ID from the dashboard
-2. Create API token (use "Edit Cloudflare Workers" template)
-3. Add secrets to GitHub:
-   - `CLOUDFLARE_API_TOKEN`
-   - `CLOUDFLARE_ACCOUNT_ID`
+The website features a bold, modern aerospace aesthetic with:
+- Dark navy/black gradient backgrounds
+- Aerospace blue (#0095FF) accent colors
+- Clean, geometric design elements
+- Smooth animations and transitions
+- Professional corporate presentation
 
-### 3. Set Up Email Service
+## Deployment
 
-1. Sign up at [resend.com](https://resend.com)
-2. Add and verify forgeandflight.com domain
-3. Create API key
-4. Add Worker secrets:
+This is a static website that can be deployed to any web hosting service or CDN:
+- GitHub Pages
+- Netlify
+- Vercel
+- AWS S3 + CloudFront
+- Traditional web hosting
 
-```bash
-npx wrangler secret put RESEND_API_KEY
-npx wrangler secret put CONTACT_EMAIL
-```
+## Browser Compatibility
 
-### 4. Deploy
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers (iOS Safari, Chrome Mobile)
 
-```bash
-# Deploy to production
-npm run deploy
+## Contact
 
-# Or push to main branch for automatic deployment
-git push origin main
-```
+**Forge & Flight Holdings, Inc.**  
 
-## 💻 Local Development
+Fayetteville, NC 28304  
+United States
 
-```bash
-# Start local dev server
-npm run dev
+**Email:** info@forgeandflight.com  
+**CAGE Code:** 18WR3
 
-# Open http://localhost:8787
-```
+## Legal
 
-## 🎨 Design System
+- All content © 2026 Forge & Flight Holdings, Inc.
+- See Privacy Policy, Terms of Use, and Export Control Notice on website
+- NDAA Section 848 Compliant
+- ITAR-controlled technical data restrictions apply
 
-### Color Palette
+## Version History
 
-- **Primary Navy**: `#0A1628` - Headers, footer
-- **Aerospace Blue**: `#003366` - Navigation, UI elements
-- **Metallic Silver**: `#A8A9AD` - Borders, accents
-- **Charcoal**: `#36454F` - Body text
-- **Off-White**: `#F8F9FA` - Backgrounds
-- **Industrial Orange**: `#FF6B35` - CTAs, highlights
+- **v1.0** (January 2026) - Initial website launch
+- **v2.0** (February 2026) - Complete redesign with modern aerospace aesthetic
 
-### Typography
+---
 
-- **Font**: Inter (Google Fonts)
-- **H1**: 48px (32px mobile) / 700
-- **H2**: 36px (26px mobile) / 600
-- **Body**: 16-18px / 1.6 line-height
-
-## 📧 Contact Form
-
-The contact form is handled by a Cloudflare Worker that:
-
-1. Validates form data
-2. Checks honeypot field for spam
-3. Sends email via Resend API
-4. Returns JSON response
-
-### Testing the Form
-
-```bash
-curl -X POST http://localhost:8787/api/contact \
-  -F "name=Test User" \
-  -F "email=test@example.com" \
-  -F "company=Test Corp" \
-  -F "message=This is a test message"
-```
-
-## 🔒 Security Features
-
-- **Honeypot spam prevention** - Hidden field catches bots
-- **Email validation** - Server-side regex validation
-- **CORS headers** - Controlled cross-origin requests
-- **Rate limiting** - (Add Cloudflare rate limiting rules if needed)
-- **HTTPS only** - Automatic via Cloudflare
-
-## 📊 Analytics (Optional)
-
-Add Cloudflare Web Analytics or Google Analytics by adding tracking code to each HTML file before `</head>`:
-
-```html
-<!-- Cloudflare Web Analytics -->
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js' 
-        data-cf-beacon='{"token": "YOUR_TOKEN"}'></script>
-```
-
-## 🚢 Deployment
-
-### Automatic (Recommended)
-
-Push to `main` branch → GitHub Actions → Deploy to production
-
-### Manual
-
-```bash
-npm run deploy
-```
-
-### Preview Deployments
-
-Create a pull request → GitHub Actions → Deploy to staging environment
-
-## 📝 Content Management
-
-To update content:
-
-1. Edit HTML files in `public/`
-2. Update CSS in `public/css/styles.css`
-3. Commit and push to trigger deployment
-
-### Adding New Pages
-
-1. Create new HTML file in `public/` (e.g., `services.html`)
-2. Add navigation link to all pages
-3. Follow existing page structure and styling
-4. Deploy
-
-## 🐛 Troubleshooting
-
-### Worker not found
-- Run `npm run deploy` at least once
-- Verify wrangler.toml is configured correctly
-
-### Contact form not working
-- Check secrets are set: `npx wrangler secret list`
-- Verify Resend domain is verified
-- Review logs: `npm run tail`
-
-### Custom domain not working
-- Wait 5-10 minutes for DNS propagation
-- Verify domain in Workers dashboard
-- Check Cloudflare DNS records
-
-### Build fails in GitHub Actions
-- Verify GitHub secrets are added
-- Check wrangler.toml is committed
-- Review Actions tab for errors
-
-## 💰 Cost
-
-- **Cloudflare Workers**: Free (100,000 requests/day)
-- **Resend**: Free (100 emails/day)
-- **GitHub Actions**: Free for public repositories
-- **Total**: $0/month
-
-## 📚 Useful Commands
-
-```bash
-# Development
-npm run dev              # Start local server
-
-# Deployment
-npm run deploy           # Deploy to production
-npm run deploy:staging   # Deploy to staging
-
-# Monitoring
-npm run tail             # View real-time logs
-
-# Secrets Management
-npx wrangler secret list           # List all secrets
-npx wrangler secret put KEY_NAME   # Add/update secret
-npx wrangler secret delete KEY     # Delete secret
-```
-
-## 🔗 Resources
-
-- [Cloudflare Workers Docs](https://developers.cloudflare.com/workers/)
-- [Resend Documentation](https://resend.com/docs)
-- [GitHub Actions Docs](https://docs.github.com/en/actions)
-- [Wrangler CLI](https://developers.cloudflare.com/workers/wrangler/)
-
-## 📄 License
-
-Copyright © 2025 Forge and Flight Holdings, Inc. All rights reserved.
-
-## 🤝 Support
-
-For questions or issues, contact: info@forgeandflight.com
+*First in Flight, Innovation Limitless | American-Made | NDAA Compliant*
