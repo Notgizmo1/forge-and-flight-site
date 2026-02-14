@@ -47,10 +47,10 @@ The website provides information about our four wholly-owned subsidiaries:
 2. **Forge and Flight Academy, LLC** - Training & Professional Development
    - Website: www.forgeandflightacademy.com
    
-3. **Forge and Flight Avionics, LLC** - Electronics & Avionics Manufacturing
+3. **Electronics Manufacturing Division** - Electronics & Avionics Manufacturing (Launching 2026)
    - Website launching 2026
    
-4. **Forge and Flight Test Systems, LLC** - Flight Test & Validation Services
+4. **Flight Test Division** - Flight Test & Validation Services (Launching 2026)
    - Website launching 2026
 
 ## Technologies Used

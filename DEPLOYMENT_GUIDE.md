@@ -54,7 +54,7 @@ Your complete corporate website package contains:
 
 **CORRECT INFORMATION**
 - Location: Fayetteville, North Carolina (Holdings headquarters)
-- All 4 operating companies listed: Labs, Academy, Avionics, Test Systems
+- All 4 divisions listed: Labs, Academy, Electronics Manufacturing, Flight Test
 - Links to Labs and Academy websites (live sites)
 - Avionics and Test Systems noted as "Launching 2026"
 - CAGE: 18WR3, EIN: 41-3413730
@@ -156,49 +156,7 @@ To redirect www.forgeandflight.com to forgeandflight.com:
 
 ---
 
-## 4. CONTACT FORM CONFIGURATION
-
-The contact form validates input but does NOT currently send emails. You must configure an email service.
-
-### RECOMMENDED: Formspree (Easiest)
-
-1. Go to https://formspree.io
-2. Sign up for free account (100 submissions/month)
-3. Click "New Form"
-4. Copy your form endpoint URL
-
-5. Edit contact.html and update the form tag:
-```html
-<form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-```
-
-6. In js/main.js, comment out the submitForm function
-7. Deploy updated files to Cloudflare
-
-**First submission will require email verification**
-
-### ALTERNATIVE: FormSubmit (No Account Needed)
-
-1. Edit contact.html, change form action to:
-```html
-<form action="https://formsubmit.co/info@forgeandflight.com" method="POST">
-```
-
-2. First submission triggers verification email
-3. Click verification link
-4. Service is active
-
-### ADVANCED: Custom Backend
-
-If you have development resources:
-- Deploy serverless function (Cloudflare Workers)
-- Use AWS Lambda + API Gateway
-- Build Node.js backend with email service
-- Update submitForm() function in js/main.js
-
----
-
-## 5. PRE-LAUNCH CHECKLIST
+## 4. PRE-LAUNCH CHECKLIST
 
 ### CONTENT VERIFICATION
 - [ ] Company location is correct (Fayetteville, North Carolina)
@@ -208,12 +166,11 @@ If you have development resources:
 - [ ] Logo displays properly
 
 ### FUNCTIONALITY TESTING
-- [ ] Submit test contact form (verify receipt)
+- [ ] Test email links open mail client correctly
 - [ ] All internal navigation links work
 - [ ] All external links open correctly
 - [ ] Mobile menu opens/closes properly
 - [ ] Cookie consent banner appears on first visit
-- [ ] Forms validate required fields
 
 ### TECHNICAL VERIFICATION
 - [ ] Google Analytics tracking code is active
@@ -301,7 +258,7 @@ Use your text editor's "Find and Replace" function to update across all files.
 ## 7. MAINTENANCE SCHEDULE
 
 ### WEEKLY
-- Check contact form submissions
+- Check email inquiries are being received
 - Review site accessibility
 - Monitor analytics for errors
 
@@ -365,7 +322,7 @@ Use your text editor's "Find and Replace" function to update across all files.
 - Form validation issues
 
 **Solutions:**
-1. Configure Formspree or FormSubmit (see Section 4)
+1. Verify email links work correctly
 2. Open browser console (F12) to check for errors
 3. Test with minimal data first
 4. Verify export control checkbox is checked
@@ -439,7 +396,7 @@ Your site includes Google Analytics tracking code:
 - Page views
 - User demographics
 - Traffic sources
-- Conversion events (contact form submissions)
+- Conversion events (email clicks)
 - Bounce rate
 - Average session duration
 
@@ -471,26 +428,6 @@ Your site includes Google Analytics tracking code:
 
 ---
 
-## CONTACT FORM FIELDS
-
-The contact form includes:
-
-**Required fields:**
-- Full Name
-- Email Address
-- Company/Organization
-- Message (minimum 20 characters)
-- Export Control Acknowledgment (checkbox)
-
-**Optional fields:**
-- Phone Number
-- Inquiry Type (dropdown)
-
-**Special checkboxes:**
-- Government Agency (identifies government customers)
-- Export Control Acknowledgment (required - ITAR compliance)
-
----
 
 ## FILE STRUCTURE
 
@@ -536,7 +473,7 @@ GitHub Support: support.github.com
 
 1. Push code to GitHub repository
 2. Connect repository to Cloudflare Pages
-3. Configure contact form email service
+3. Verify contact information is accurate
 4. Setup custom domain (optional)
 5. Test all functionality
 6. Launch!
