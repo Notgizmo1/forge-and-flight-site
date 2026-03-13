@@ -64,31 +64,104 @@
             <section class="section">
                 <div class="section-header">
                     <h2>Get in Touch</h2>
-                    <p>Contact us directly via email. Our team responds to all inquiries within one business day.</p>
+                    <p>Submit your inquiry below or reach us directly at <a href="mailto:info@forgeandflight.com" style="color: var(--steel-blue); font-weight: 600;">info@forgeandflight.com</a>. We respond to all inquiries within one business day.</p>
                 </div>
-                
-                <div class="grid grid-2">
-                    <div class="card">
-                        <h3>General Inquiries</h3>
-                        <p style="font-size: 1.3rem; margin: 1.5rem 0;">
-                            <a href="mailto:info@forgeandflight.com" style="color: var(--steel-blue); font-weight: 600; text-decoration: none;">info@forgeandflight.com</a>
-                        </p>
-                        <p>For general information, platform specifications, pricing inquiries, partnership opportunities, and business development.</p>
-                        <p style="margin-top: 1rem; color: var(--text-medium); font-size: 0.9rem;">
-                            <strong>Response Time:</strong> Within one business day
-                        </p>
+
+                <div class="grid grid-2" style="align-items: start;">
+                    <!-- Contact Form -->
+                    <div class="card" style="padding: 2.5rem;">
+                        <h3 style="margin-bottom: 1.5rem;">Send an Inquiry</h3>
+                        <form method="POST" action="https://formspree.io/f/mpqyldpw" style="display: flex; flex-direction: column; gap: 1.25rem;">
+                            <input type="hidden" name="_subject" value="New Inquiry — Forge & Flight Holdings">
+                            <input type="text" name="_gotcha" style="display:none">
+
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                                <div>
+                                    <label style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.4rem;">Name <span style="color: #e53e3e;">*</span></label>
+                                    <input type="text" name="name" required style="width: 100%; padding: 0.65rem 0.85rem; border: 1px solid #d1d5db; border-radius: 5px; font-size: 0.95rem; font-family: inherit; box-sizing: border-box;">
+                                </div>
+                                <div>
+                                    <label style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.4rem;">Email <span style="color: #e53e3e;">*</span></label>
+                                    <input type="email" name="email" required style="width: 100%; padding: 0.65rem 0.85rem; border: 1px solid #d1d5db; border-radius: 5px; font-size: 0.95rem; font-family: inherit; box-sizing: border-box;">
+                                </div>
+                            </div>
+
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                                <div>
+                                    <label style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.4rem;">Organization <span style="color: #e53e3e;">*</span></label>
+                                    <input type="text" name="organization" required style="width: 100%; padding: 0.65rem 0.85rem; border: 1px solid #d1d5db; border-radius: 5px; font-size: 0.95rem; font-family: inherit; box-sizing: border-box;">
+                                </div>
+                                <div>
+                                    <label style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.4rem;">Phone</label>
+                                    <input type="tel" name="phone" style="width: 100%; padding: 0.65rem 0.85rem; border: 1px solid #d1d5db; border-radius: 5px; font-size: 0.95rem; font-family: inherit; box-sizing: border-box;">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.4rem;">Organization Type <span style="color: #e53e3e;">*</span></label>
+                                <select name="org-type" required style="width: 100%; padding: 0.65rem 0.85rem; border: 1px solid #d1d5db; border-radius: 5px; font-size: 0.95rem; font-family: inherit; background: white; box-sizing: border-box;">
+                                    <option value="">Select type...</option>
+                                    <option value="dod">Department of Defense / Military</option>
+                                    <option value="federal">Federal Agency</option>
+                                    <option value="state-local">State / Local Government</option>
+                                    <option value="university">University / Research Institution</option>
+                                    <option value="contractor">Defense Contractor</option>
+                                    <option value="commercial">Commercial Enterprise</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.4rem;">Area of Interest <span style="color: #e53e3e;">*</span></label>
+                                <select name="area-of-interest" required style="width: 100%; padding: 0.65rem 0.85rem; border: 1px solid #d1d5db; border-radius: 5px; font-size: 0.95rem; font-family: inherit; background: white; box-sizing: border-box;">
+                                    <option value="">Select area...</option>
+                                    <option value="uas-platforms">UAS Platforms (Forge and Flight Labs)</option>
+                                    <option value="training">UAS Training (Forge and Flight Academy)</option>
+                                    <option value="avionics">Avionics / Electronics Manufacturing</option>
+                                    <option value="test-systems">Flight Test Services</option>
+                                    <option value="partnership">Partnership / Business Development</option>
+                                    <option value="general">General Inquiry</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.4rem;">Message <span style="color: #e53e3e;">*</span></label>
+                                <textarea name="message" required rows="5" placeholder="Describe your requirements, questions, or opportunity..." style="width: 100%; padding: 0.65rem 0.85rem; border: 1px solid #d1d5db; border-radius: 5px; font-size: 0.95rem; font-family: inherit; resize: vertical; box-sizing: border-box;"></textarea>
+                            </div>
+
+                            <button type="submit" style="background: var(--steel-blue); color: white; padding: 0.85rem 2rem; border: none; border-radius: 5px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: background 0.2s; align-self: flex-start;">Send Inquiry</button>
+                        </form>
                     </div>
-                    
-                    <div class="card">
-                        <h3>Government & Defense Procurement</h3>
-                        <p style="font-size: 1.3rem; margin: 1.5rem 0;">
-                            <a href="mailto:info@forgeandflight.com" style="color: var(--steel-blue); font-weight: 600; text-decoration: none;">info@forgeandflight.com</a>
-                        </p>
-                        <p>For government procurement, NDAA compliance documentation, CAGE code verification, and DoD contract inquiries.</p>
-                        <p style="margin-top: 1rem; color: var(--text-medium); font-size: 0.9rem;">
-                            <strong>Priority Response:</strong> Same business day<br>
-                            <strong>Please include:</strong> Agency name, CAGE code (if applicable), and specific requirements
-                        </p>
+
+                    <!-- Contact Info Sidebar -->
+                    <div>
+                        <div class="card" style="margin-bottom: 1.5rem;">
+                            <h3>Direct Contact</h3>
+                            <p style="margin-top: 1rem;">
+                                <strong>General & Business Development</strong><br>
+                                <a href="mailto:info@forgeandflight.com" style="color: var(--steel-blue); font-weight: 600;">info@forgeandflight.com</a>
+                            </p>
+                            <p style="margin-top: 1.25rem; color: var(--text-medium); font-size: 0.9rem;">
+                                <strong>Response Time:</strong> Within one business day<br>
+                                <strong>Gov/DoD Priority:</strong> Same business day
+                            </p>
+                            <p style="margin-top: 1.25rem; color: var(--text-medium); font-size: 0.875rem;">
+                                For government procurement, NDAA documentation, or CAGE code verification, please include your agency name and contract vehicle when writing.
+                            </p>
+                        </div>
+
+                        <div class="card">
+                            <h3>Corporate Headquarters</h3>
+                            <p style="margin-top: 1rem;">
+                                Fayetteville, North Carolina<br>
+                                <span style="color: var(--text-medium); font-size: 0.9rem;">Fort Liberty Adjacent</span>
+                            </p>
+                            <p style="margin-top: 1rem; font-size: 0.9rem;">
+                                <strong>CAGE:</strong> 18WR3<br>
+                                <strong>EIN:</strong> 41-3413730
+                            </p>
+                            <p style="margin-top: 1rem; color: var(--text-medium); font-size: 0.875rem;">Mon–Fri, 0900–1700 EST</p>
+                        </div>
                     </div>
                 </div>
             </section>
