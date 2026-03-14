@@ -37,9 +37,15 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://forgeandflight.com/terms-of-use/</loc>
+    <loc>https://forgeandflight.com/avionics/</loc>
     <lastmod>2026-03-13</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://forgeandflight.com/test-systems/</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>
