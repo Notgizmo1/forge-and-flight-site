@@ -1,0 +1,51 @@
+{{ define "main" }}
+<section class="page-hero">
+  <div class="container page-hero-inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>Platforms</span>
+    </nav>
+    <span class="eyebrow">NDAA §889 Compliant · American-Manufactured · Blue UAS Eligible</span>
+    <h1>UAS Platform Catalog</h1>
+    <p>Full platform specifications and pricing are available on the Forge &amp; Flight Labs website. All platforms are NDAA §889 compliant, American-manufactured, and eligible for DoD simplified acquisition under the appropriate schedule.</p>
+    <div class="badge-row">
+      <span class="badge badge-ndaa">NDAA §889 Compliant</span>
+      <span class="badge badge-secure">Blue UAS Eligible</span>
+      <span class="badge badge-sam">DoD Schedule A · Commercial Schedule B</span>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Contracting Entity: Forge & Flight Labs LLC — CAGE 18VF2</span>
+      <h2>Group 1–3 Platform Line</h2>
+      <p>Platform sales are executed through Forge &amp; Flight Labs LLC. Full technical specifications, payload options, and pricing schedules are available on the Labs site and via direct request.</p>
+    </div>
+    <div class="grid-2">
+      {{ range slice
+        (dict "name" "Aether-10" "group" "Group 2 · Multi-Role" "desc" "Fixed-wing/VTOL hybrid. NVIDIA Jetson Orin Nano 8GB compute. Gremsy VIO F1 payload. Blue UAS eligible. AI intelligence modules compatible." "link" "/products/aether-10/")
+        (dict "name" "Vanguard-14" "group" "Group 2/3 · AI-Enabled" "desc" "Extended range fixed-wing/VTOL. Jetson Orin NX 16GB — 100 TOPS. Full Intelligence Suite compatible. DoD tactical operations." "link" "/products/vanguard-14/")
+        (dict "name" "Titan-20" "group" "Group 3 · Heavy-Lift VTOL" "desc" "High endurance heavy-lift VTOL. NVIDIA Thor AGX compute. Maximum payload capacity. Fire services, aerial application, and long-duration surveillance." "link" "/products/titan-20/")
+        (dict "name" "Longbow-8" "group" "Group 1 · Development Platform" "desc" "Entry-level fixed-wing/VTOL. Operator training, proof-of-concept, and development work. Land-and-expand pathway to Group 2/3 platforms." "link" "/products/longbow-8/")
+      }}
+      <div class="card">
+        <span class="eyebrow">{{ .group }}</span>
+        <h3>{{ .name }}</h3>
+        <p>{{ .desc }}</p>
+        <a href="{{ $.Site.Params.labs_url }}{{ .link }}" target="_blank" rel="noopener" class="btn btn-outline btn-sm" style="margin-top:1.25rem;">Full Specs on Labs ↗</a>
+      </div>
+      {{ end }}
+    </div>
+    <div class="cta-strip" style="margin-top:3rem;">
+      <h2>Platform pricing is not published publicly.</h2>
+      <p>DoD Schedule A and Commercial Schedule B pricing is available upon request. All quotes require entity verification. Contact Forge &amp; Flight Labs for a formal quote.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href="/contact/?interest=aether-10" class="btn btn-outline-white">Request Platform Quote</a>
+        <a href="{{ $.Site.Params.labs_url }}" target="_blank" rel="noopener" class="btn btn-outline-white">Visit Forge &amp; Flight Labs ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,29 @@
+{{ define "main" }}
+<section class="page-hero">
+  <div class="container page-hero-inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      {{ if .Parent }}
+      <span class="breadcrumb-sep">›</span>
+      <a href="{{ .Parent.Permalink }}">{{ .Parent.Title }}</a>
+      {{ end }}
+      <span class="breadcrumb-sep">›</span>
+      <span>{{ .Title }}</span>
+    </nav>
+    {{ with .Params.eyebrow }}<span class="eyebrow">{{ . }}</span>{{ end }}
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.subtitle }}<p>{{ . }}</p>{{ end }}
+    {{ with .Params.badges }}
+    <div class="badge-row">
+      {{ range . }}<span class="badge badge-ndaa">{{ . }}</span>{{ end }}
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+<div class="section">
+  <div class="container">
+    {{ .Content }}
+  </div>
+</div>
+{{ end }}

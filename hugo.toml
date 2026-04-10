@@ -1,0 +1,93 @@
+baseURL = "https://forgeandflight.com/"
+languageCode = "en-US"
+title = "Forge & Flight Holdings | Defense Technology & Professional Services"
+theme = ""
+enableRobotsTXT = true
+enableGitInfo = false
+summaryLength = 70
+
+[outputs]
+  home = ["HTML", "RSS", "SITEMAP"]
+  section = ["HTML", "RSS"]
+  page = ["HTML"]
+
+[sitemap]
+  changeFreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[params]
+  description = "American defense technology holding company. NDAA-compliant UAS platforms, AI-powered mission software, federal contracting services, and professional consulting. CAGE: 18WR3 | CMMC Level 2 | Fort Bragg, NC."
+  keywords = "NDAA compliant defense contractor, American UAS manufacturer, defense technology company, CMMC Level 2 contractor, Fort Bragg contractor, Fayetteville NC defense, counter-UAS software, MAVLink ATAK integration, Blue UAS, small business defense contractor"
+  author = "Forge & Flight Holdings, Inc."
+  entity = "Forge & Flight Holdings, Inc."
+  cage = "18WR3"
+  uei = "Z9PWMMZXJ321"
+  ein = "41-3413730"
+  sam_expires = "March 9, 2027"
+  sprs = "105/110"
+  address = "Fayetteville, NC 28304"
+  phone = "(347) 678-7690"
+  email = "m.ortiz@forgeandflight.com"
+  ga_id = "G-4RVS5R9Z6G"
+  bing_verify = "CBB3DDC3738AE030F4107D4B0869525F"
+  labs_url = "https://forgeandflightlabs.com"
+  academy_url = "https://forgeandflightacademy.com"
+  labs_cage = "18VF2"
+  labs_uei = "SUVKLZLPBJC1"
+  academy_cage = "1A6J3"
+  academy_uei = "YV8UNYJWZHV1"
+  og_image = "https://forgeandflight.com/images/og-default.png"
+
+[menu]
+  [[menu.main]]
+    name = "Platforms"
+    url = "/platforms/"
+    weight = 1
+  [[menu.main]]
+    name = "Software"
+    url = "/software/"
+    weight = 2
+  [[menu.main]]
+    name = "Services"
+    url = "/services/"
+    weight = 3
+    hasChildren = true
+  [[menu.main]]
+    name = "Federal Services"
+    url = "/services/federal-services/"
+    parent = "Services"
+    weight = 1
+  [[menu.main]]
+    name = "Professional Services"
+    url = "/services/professional-services/"
+    parent = "Services"
+    weight = 2
+  [[menu.main]]
+    name = "Forge Flex"
+    url = "/forge-flex/"
+    parent = "Services"
+    weight = 3
+  [[menu.main]]
+    name = "Divisions"
+    url = "/divisions/"
+    weight = 4
+  [[menu.main]]
+    name = "Compliance"
+    url = "/compliance/"
+    weight = 5
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 6
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 7
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false

@@ -1,0 +1,151 @@
+{{ define "main" }}
+<section class="page-hero">
+  <div class="container page-hero-inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>Contact</span>
+    </nav>
+    <span class="eyebrow">Sales · Contracting · Services · General Inquiries</span>
+    <h1>Contact</h1>
+    <p>We respond within one business day. Contracting officers: all SAM data, CAGE codes, and UEIs are listed below — no need to ask separately.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+
+      {{/* ── FORM ──────────────────────────────────────────── */}}
+      <div>
+        <form id="contact-form" action="https://formspree.io/f/REPLACE_WITH_FORMSPREE_ID" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="Forge & Flight Holdings — Website Inquiry">
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+          <div class="form-group">
+            <label class="form-label" for="inquiry-type">Inquiry Type <span style="color:var(--orange)">*</span></label>
+            <select class="form-control" id="inquiry-type" name="inquiry_type" required>
+              <option value="">Select inquiry type…</option>
+              <optgroup label="Software Products">
+                <option value="omen-stack">OMEN Stack (IronMesh / Nexus / AegisEye)</option>
+                <option value="intelligence-suite">AegisEye Intelligence Suite (FireWatch / WatchTower / OverWatch / FloodWatch)</option>
+                <option value="nemesis">NEMESIS C-UAS Platform</option>
+              </optgroup>
+              <optgroup label="Platform Sales (Forge & Flight Labs)">
+                <option value="aether-10">Aether-10</option>
+                <option value="vanguard-14">Vanguard-14</option>
+                <option value="titan-20">Titan-20</option>
+                <option value="longbow-8">Longbow-8</option>
+                <option value="forge-flex">Forge Flex MPaaS</option>
+              </optgroup>
+              <optgroup label="Services">
+                <option value="federal-services">Federal Services / SAT Contracting</option>
+                <option value="defense-consulting">Defense &amp; Security Consulting</option>
+                <option value="osint-intelligence">Intelligence / OSINT Services</option>
+                <option value="uas-advisory">UAS Regulatory Advisory</option>
+                <option value="latam">Latin America Advisory</option>
+                <option value="technical-writing">Technical Writing &amp; Documentation</option>
+                <option value="avionics">Avionics / Electronics Products</option>
+                <option value="test-systems">Test Systems Services</option>
+              </optgroup>
+              <optgroup label="Training (Forge Flight Academy)">
+                <option value="training">Training Programs</option>
+              </optgroup>
+              <optgroup label="Other">
+                <option value="partnership">Teaming / Subcontracting Opportunity</option>
+                <option value="sbir">SBIR / OTA Inquiry</option>
+                <option value="media">Media / Press</option>
+                <option value="general">General Inquiry</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+            <div class="form-group">
+              <label class="form-label" for="first-name">First Name <span style="color:var(--orange)">*</span></label>
+              <input class="form-control" type="text" id="first-name" name="first_name" required autocomplete="given-name">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="last-name">Last Name <span style="color:var(--orange)">*</span></label>
+              <input class="form-control" type="text" id="last-name" name="last_name" required autocomplete="family-name">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="organization">Organization / Agency <span style="color:var(--orange)">*</span></label>
+            <input class="form-control" type="text" id="organization" name="organization" required autocomplete="organization">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address <span style="color:var(--orange)">*</span></label>
+            <input class="form-control" type="email" id="email" name="email" required autocomplete="email">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="phone">Phone (optional)</label>
+            <input class="form-control" type="tel" id="phone" name="phone" autocomplete="tel">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message">Message <span style="color:var(--orange)">*</span></label>
+            <textarea class="form-control" id="message" name="message" required placeholder="Briefly describe your requirement, timeline, and any relevant contract vehicle or funding information."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">Submit Inquiry</button>
+          <p style="font-size:0.78rem;color:var(--text-muted);margin-top:0.75rem;text-align:center;">We respond within one business day. For urgent contracting matters, call <a href="tel:+13476787690">(347) 678-7690</a>.</p>
+        </form>
+      </div>
+
+      {{/* ── SIDEBAR ────────────────────────────────────────── */}}
+      <div>
+        <div class="cred-block" style="margin-bottom:1.5rem;">
+          <p style="font-family:var(--font-mono);font-size:0.65rem;color:var(--slate-500);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:1.25rem;padding-bottom:0.75rem;border-bottom:1px solid var(--navy-border);">Direct Contact</p>
+          <p style="color:var(--white);font-weight:600;margin-bottom:0.25rem;">M. Ortiz, CEO</p>
+          <p style="font-size:0.875rem;margin-bottom:0.75rem;"><a href="mailto:m.ortiz@forgeandflight.com" style="color:var(--orange);">m.ortiz@forgeandflight.com</a></p>
+          <p style="font-size:0.875rem;"><a href="tel:+13476787690" style="color:var(--slate-300);">(347) 678-7690</a></p>
+        </div>
+
+        <div class="card" style="margin-bottom:1.5rem;">
+          <h4 style="margin-bottom:1rem;font-size:1rem;">Holdings Registration Data</h4>
+          {{ $data := slice
+            (slice "Legal Name" "Forge & Flight Holdings, Inc.")
+            (slice "CAGE Code" "18WR3")
+            (slice "UEI" "Z9PWMMZXJ321")
+            (slice "EIN" "41-3413730")
+            (slice "SAM Status" "Active — Mar 9, 2027")
+            (slice "CMMC" "Level 2 · SPRS 105/110")
+            (slice "Address" "Fayetteville, NC 28304")
+          }}
+          {{ range $data }}
+          <div style="display:flex;justify-content:space-between;padding:0.45rem 0;border-bottom:1px solid var(--slate-100);gap:1rem;">
+            <span style="font-family:var(--font-mono);font-size:0.68rem;color:var(--slate-500);flex-shrink:0;">{{ index . 0 }}</span>
+            <span style="font-family:var(--font-mono);font-size:0.75rem;color:var(--navy);font-weight:500;text-align:right;">{{ index . 1 }}</span>
+          </div>
+          {{ end }}
+        </div>
+
+        <div class="card" style="margin-bottom:1.5rem;">
+          <h4 style="margin-bottom:1rem;font-size:1rem;">Subsidiary Registration Data</h4>
+          <p style="font-size:0.8rem;font-weight:600;color:var(--navy);margin-bottom:0.5rem;">Forge &amp; Flight Labs LLC</p>
+          <div style="display:flex;gap:1rem;margin-bottom:1rem;flex-wrap:wrap;">
+            <span style="font-family:var(--font-mono);font-size:0.72rem;color:var(--slate-500);">CAGE <span style="color:var(--navy);">18VF2</span></span>
+            <span style="font-family:var(--font-mono);font-size:0.72rem;color:var(--slate-500);">UEI <span style="color:var(--navy);">SUVKLZLPBJC1</span></span>
+          </div>
+          <p style="font-size:0.8rem;font-weight:600;color:var(--navy);margin-bottom:0.5rem;">Forge and Flight Academy LLC</p>
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+            <span style="font-family:var(--font-mono);font-size:0.72rem;color:var(--slate-500);">CAGE <span style="color:var(--navy);">1A6J3</span></span>
+            <span style="font-family:var(--font-mono);font-size:0.72rem;color:var(--slate-500);">UEI <span style="color:var(--navy);">YV8UNYJWZHV1</span></span>
+          </div>
+        </div>
+
+        <div style="padding:1.25rem;background:var(--off-white);border-radius:var(--radius);border:1px solid var(--slate-100);">
+          <p style="font-size:0.8rem;color:var(--text-muted);line-height:1.6;">
+            <strong style="color:var(--navy);">Contracting Officers:</strong> All entities are verifiable on SAM.gov. Verify current status at <a href="https://sam.gov" target="_blank" rel="noopener">sam.gov</a> using the CAGE codes above.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+{{ end }}

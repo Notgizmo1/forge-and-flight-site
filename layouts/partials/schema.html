@@ -1,0 +1,170 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["Organization", "LocalBusiness"],
+      "@id": "https://forgeandflight.com/#organization",
+      "name": "Forge & Flight Holdings, Inc.",
+      "alternateName": ["Forge and Flight Holdings", "FFH"],
+      "url": "https://forgeandflight.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://forgeandflight.com/images/logo.png",
+        "width": 400,
+        "height": 120
+      },
+      "image": "https://forgeandflight.com/images/og-default.png",
+      "description": "American defense technology and professional services holding company. NDAA-compliant UAS platforms, AI-powered mission software, CMMC-hardened federal contracting solutions, and defense consulting services. CAGE: 18WR3.",
+      "foundingDate": "2026",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Fayetteville",
+        "addressRegion": "NC",
+        "postalCode": "28304",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "35.0527",
+        "longitude": "-78.8784"
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "email": "m.ortiz@forgeandflight.com",
+          "telephone": "+13476787690",
+          "contactType": "Sales",
+          "availableLanguage": ["English", "Spanish"]
+        }
+      ],
+      "identifier": [
+        { "@type": "PropertyValue", "name": "CAGE Code", "value": "18WR3" },
+        { "@type": "PropertyValue", "name": "SAM.gov UEI", "value": "Z9PWMMZXJ321" },
+        { "@type": "PropertyValue", "name": "EIN", "value": "41-3413730" }
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "CMMC Level 2",
+          "description": "Cybersecurity Maturity Model Certification Level 2, SPRS Score 105/110"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "NDAA Section 889 Compliant",
+          "description": "National Defense Authorization Act Section 889 compliance verified"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "SAM.gov Active Registration",
+          "description": "Active System for Award Management registration, expires March 2027"
+        }
+      ],
+      "knowsAbout": [
+        "Unmanned Aircraft Systems",
+        "Counter-UAS Systems",
+        "NDAA Compliance",
+        "UAS Manufacturing",
+        "Defense Contracting",
+        "Federal Acquisition",
+        "CMMC Compliance",
+        "MAVLink Integration",
+        "ATAK Ecosystem",
+        "AI Edge Computing",
+        "Mission Intelligence Software",
+        "Geopolitical Risk Analysis",
+        "Defense Consulting",
+        "Latin America Advisory"
+      ],
+      "areaServed": ["US", "DoD", "Fort Bragg", "USASOC"],
+      "subOrganization": [
+        {
+          "@type": "Organization",
+          "name": "Forge & Flight Labs LLC",
+          "url": "https://forgeandflightlabs.com",
+          "description": "NDAA-compliant UAS platform design and manufacturing",
+          "identifier": [
+            { "@type": "PropertyValue", "name": "CAGE Code", "value": "18VF2" },
+            { "@type": "PropertyValue", "name": "SAM.gov UEI", "value": "SUVKLZLPBJC1" }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "Forge and Flight Academy LLC",
+          "url": "https://forgeandflightacademy.com",
+          "description": "Professional UAS operator training and certification for DoD, government, and research institutions",
+          "identifier": [
+            { "@type": "PropertyValue", "name": "CAGE Code", "value": "1A6J3" },
+            { "@type": "PropertyValue", "name": "SAM.gov UEI", "value": "YV8UNYJWZHV1" }
+          ]
+        }
+      ],
+      "sameAs": [
+        "https://forgeandflightlabs.com",
+        "https://forgeandflightacademy.com"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://forgeandflight.com/#website",
+      "url": "https://forgeandflight.com",
+      "name": "Forge & Flight Holdings",
+      "publisher": { "@id": "https://forgeandflight.com/#organization" },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://forgeandflight.com/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "{{ .Permalink }}#webpage",
+      "url": "{{ .Permalink }}",
+      "name": "{{ .Title }}",
+      "isPartOf": { "@id": "https://forgeandflight.com/#website" },
+      "about": { "@id": "https://forgeandflight.com/#organization" },
+      "inLanguage": "en-US"
+    }
+    {{ if .Params.schema_extra }},{{ .Params.schema_extra | safeJS }}{{ end }}
+  ]
+}
+</script>
+
+{{/* Breadcrumb schema for non-home pages */}}
+{{ if not .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://forgeandflight.com/"
+    }
+    {{ if .Parent }}
+    ,{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ .Parent.Title }}",
+      "item": "{{ .Parent.Permalink }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ .Title }}",
+      "item": "{{ .Permalink }}"
+    }
+    {{ else }}
+    ,{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ .Title }}",
+      "item": "{{ .Permalink }}"
+    }
+    {{ end }}
+  ]
+}
+</script>
+{{ end }}

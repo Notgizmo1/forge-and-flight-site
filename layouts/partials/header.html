@@ -1,0 +1,119 @@
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <div class="header-brand">
+      <a href="/" class="brand-link" aria-label="Forge & Flight Holdings Home">
+        <img src="/images/logo.png" alt="Forge & Flight Holdings" class="brand-logo" width="180" height="54">
+      </a>
+    </div>
+
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+
+        <li class="nav-item has-dropdown">
+          <a href="/platforms/" class="nav-link">Platforms</a>
+          <ul class="nav-dropdown">
+            <li><a href="/platforms/" class="dropdown-link">
+              <span class="dd-title">All Platforms</span>
+              <span class="dd-desc">NDAA-compliant UAS product line</span>
+            </a></li>
+            <li><a href="{{ .Site.Params.labs_url }}/products/aether-10/" class="dropdown-link ext" target="_blank" rel="noopener">
+              <span class="dd-title">Aether-10 ↗</span>
+              <span class="dd-desc">Group 2 multi-role platform</span>
+            </a></li>
+            <li><a href="{{ .Site.Params.labs_url }}/products/vanguard-14/" class="dropdown-link ext" target="_blank" rel="noopener">
+              <span class="dd-title">Vanguard-14 ↗</span>
+              <span class="dd-desc">Group 3 AI-enabled</span>
+            </a></li>
+            <li><a href="{{ .Site.Params.labs_url }}/products/titan-20/" class="dropdown-link ext" target="_blank" rel="noopener">
+              <span class="dd-title">Titan-20 ↗</span>
+              <span class="dd-desc">Group 3 heavy-lift VTOL</span>
+            </a></li>
+            <li><a href="{{ .Site.Params.labs_url }}/products/longbow-8/" class="dropdown-link ext" target="_blank" rel="noopener">
+              <span class="dd-title">Longbow-8 ↗</span>
+              <span class="dd-desc">Group 1 development platform</span>
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item has-dropdown">
+          <a href="/software/" class="nav-link">Software</a>
+          <ul class="nav-dropdown">
+            <li><a href="/software/" class="dropdown-link">
+              <span class="dd-title">All Software</span>
+              <span class="dd-desc">CMMC Level 2 mission systems</span>
+            </a></li>
+            <li><a href="/software/#omen" class="dropdown-link">
+              <span class="dd-title">OMEN Stack</span>
+              <span class="dd-desc">IronMesh · Nexus · AegisEye</span>
+            </a></li>
+            <li><a href="/software/#intelligence-suite" class="dropdown-link">
+              <span class="dd-title">Intelligence Suite</span>
+              <span class="dd-desc">FireWatch · WatchTower · OverWatch · FloodWatch</span>
+            </a></li>
+            <li><a href="/software/#nemesis" class="dropdown-link">
+              <span class="dd-title">NEMESIS C-UAS</span>
+              <span class="dd-desc">Autonomous counter-UAS platform</span>
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item has-dropdown">
+          <a href="/services/" class="nav-link">Services</a>
+          <ul class="nav-dropdown">
+            <li><a href="/services/federal-services/" class="dropdown-link">
+              <span class="dd-title">Federal Services</span>
+              <span class="dd-desc">SAT contracts · Fort Bragg</span>
+            </a></li>
+            <li><a href="/services/professional-services/" class="dropdown-link">
+              <span class="dd-title">Professional Services</span>
+              <span class="dd-desc">Defense consulting · LATAM · OSINT</span>
+            </a></li>
+            <li><a href="/forge-flex/" class="dropdown-link">
+              <span class="dd-title">Forge Flex MPaaS</span>
+              <span class="dd-desc">Mission Platform as a Service</span>
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a href="/divisions/" class="nav-link">Divisions</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="/compliance/" class="nav-link">Compliance</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="/about/" class="nav-link">About</a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a href="/contact/" class="btn btn-primary btn-sm">Contact</a>
+      <button class="mobile-toggle" id="mobile-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+      </button>
+    </div>
+  </div>
+
+  {{/* Credential bar - shows on all pages */}}
+  <div class="credential-bar" aria-label="Company credentials">
+    <div class="cred-inner">
+      <span class="cred-item"><span class="cred-dot green"></span>SAM.gov Active</span>
+      <span class="cred-sep">·</span>
+      <span class="cred-item">CAGE&nbsp;<strong>18WR3</strong></span>
+      <span class="cred-sep">·</span>
+      <span class="cred-item">UEI&nbsp;<strong>Z9PWMMZXJ321</strong></span>
+      <span class="cred-sep">·</span>
+      <span class="cred-item">CMMC Level 2&nbsp;<strong>SPRS 105/110</strong></span>
+      <span class="cred-sep">·</span>
+      <span class="cred-item">NDAA §889 Compliant</span>
+      <span class="cred-sep">·</span>
+      <span class="cred-item">Fayetteville, NC</span>
+    </div>
+  </div>
+</header>

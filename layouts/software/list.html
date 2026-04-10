@@ -1,0 +1,194 @@
+{{ define "main" }}
+<section class="page-hero">
+  <div class="container page-hero-inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>Software Products</span>
+    </nav>
+    <span class="eyebrow">Mission Software · CMMC Level 2 · NDAA §889 Compliant</span>
+    <h1>Software that answers<br>"What else beyond the drone?"</h1>
+    <p>Three product lines built on NVIDIA Jetson edge compute, Cloudflare-native infrastructure, and a CMMC-hardened codebase. Every product is NDAA §889 compliant, no-cloud-dependency capable, and ATAK-native.</p>
+    <div class="badge-row">
+      <span class="badge badge-cmmc">CMMC Level 2 · SPRS 105/110</span>
+      <span class="badge badge-ndaa">NDAA §889 Compliant</span>
+      <span class="badge badge-secure">CI Green · All Repos</span>
+      <span class="badge badge-sam">Government Purpose Rights</span>
+    </div>
+  </div>
+</section>
+
+{{/* ── OMEN STACK ────────────────────────────────────────── */}}
+<section class="section" id="omen" aria-labelledby="omen-heading">
+  <div class="container">
+    <div class="software-product">
+      <div class="software-product-header">
+        <div>
+          <span class="eyebrow">DoD Command & Control · DIU PROJ00662</span>
+          <h2 id="omen-heading">OMEN Stack</h2>
+          <p>IronMesh · Forge-Nexus Command Center · AegisEye GCS — three integrated components providing a complete CMMC Level 2-hardened drone command and control solution for DoD and federal customers.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:0.5rem;align-items:flex-end;flex-shrink:0;">
+          <span class="badge badge-cmmc">SPRS 105/110</span>
+          <span class="badge badge-ndaa">NDAA Compliant</span>
+          <span class="badge badge-secure">DIU PROJ00662</span>
+        </div>
+      </div>
+      <div class="software-product-body">
+        <div class="module-grid">
+          <div class="module-card">
+            <h4>⬡ IronMesh</h4>
+            <p>Open-source (GPL-3.0) MAVLink↔CoT bridge. Connects any ArduPilot drone to ATAK, Space Force UDL, FAA NOTAMs, ADS-B, and DoD battle networks. 25 data adapters. Tailscale/WireGuard encrypted mesh.</p>
+            <p class="module-market">Enterprise · Government Purpose Rights</p>
+          </div>
+          <div class="module-card">
+            <h4>🌐 Forge-Nexus Command Center</h4>
+            <p>CesiumJS 3D globe for multi-domain C2. Real-time drone positions, threat tracks, NOTAM overlays, and Space Force UDL federation. React 18 + TypeScript. On-premises deployable.</p>
+            <p class="module-market">Government Purpose Rights</p>
+          </div>
+          <div class="module-card">
+            <h4>🖥 AegisEye GCS</h4>
+            <p>Windows ground control station. PIV/CAC smart card auth. STANAG 4586. Plugin SDK for Intelligence Suite modules. SHA-256 cryptographic audit chain. 15-min inactivity lock.</p>
+            <p class="module-market">Government Purpose Rights</p>
+          </div>
+        </div>
+
+        <h4 style="margin-bottom:1rem;">DoD Data Integration — Critical Abstraction Layer</h4>
+        <div style="overflow-x:auto;">
+          <table class="spec-table">
+            <thead><tr><th>Integration</th><th>Source</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>CoT / TAK Ecosystem</td><td>Bidirectional TAK Server TCP/TLS</td><td>✅ Complete</td></tr>
+              <tr><td>NOTAM</td><td>FAA API Portal + AviationWeather.gov fallback</td><td>✅ Complete</td></tr>
+              <tr><td>FAA CIFP Aeronautical</td><td>ARINC 424-18 — 71,380 airports, airspace, waypoints</td><td>✅ Complete</td></tr>
+              <tr><td>Space Force UDL</td><td>Elsets, state vectors, aircraft, conjunctions (v1.39.0)</td><td>✅ Complete</td></tr>
+              <tr><td>UDL POST /cot</td><td>Push drone positions to UDL TAK → federates DoD-wide</td><td>✅ Complete</td></tr>
+              <tr><td>ADS-B</td><td>MAVLink ADSB_VEHICLE → CoT air tracks</td><td>✅ Complete</td></tr>
+              <tr><td>MIL-STD-1553 / UCI</td><td>Adapter architecture ready</td><td>🔄 Roadmap</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;">
+          <a href="/contact/?interest=omen-stack" class="btn btn-primary">Request Product Sheet</a>
+          <a href="/compliance/" class="btn btn-outline">View CMMC Status</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ── INTELLIGENCE SUITE ───────────────────────────────── */}}
+<section class="section" id="intelligence-suite" style="background:var(--off-white);" aria-labelledby="suite-heading">
+  <div class="container">
+    <div class="software-product">
+      <div class="software-product-header">
+        <div>
+          <span class="eyebrow">AI Detection Modules · NVIDIA Jetson · ATAK Native</span>
+          <h2 id="suite-heading">AegisEye Intelligence Suite</h2>
+          <p>Four modular AI detection systems — FireWatch, WatchTower, OverWatch, FloodWatch — extending UAS platforms beyond flight into persistent intelligence. All modules integrate natively with AegisEye GCS via MQTT and deliver georeferenced alerts in under 500ms.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:0.5rem;align-items:flex-end;flex-shrink:0;">
+          <span class="badge badge-ndaa">NDAA §889</span>
+          <span class="badge badge-secure">&lt;500ms Latency</span>
+        </div>
+      </div>
+      <div class="software-product-body">
+        <div class="module-grid">
+          <div class="module-card">
+            <h4>🔥 FireWatch</h4>
+            <p>Aerial wildfire and smoke detection. YOLO11n + FLIR Boson 640 thermal fusion. Fire perimeter GeoJSON mapping. Gimbal auto-track on confirmed detection. 3-class: fire, smoke, hotspot.</p>
+            <p class="module-market">Fire Agencies · USFS · CAL FIRE · Prescribed Burn</p>
+          </div>
+          <div class="module-card">
+            <h4>👁 WatchTower</h4>
+            <p>24/7 fixed-site perimeter surveillance. ONVIF IP cameras. Zone and tripwire logic. ByteTrack multi-object tracking. PTZ auto-track. CRITICAL/HIGH/MEDIUM/LOW priority alerts. Continuous recording + event clips.</p>
+            <p class="module-market">FOBs · Critical Infrastructure · Installation Security</p>
+          </div>
+          <div class="module-card">
+            <h4>🔎 OverWatch</h4>
+            <p>Autonomous aerial SAR detection. Person, vehicle, wreckage, and signal detection. FLIR thermal fusion for night operations. Cross-pass re-identification. Georeferenced track ±10m.</p>
+            <p class="module-market">SAR · Emergency Management · FEMA · Coast Guard</p>
+          </div>
+          <div class="module-card">
+            <h4>🌊 FloodWatch</h4>
+            <p>Flood and disaster response. 7-class detection. FEMA ICS triage coding — RED/ORANGE/YELLOW/GREEN. Real-time flood extent GeoJSON mapping. Automatic escalation on unrescued survivors.</p>
+            <p class="module-market">FEMA · State Emergency Management · Corps of Engineers</p>
+          </div>
+        </div>
+
+        <div style="margin-top:1.5rem;padding:1.5rem;background:var(--off-white);border-radius:var(--radius);border:1px solid var(--slate-100);">
+          <h4 style="margin-bottom:0.5rem;">Platform Compatibility</h4>
+          <div style="overflow-x:auto;">
+            <table class="spec-table">
+              <thead><tr><th>Platform</th><th>Compute</th><th>Payload</th><th>NDAA Status</th></tr></thead>
+              <tbody>
+                <tr><td>Aether-10 (Group 2)</td><td>Jetson Orin Nano 8GB · 40 TOPS</td><td>Gremsy VIO F1</td><td style="color:var(--green);font-weight:600;">Blue UAS Eligible</td></tr>
+                <tr><td>Vanguard-14 (Group 2/3)</td><td>Jetson Orin NX 16GB · 100 TOPS</td><td>Gremsy Orus L</td><td style="color:var(--green);font-weight:600;">NDAA §889 Compliant</td></tr>
+                <tr><td>Titan-20 VTOL (Group 3)</td><td>NVIDIA Thor AGX</td><td>Gremsy Orus L</td><td style="color:var(--green);font-weight:600;">NDAA §889 Compliant</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;">
+          <a href="/contact/?interest=intelligence-suite" class="btn btn-primary">Request Product Sheet</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ── NEMESIS ───────────────────────────────────────────── */}}
+<section class="section" id="nemesis" aria-labelledby="nemesis-heading">
+  <div class="container">
+    <div class="software-product">
+      <div class="software-product-header">
+        <div>
+          <span class="eyebrow">Counter-UAS · Autonomous Intercept · Forge & Flight Labs LLC</span>
+          <h2 id="nemesis-heading">NEMESIS C-UAS Platform</h2>
+          <p>Autonomous counter-UAS interceptor simulation and prototype framework. YOLOv8 AI vision, formation flying, ArduPilot + PX4, ROS2/MAVROS, cryptographic audit chain. NIST SP 800-171 Rev. 2 aligned. Government Purpose Rights.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:0.5rem;align-items:flex-end;flex-shrink:0;">
+          <span class="badge badge-ndaa">NIST 800-171</span>
+          <span class="badge badge-secure">GPR Licensed</span>
+          <span class="badge badge-cmmc">TRL 4–5</span>
+        </div>
+      </div>
+      <div class="software-product-body">
+        <div class="module-grid">
+          <div class="module-card">
+            <h4>Vision & Detection</h4>
+            <p>YOLOv8 real-time threat detection. FastSAM + SAM2 segmentation. Camera + telemetry fusion for 3D target position. SHA-256 model integrity verification before every load.</p>
+          </div>
+          <div class="module-card">
+            <h4>Autonomous Intercept</h4>
+            <p>Formation flying: leader-follower configuration. ArduPilot + PX4 compatibility. MAVLink 2.0 message signing. ROS2/MAVROS mission autonomy. Geofence enforcement prevents fratricide.</p>
+          </div>
+          <div class="module-card">
+            <h4>Security Posture</h4>
+            <p>NIST SP 800-171 Rev. 2 aligned. SROS2/DDS-Security encrypted ROS2 nodes. Cryptographic telemetry log integrity. CI: bandit 0H/0M, pip-audit clean, 41 tests passing.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;">
+          <a href="/contact/?interest=nemesis" class="btn btn-primary">Request Product Brief</a>
+          <a href="/contact/?interest=sbir" class="btn btn-outline">SBIR Co-Development Inquiry</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ── SOFTWARE CTA ──────────────────────────────────────── */}}
+<section class="section-sm">
+  <div class="container">
+    <div class="cta-strip">
+      <h2>Request a product sheet or capability brief</h2>
+      <p>All software products are available for demonstration to qualified DoD, federal, and commercial customers. Product sheets available on request — no pricing published publicly.</p>
+      <a href="/contact/" class="btn btn-outline-white btn-lg">Contact Software Sales</a>
+    </div>
+  </div>
+</section>
+
+{{ end }}

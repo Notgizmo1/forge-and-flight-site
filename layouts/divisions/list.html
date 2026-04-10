@@ -1,0 +1,233 @@
+{{ define "main" }}
+<section class="page-hero">
+  <div class="container page-hero-inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>Divisions &amp; Subsidiaries</span>
+    </nav>
+    <span class="eyebrow">Corporate Structure · Three SAM-Registered Entities</span>
+    <h1>Divisions &amp; Subsidiaries</h1>
+    <p>Forge &amp; Flight Holdings operates two wholly-owned subsidiaries and four internal divisions — all functioning under active SAM.gov registrations with NDAA-compliant supply chains and domestic sourcing.</p>
+  </div>
+</section>
+
+{{/* ── ORG OVERVIEW ─────────────────────────────────────── */}}
+<section class="section-sm" style="background:var(--off-white);border-bottom:1px solid var(--slate-100);">
+  <div class="container">
+    <div style="max-width:860px;margin:0 auto;">
+      <div style="background:var(--navy);border-radius:var(--radius-lg);padding:2.5rem;text-align:center;">
+        <span class="eyebrow">Parent Company</span>
+        <h2 style="color:var(--white);margin-bottom:0.25rem;">Forge &amp; Flight Holdings, Inc.</h2>
+        <p style="color:var(--slate-300);margin-bottom:1.5rem;">S-Corporation · North Carolina · EIN 41-3413730</p>
+        <div style="display:flex;gap:2rem;justify-content:center;flex-wrap:wrap;">
+          <div>
+            <p style="font-family:var(--font-mono);font-size:0.65rem;color:var(--slate-500);text-transform:uppercase;letter-spacing:0.1em;">CAGE</p>
+            <p style="font-family:var(--font-mono);color:var(--white);font-weight:600;">18WR3</p>
+          </div>
+          <div>
+            <p style="font-family:var(--font-mono);font-size:0.65rem;color:var(--slate-500);text-transform:uppercase;letter-spacing:0.1em;">UEI</p>
+            <p style="font-family:var(--font-mono);color:var(--white);font-weight:600;">Z9PWMMZXJ321</p>
+          </div>
+          <div>
+            <p style="font-family:var(--font-mono);font-size:0.65rem;color:var(--slate-500);text-transform:uppercase;letter-spacing:0.1em;">SAM Status</p>
+            <p style="font-family:var(--font-mono);color:var(--green);font-weight:600;">● Active thru Mar 9, 2027</p>
+          </div>
+          <div>
+            <p style="font-family:var(--font-mono);font-size:0.65rem;color:var(--slate-500);text-transform:uppercase;letter-spacing:0.1em;">CMMC</p>
+            <p style="font-family:var(--font-mono);color:var(--amber);font-weight:600;">Level 2 · SPRS 105/110</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--slate-100);border-radius:var(--radius);overflow:hidden;margin-top:1.5rem;">
+        <div style="background:var(--white);padding:1.5rem;text-align:center;">
+          <p style="font-family:var(--font-mono);font-size:0.6rem;text-transform:uppercase;letter-spacing:0.1em;color:#60A5FA;margin-bottom:0.5rem;">Subsidiary — UAS Manufacturing</p>
+          <p style="font-weight:700;color:var(--navy);margin-bottom:0.25rem;">Forge &amp; Flight Labs LLC</p>
+          <p style="font-family:var(--font-mono);font-size:0.72rem;color:var(--slate-500);">CAGE 18VF2 · UEI SUVKLZLPBJC1 · SAM Active</p>
+          <a href="{{ .Site.Params.labs_url }}" target="_blank" rel="noopener" style="display:inline-block;margin-top:0.75rem;font-size:0.85rem;font-weight:600;color:var(--orange);">forgeandflightlabs.com ↗</a>
+        </div>
+        <div style="background:var(--white);padding:1.5rem;text-align:center;">
+          <p style="font-family:var(--font-mono);font-size:0.6rem;text-transform:uppercase;letter-spacing:0.1em;color:#60A5FA;margin-bottom:0.5rem;">Subsidiary — UAS Training</p>
+          <p style="font-weight:700;color:var(--navy);margin-bottom:0.25rem;">Forge and Flight Academy LLC</p>
+          <p style="font-family:var(--font-mono);font-size:0.72rem;color:var(--slate-500);">CAGE 1A6J3 · UEI YV8UNYJWZHV1 · SAM Active</p>
+          <a href="{{ .Site.Params.academy_url }}" target="_blank" rel="noopener" style="display:inline-block;margin-top:0.75rem;font-size:0.85rem;font-weight:600;color:var(--orange);">forgeandflightacademy.com ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ── SUBSIDIARIES DETAIL ───────────────────────────────── */}}
+<section class="section" aria-labelledby="subsidiaries-heading">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Wholly-Owned Subsidiaries</span>
+      <h2 id="subsidiaries-heading">Subsidiaries</h2>
+      <p>Each subsidiary maintains its own independent SAM.gov registration, CAGE code, and UEI — enabling direct federal contracting at the subsidiary level for platform and training acquisitions.</p>
+    </div>
+
+    <div class="division-card">
+      <span class="eyebrow">Subsidiary LLC · UAS Platform Design &amp; Manufacturing</span>
+      <h3>Forge &amp; Flight Labs LLC</h3>
+      <span class="division-tag">CAGE 18VF2 · UEI SUVKLZLPBJC1 · SAM Active through Feb 11, 2027 · Fayetteville, NC</span>
+      <p>Forge &amp; Flight Labs is the platform design and manufacturing subsidiary of Holdings. It develops and delivers the complete line of NDAA-compliant Group 1–3 UAS platforms, as well as the Forge Flex Mission Platform as a Service (MPaaS) retainer program. Labs holds its own independent SAM.gov registration and is the contracting entity for all platform sales and Forge Flex engagements.</p>
+      <div class="capability-list" style="margin-top:1.25rem;">
+        <div class="capability-item">NDAA §889-compliant platform design and manufacturing</div>
+        <div class="capability-item">Group 1–3 UAS: Longbow-8, Aether-10, Vanguard-14, Titan-20</div>
+        <div class="capability-item">Forge Flex Mission Platform as a Service retainers</div>
+        <div class="capability-item">Platform integration with AegisEye Intelligence Suite</div>
+        <div class="capability-item">Blue UAS framework eligibility across product line</div>
+        <div class="capability-item">Custom platform configuration for DoD and commercial missions</div>
+      </div>
+      <div style="margin-top:1.5rem;display:flex;gap:0.75rem;flex-wrap:wrap;">
+        <a href="{{ .Site.Params.labs_url }}" target="_blank" rel="noopener" class="btn btn-outline">Visit Forge &amp; Flight Labs ↗</a>
+        <a href="/platforms/" class="btn btn-outline">View Platform Catalog</a>
+      </div>
+    </div>
+
+    <div class="division-card" style="margin-top:1.5rem;">
+      <span class="eyebrow">Subsidiary LLC · UAS Training &amp; Certification</span>
+      <h3>Forge and Flight Academy LLC</h3>
+      <span class="division-tag">CAGE 1A6J3 · UEI YV8UNYJWZHV1 · SAM Active through Mar 9, 2027 · Fayetteville, NC</span>
+      <p>Forge and Flight Academy is the professional UAS training subsidiary of Holdings. It delivers a 10-course catalog spanning FAA Part 107 certification, FPV tactical operations, advanced fabrication, AI-enabled drone systems, and instructor certification programs. The Academy serves DoD units, federal agencies, universities, and defense contractors — with a Five-Pillar Framework designed to build operators from ground up through mission-ready proficiency.</p>
+      <div class="capability-list" style="margin-top:1.25rem;">
+        <div class="capability-item">10-course UAS operator training catalog</div>
+        <div class="capability-item">FAA Part 107 Remote Pilot Certificate preparation</div>
+        <div class="capability-item">FPV tactical training — DoD and law enforcement focus</div>
+        <div class="capability-item">Advanced fabrication: airframe, electronics, avionics</div>
+        <div class="capability-item">Autonomy and AI systems integration courses</div>
+        <div class="capability-item">Instructor certification and train-the-trainer programs</div>
+      </div>
+      <div style="margin-top:1.5rem;display:flex;gap:0.75rem;flex-wrap:wrap;">
+        <a href="{{ .Site.Params.academy_url }}" target="_blank" rel="noopener" class="btn btn-outline">Visit Forge Flight Academy ↗</a>
+        <a href="/contact/?interest=training" class="btn btn-outline">Training Inquiries</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ── DIVISIONS ─────────────────────────────────────────── */}}
+<section class="section" style="background:var(--off-white);" aria-labelledby="divisions-heading">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Internal Operating Divisions</span>
+      <h2 id="divisions-heading">Divisions of Holdings</h2>
+      <p>The following divisions operate as internal business units of Forge &amp; Flight Holdings, Inc. under the Holdings EIN (41-3413730) and CAGE code (18WR3). They are not separate legal entities.</p>
+    </div>
+
+    {{/* Avionics */}}
+    <div class="division-card">
+      <span class="eyebrow">Division of Forge &amp; Flight Holdings, Inc. · Electronics &amp; Avionics Manufacturing</span>
+      <h3>Forge and Flight Avionics</h3>
+      <span class="division-tag">Operating under Holdings CAGE 18WR3 · UEI Z9PWMMZXJ321 · Fayetteville, NC</span>
+      <p>Forge and Flight Avionics is the electronics and avionics manufacturing division of Holdings, delivering NDAA-compliant avionics, power distribution systems, and mission-critical electronics for aerospace applications. All products are domestically sourced and manufactured, with complete component traceability documentation for defense compliance requirements. The Avionics division supplies electronics to Forge &amp; Flight Labs at transfer pricing and sells externally under the Aegis product line.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:1.5rem;">
+        <div>
+          <h4 style="font-size:1rem;margin-bottom:0.75rem;">Core Capabilities</h4>
+          <div class="capability-list">
+            <div class="capability-item">Custom avionics design and integration</div>
+            <div class="capability-item">PCB fabrication with domestic component sourcing</div>
+            <div class="capability-item">Power distribution and battery management systems</div>
+            <div class="capability-item">Communication systems and telemetry electronics</div>
+            <div class="capability-item">Complete component traceability documentation</div>
+            <div class="capability-item">NDAA §889 and IPC-A-610 compliance verification</div>
+          </div>
+        </div>
+        <div>
+          <h4 style="font-size:1rem;margin-bottom:0.75rem;">Supply Chain Security</h4>
+          <div class="capability-list">
+            <div class="capability-item">100% domestic component sourcing — verified supply chain</div>
+            <div class="capability-item">No foreign-manufactured components in any data or power path</div>
+            <div class="capability-item">Blue UAS Framework eligibility supported</div>
+            <div class="capability-item">Full traceability from raw material to delivered assembly</div>
+            <div class="capability-item">NDAA §848 compliance verification on all product lines</div>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:1.5rem;">
+        <h4 style="font-size:0.95rem;margin-bottom:0.5rem;">Aegis Product Line</h4>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+          <span style="font-family:var(--font-mono);font-size:0.75rem;padding:0.3rem 0.7rem;background:var(--navy);color:var(--slate-300);border-radius:3px;">FFA-PDB-100 Power Distribution Board</span>
+          <span style="font-family:var(--font-mono);font-size:0.75rem;padding:0.3rem 0.7rem;background:var(--navy);color:var(--slate-300);border-radius:3px;">FFA-CORE-500 Avionics Hub</span>
+          <span style="font-family:var(--font-mono);font-size:0.75rem;padding:0.3rem 0.7rem;background:var(--navy);color:var(--slate-300);border-radius:3px;">FFA-SERVO-50 Distribution Board</span>
+        </div>
+      </div>
+      <div style="margin-top:1.5rem;">
+        <a href="/contact/?interest=avionics" class="btn btn-outline">Avionics Inquiries</a>
+      </div>
+    </div>
+
+    {{/* Test Systems */}}
+    <div class="division-card" style="margin-top:1.5rem;">
+      <span class="eyebrow">Division of Forge &amp; Flight Holdings, Inc. · Flight Test &amp; Validation</span>
+      <h3>Forge and Flight Test Systems</h3>
+      <span class="division-tag">Operating under Holdings CAGE 18WR3 · UEI Z9PWMMZXJ321 · Fayetteville, NC</span>
+      <p>Forge and Flight Test Systems provides dedicated flight test infrastructure, developmental testing, mission validation, and operational demonstration services for UAS platforms and software systems. Professional Range Safety Officer oversight and coordinated FAA airspace management enable rapid development cycles. Proximate to Fort Bragg and Pope Field, Test Systems supports both Holdings platform development and external customer testing requirements.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:1.5rem;">
+        <div>
+          <h4 style="font-size:1rem;margin-bottom:0.75rem;">Test Services</h4>
+          <div class="capability-list">
+            <div class="capability-item">Developmental flight testing and envelope expansion</div>
+            <div class="capability-item">Performance validation and characterization</div>
+            <div class="capability-item">Mission profile demonstration and documentation</div>
+            <div class="capability-item">Operator training and platform familiarization</div>
+            <div class="capability-item">Customer acceptance testing and delivery validation</div>
+            <div class="capability-item">Regulatory compliance verification for FAA and DoD</div>
+          </div>
+        </div>
+        <div>
+          <h4 style="font-size:1rem;margin-bottom:0.75rem;">Infrastructure</h4>
+          <div class="capability-list">
+            <div class="capability-item">Dedicated test range facilities — controlled airspace</div>
+            <div class="capability-item">Professional Range Safety Officer oversight</div>
+            <div class="capability-item">FAA airspace coordination and COA management</div>
+            <div class="capability-item">Proximate to Fort Bragg and Pope Field — USASOC access</div>
+            <div class="capability-item">Multi-platform simultaneous test support</div>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:1.5rem;">
+        <a href="/contact/?interest=test-systems" class="btn btn-outline">Test Services Inquiries</a>
+      </div>
+    </div>
+
+    {{/* Federal Services */}}
+    <div class="division-card" style="margin-top:1.5rem;">
+      <span class="eyebrow">Division of Forge &amp; Flight Holdings, Inc. · Federal Contracting</span>
+      <h3>Forge &amp; Flight Federal Services</h3>
+      <span class="division-tag">Operating under Holdings CAGE 18WR3 · UEI Z9PWMMZXJ321 · Fayetteville, NC</span>
+      <p>Forge &amp; Flight Federal Services pursues and fulfills federal contracts at or below the Simplified Acquisition Threshold (SAT — currently $350,000) across professional services, logistics, IT services, and aerospace-adjacent support. Operating within the Fort Bragg ecosystem with proximity to USASOC, FORSCOM, and MICC-Fort Bragg, the division provides a fast-to-award, set-aside eligible contracting vehicle for installation-level requirements.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:1.5rem;">
+        <div>
+          <h4 style="font-size:1rem;margin-bottom:0.75rem;">Capability Areas</h4>
+          <div class="capability-list">
+            <div class="capability-item">Professional services and management consulting</div>
+            <div class="capability-item">Logistics, supply chain, and procurement support</div>
+            <div class="capability-item">IT services, software development, and data support</div>
+            <div class="capability-item">Aerospace-adjacent: simulation, inspection, technical services</div>
+            <div class="capability-item">Technical writing and documentation</div>
+            <div class="capability-item">Language services — English and Spanish</div>
+          </div>
+        </div>
+        <div>
+          <h4 style="font-size:1rem;margin-bottom:0.75rem;">Primary NAICS Codes</h4>
+          <div class="capability-list">
+            <div class="capability-item">541611 — Management Consulting Services</div>
+            <div class="capability-item">541519 — Other Computer Related Services</div>
+            <div class="capability-item">541614 — Process &amp; Logistics Consulting</div>
+            <div class="capability-item">541512 — Computer Systems Design Services</div>
+            <div class="capability-item">541330 — Engineering Services (Military/Aerospace)</div>
+            <div class="capability-item">541380 — Testing Laboratories and Services</div>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:1.5rem;display:flex;gap:0.75rem;flex-wrap:wrap;">
+        <a href="/services/federal-services/" class="btn btn-primary">Federal Services Detail</a>
+        <a href="/contact/?interest=federal-services" class="btn btn-outline">Contracting Inquiries</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

@@ -1,0 +1,119 @@
+{{ define "main" }}
+<section class="page-hero">
+  <div class="container page-hero-inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>About</span>
+    </nav>
+    <span class="eyebrow">Founded 2026 · Fayetteville, NC · American-Made</span>
+    <h1>About Forge &amp; Flight Holdings</h1>
+    <p>Built by operators. Engineered for the mission. Headquartered in Fayetteville, NC — minutes from Fort Bragg and the largest Special Operations community in the world.</p>
+  </div>
+</section>
+
+{{/* ── COMPANY STORY ─────────────────────────────────────── */}}
+<section class="section" aria-labelledby="story-heading">
+  <div class="container">
+    <div class="grid-2" style="align-items:start;gap:5rem;">
+      <div>
+        <span class="eyebrow">The Company</span>
+        <h2 id="story-heading">Defense technology built from the inside out.</h2>
+        <p style="margin-top:1rem;font-size:1.05rem;color:var(--text-muted);">Forge &amp; Flight Holdings was founded in January 2026 by two career military professionals with combined decades of operational experience spanning Special Operations, aviation, aeronautical engineering, and defense acquisition.</p>
+        <p style="margin-top:1rem;color:var(--text-muted);">The company exists because the gap between what operators need and what the defense industrial base delivers has widened to a point where the mission suffers. We build what we would have wanted in the field — NDAA-compliant, domestically sourced, CMMC-hardened platforms and software that integrate cleanly into existing DoD infrastructure without requiring a systems integrator between the product and the operator.</p>
+        <p style="margin-top:1rem;color:var(--text-muted);">Incorporated in North Carolina and headquartered in Fayetteville, we operate within the Fort Bragg ecosystem intentionally. Proximity to the 18th Airborne Corps, USASOC, Special Operations Command, and the MICC-Fort Bragg contracting office is not incidental — it is strategy.</p>
+      </div>
+      <div>
+        <div style="background:var(--navy);border-radius:var(--radius-lg);padding:2.5rem;">
+          <p style="font-family:var(--font-mono);font-size:0.65rem;color:var(--slate-500);text-transform:uppercase;letter-spacing:0.12em;margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:1px solid var(--navy-border);">Company Facts</p>
+          {{ $facts := slice
+            (slice "Founded" "January 6, 2026")
+            (slice "Incorporated" "North Carolina")
+            (slice "Structure" "S-Corporation")
+            (slice "EIN" "41-3413730")
+            (slice "Headquarters" "Fayetteville, NC 28304")
+            (slice "Ownership" "50/50 — Minority-Owned · SDB")
+            (slice "CAGE Code" "18WR3")
+            (slice "CMMC Status" "Level 2 · SPRS 105/110")
+            (slice "Languages" "English · Spanish")
+          }}
+          {{ range $facts }}
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:0.55rem 0;border-bottom:1px solid rgba(255,255,255,0.04);">
+            <span style="font-family:var(--font-mono);font-size:0.7rem;color:var(--slate-500);">{{ index . 0 }}</span>
+            <span style="font-family:var(--font-mono);font-size:0.78rem;color:var(--white);">{{ index . 1 }}</span>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ── LEADERSHIP ────────────────────────────────────────── */}}
+<section class="section" style="background:var(--off-white);" aria-labelledby="leadership-heading">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Leadership</span>
+      <h2 id="leadership-heading">Built by people who flew it, fixed it, and fought with it.</h2>
+    </div>
+
+    <div class="leadership-grid">
+      <div class="leader-card">
+        <h3 class="leader-name">M. Ortiz</h3>
+        <span class="leader-title">Chief Executive Officer · Co-Founder</span>
+        <p class="leader-bio">Twenty-year Army Special Operations veteran. Ten operational deployments spanning counterterrorism, irregular warfare, and strategic advisory roles. Embassy postings in South America including Ambassador-level engagements. Fluent Spanish. Holds a B.S. in Aeronautical Science from Embry-Riddle Aeronautical University with a minor in Space Physics, a Commercial Pilot License, and an FCC Technician License. Active Python developer with a background in RF systems, custom electronics fabrication, and UAS engineering.</p>
+        <p class="leader-bio" style="margin-top:0.75rem;">Medical retirement 2026. Led the design, engineering, and regulatory strategy for the full Forge &amp; Flight platform portfolio from inception.</p>
+        <div class="credential-tags">
+          <span class="cred-tag">B.S. Aeronautical Science — ERAU</span>
+          <span class="cred-tag">Commercial Pilot License</span>
+          <span class="cred-tag">FCC Technician</span>
+          <span class="cred-tag">20 Yrs Army SOF</span>
+          <span class="cred-tag">10 Deployments</span>
+          <span class="cred-tag">Fluent Spanish</span>
+          <span class="cred-tag">FAA Part 107</span>
+        </div>
+      </div>
+
+      <div class="leader-card">
+        <h3 class="leader-name">A. Nieves Flores</h3>
+        <span class="leader-title">Chief Operating Officer · Co-Founder</span>
+        <p class="leader-bio">Career military professional and operational leader with broad experience in logistics, sustainment, and organizational management. Co-founder of Forge &amp; Flight Holdings and responsible for operational execution, supply chain integrity, and intercompany coordination across the Holdings family of companies.</p>
+        <p class="leader-bio" style="margin-top:0.75rem;font-style:italic;color:var(--text-muted);">Extended biography forthcoming.</p>
+        <div class="credential-tags">
+          <span class="cred-tag">Army Veteran</span>
+          <span class="cred-tag">Operations Leadership</span>
+          <span class="cred-tag">Supply Chain</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ── WHY FAYETTEVILLE ──────────────────────────────────── */}}
+<section class="section section-dark" aria-labelledby="location-heading">
+  <div class="container">
+    <div class="grid-2" style="align-items:center;gap:4rem;">
+      <div>
+        <span class="eyebrow">Strategic Location</span>
+        <h2 id="location-heading">Fayetteville, NC.<br>Fort Bragg next door.</h2>
+        <p style="margin-top:1rem;">Forge &amp; Flight is headquartered in Fayetteville, NC — home to Fort Bragg, the 82nd Airborne Division, the 18th Airborne Corps, United States Army Special Operations Command (USASOC), and Pope Field. It is the largest military installation in the world by population.</p>
+        <p style="margin-top:1rem;">That proximity is not coincidence. The Mission and Installation Contracting Command (MICC-Fort Bragg) awards approximately $1 billion annually in contracts. USASOC hosts monthly small business capability briefings. The North Carolina Military Business Center at Fayetteville Technical Community College has helped NC businesses win over $18.6 billion in federal contracts.</p>
+        <p style="margin-top:1rem;">We are not a defense company trying to reach the DoD from the outside. We operate within the ecosystem, understand the culture, and speak the language — literally and operationally.</p>
+      </div>
+      <div>
+        <div style="background:var(--navy-mid);border:1px solid var(--navy-border);border-radius:var(--radius-lg);padding:2rem;">
+          <p style="font-family:var(--font-mono);font-size:0.65rem;color:var(--slate-500);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:1.25rem;">Fort Bragg Ecosystem</p>
+          {{ $units := slice "82nd Airborne Division" "18th Airborne Corps" "US Army Special Operations Command (USASOC)" "1st Special Forces Command" "75th Ranger Regiment" "Pope Field (435th Air Ground Operations Wing)" "MICC-Fort Bragg (419th CSB)" "USASOC HQ Contracting" }}
+          {{ range $units }}
+          <div style="display:flex;align-items:center;gap:0.6rem;padding:0.5rem 0;border-bottom:1px solid rgba(255,255,255,0.04);">
+            <span style="color:var(--orange);font-size:0.7rem;">▸</span>
+            <span style="font-size:0.875rem;color:var(--slate-300);">{{ . }}</span>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

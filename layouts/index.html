@@ -1,0 +1,247 @@
+{{ define "main" }}
+
+{{/* ── HERO ──────────────────────────────────────────────── */}}
+<section class="hero" aria-label="Company overview">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <p class="hero-eyebrow">American Defense Technology · Fayetteville, NC</p>
+        <h1>Built for the<br><em>Mission.</em><br>Proven in the Field.</h1>
+        <p class="hero-desc">
+          Forge &amp; Flight Holdings is a defense technology and professional services holding company delivering NDAA-compliant UAS platforms, CMMC-hardened mission software, and expert consulting to DoD, federal agencies, and allied partners.
+        </p>
+        <div class="hero-actions">
+          <a href="/software/" class="btn btn-primary btn-lg">View Software Products</a>
+          <a href="/contact/" class="btn btn-outline-white btn-lg">Contact Sales</a>
+        </div>
+      </div>
+
+      <div class="hero-cred-panel" aria-label="Credentials summary">
+        <p class="hero-cred-title">Registration &amp; Compliance</p>
+        <div class="hcp-row">
+          <span class="hcp-label">SAM.gov Status</span>
+          <span class="hcp-val active">● Active</span>
+        </div>
+        <div class="hcp-row">
+          <span class="hcp-label">CAGE Code</span>
+          <span class="hcp-val">18WR3</span>
+        </div>
+        <div class="hcp-row">
+          <span class="hcp-label">UEI</span>
+          <span class="hcp-val">Z9PWMMZXJ321</span>
+        </div>
+        <div class="hcp-row">
+          <span class="hcp-label">CMMC Self-Assessment</span>
+          <span class="hcp-val score">Level 2 · 105/110</span>
+        </div>
+        <div class="hcp-row">
+          <span class="hcp-label">NDAA §889</span>
+          <span class="hcp-val active">Compliant</span>
+        </div>
+        <div class="hcp-row">
+          <span class="hcp-label">SPRS Upload</span>
+          <span class="hcp-val">sprs.csd.disa.mil</span>
+        </div>
+        <div class="hcp-row">
+          <span class="hcp-label">SAM Expires</span>
+          <span class="hcp-val">Mar 9, 2027</span>
+        </div>
+        <div class="hcp-row">
+          <span class="hcp-label">Entity Type</span>
+          <span class="hcp-val">S-Corp · NC · SDB</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ── CAPABILITY STRIP ─────────────────────────────────── */}}
+<div class="capability-strip section-dark" aria-label="Core capability areas">
+  <div class="cap-strip-inner">
+    <span class="cap-item">UAS Platforms</span>
+    <span class="cap-sep">·</span>
+    <span class="cap-item">Mission Software</span>
+    <span class="cap-sep">·</span>
+    <span class="cap-item">C-UAS Systems</span>
+    <span class="cap-sep">·</span>
+    <span class="cap-item">Federal Contracting</span>
+    <span class="cap-sep">·</span>
+    <span class="cap-item">Defense Consulting</span>
+    <span class="cap-sep">·</span>
+    <span class="cap-item">LATAM Advisory</span>
+    <span class="cap-sep">·</span>
+    <span class="cap-item">UAS Training</span>
+  </div>
+</div>
+
+{{/* ── FOUR QUADRANTS ───────────────────────────────────── */}}
+<section class="section" aria-labelledby="capabilities-heading">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">What We Do</span>
+      <h2 id="capabilities-heading">Four integrated capability lines.<br>One vertically integrated team.</h2>
+      <p>No other American UAS company delivers design, manufacturing, mission software, testing, and training under one roof — all NDAA-compliant and SAM-registered.</p>
+    </div>
+
+    <div class="quad-grid">
+      <div class="quad-item animate-in">
+        <p class="quad-number">01 / HARDWARE</p>
+        <h3>NDAA-Compliant<br>UAS Platforms</h3>
+        <p>Group 1–3 platforms. Aether-10, Vanguard-14, Titan-20, Longbow-8. American-manufactured, Blue UAS eligible. DoD and commercial pricing schedules available.</p>
+        <a href="/platforms/" class="quad-link">View Platforms →</a>
+      </div>
+      <div class="quad-item animate-in delay-1">
+        <p class="quad-number">02 / SOFTWARE</p>
+        <h3>CMMC-Hardened<br>Mission Software</h3>
+        <p>OMEN Stack (IronMesh · Nexus · AegisEye), AI Intelligence Suite (FireWatch · WatchTower · OverWatch · FloodWatch), NEMESIS autonomous C-UAS. SPRS 105/110.</p>
+        <a href="/software/" class="quad-link">View Software →</a>
+      </div>
+      <div class="quad-item animate-in delay-2">
+        <p class="quad-number">03 / SERVICES</p>
+        <h3>Federal &amp; Professional<br>Services</h3>
+        <p>Federal contracting (SAT zone, Fort Bragg), defense consulting, OSINT intelligence services, UAS regulatory advisory, LATAM advisory, and technical writing.</p>
+        <a href="/services/" class="quad-link">View Services →</a>
+      </div>
+      <div class="quad-item animate-in delay-3">
+        <p class="quad-number">04 / TRAINING</p>
+        <h3>Operator Training &amp;<br>Certification</h3>
+        <p>10-course catalog. FAA Part 107, FPV tactical, advanced fabrication, and autonomy integration programs for DoD, universities, and contractors.</p>
+        <a href="{{ .Site.Params.academy_url }}" target="_blank" rel="noopener" class="quad-link">Forge Flight Academy ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ── SOFTWARE HIGHLIGHT ───────────────────────────────── */}}
+<section class="section section-dark" aria-labelledby="software-heading">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Software Products</span>
+      <h2 id="software-heading">Every platform. Every network.<br>One mission picture.</h2>
+      <p>Our software answers the question every customer asks: "What else beyond the drone?" Three product lines, all NDAA-compliant, all CMMC-ready.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card card-dark animate-in">
+        <div class="card-icon">⬡</div>
+        <span class="eyebrow">DoD C2 Platform</span>
+        <h3>OMEN Stack</h3>
+        <p>IronMesh MAVLink↔CoT bridge, Forge-Nexus 3D command center, and AegisEye Windows GCS. Federated DoD-wide via Space Force UDL. DIU PROJ00662 submission.</p>
+        <a href="/software/#omen" class="btn btn-outline-white btn-sm mt-3">Learn More</a>
+      </div>
+      <div class="card card-dark animate-in delay-1">
+        <div class="card-icon">🔍</div>
+        <span class="eyebrow">AI Detection Suite</span>
+        <h3>Intelligence Suite</h3>
+        <p>FireWatch, WatchTower, OverWatch, and FloodWatch. YOLO11n on Jetson edge hardware. &lt;500ms detection-to-alert. ATAK, MQTT, SMS integration native.</p>
+        <a href="/software/#intelligence-suite" class="btn btn-outline-white btn-sm mt-3">Learn More</a>
+      </div>
+      <div class="card card-dark animate-in delay-2">
+        <div class="card-icon">⚡</div>
+        <span class="eyebrow">Counter-UAS</span>
+        <h3>NEMESIS C-UAS</h3>
+        <p>Autonomous interceptor platform. YOLOv8 vision, formation flying, ArduPilot + PX4, ROS2/MAVROS. NIST 800-171 aligned. Government Purpose Rights.</p>
+        <a href="/software/#nemesis" class="btn btn-outline-white btn-sm mt-3">Learn More</a>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="/software/" class="btn btn-primary btn-lg">View All Software Products</a>
+    </div>
+  </div>
+</section>
+
+{{/* ── ENTITY STRIP ─────────────────────────────────────── */}}
+<section class="section" aria-labelledby="entities-heading">
+  <div class="container">
+    <div class="section-header center">
+      <span class="eyebrow">Corporate Structure</span>
+      <h2 id="entities-heading">Three SAM-registered entities.<br>One integrated team.</h2>
+      <p>All three entities are fully registered on SAM.gov with active CAGE codes and UEIs — ready for federal contract execution at the program, installation, and agency level.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card animate-in">
+        <span class="eyebrow">Parent Company</span>
+        <h3>Forge &amp; Flight Holdings</h3>
+        <p>S-Corp · North Carolina. Software products, professional services, Avionics division, Test Systems division, Federal Services division.</p>
+        <div class="cred-block mt-3">
+          <div class="cred-row">
+            <div class="cred-item-block">
+              <span class="cred-label">CAGE</span>
+              <span class="cred-value">18WR3</span>
+            </div>
+            <div class="cred-item-block">
+              <span class="cred-label">UEI</span>
+              <span class="cred-value">Z9PWMMZXJ321</span>
+            </div>
+            <div class="cred-item-block">
+              <span class="cred-label">SAM</span>
+              <span class="cred-value" style="color:var(--green)"><span class="cred-dot green"></span>Active</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card animate-in delay-1">
+        <span class="eyebrow">Subsidiary — UAS Manufacturing</span>
+        <h3>Forge &amp; Flight Labs LLC</h3>
+        <p>NDAA-compliant UAS platform design and manufacturing. Aether-10, Vanguard-14, Titan-20, Longbow-8. Forge Flex MPaaS retainers.</p>
+        <div class="cred-block mt-3">
+          <div class="cred-row">
+            <div class="cred-item-block">
+              <span class="cred-label">CAGE</span>
+              <span class="cred-value">18VF2</span>
+            </div>
+            <div class="cred-item-block">
+              <span class="cred-label">UEI</span>
+              <span class="cred-value">SUVKLZLPBJC1</span>
+            </div>
+            <div class="cred-item-block">
+              <span class="cred-label">SAM</span>
+              <span class="cred-value" style="color:var(--green)"><span class="cred-dot green"></span>Active</span>
+            </div>
+          </div>
+        </div>
+        <a href="{{ .Site.Params.labs_url }}" target="_blank" rel="noopener" class="btn btn-outline btn-sm mt-3">Visit Labs ↗</a>
+      </div>
+      <div class="card animate-in delay-2">
+        <span class="eyebrow">Subsidiary — UAS Training</span>
+        <h3>Forge and Flight Academy LLC</h3>
+        <p>Professional UAS training and certification. 10-course catalog. FAA Part 107, FPV tactical, fabrication, and autonomy. DoD and university programs.</p>
+        <div class="cred-block mt-3">
+          <div class="cred-row">
+            <div class="cred-item-block">
+              <span class="cred-label">CAGE</span>
+              <span class="cred-value">1A6J3</span>
+            </div>
+            <div class="cred-item-block">
+              <span class="cred-label">UEI</span>
+              <span class="cred-value">YV8UNYJWZHV1</span>
+            </div>
+            <div class="cred-item-block">
+              <span class="cred-label">SAM</span>
+              <span class="cred-value" style="color:var(--green)"><span class="cred-dot green"></span>Active</span>
+            </div>
+          </div>
+        </div>
+        <a href="{{ .Site.Params.academy_url }}" target="_blank" rel="noopener" class="btn btn-outline btn-sm mt-3">Visit Academy ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ── CTA ──────────────────────────────────────────────── */}}
+<section class="section-sm">
+  <div class="container">
+    <div class="cta-strip">
+      <h2>Ready to discuss your requirement?</h2>
+      <p>Whether you are a contracting officer, program manager, or prime looking for a qualified domestic small business — we are registered, credentialed, and ready.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href="/contact/" class="btn btn-outline-white btn-lg">Contact Sales</a>
+        <a href="/compliance/" class="btn btn-outline-white btn-lg">View Credentials</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}
