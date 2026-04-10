@@ -1,0 +1,26 @@
+{{ define "main" }}
+<section class="page-hero">
+  <div class="container page-hero-inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="/news/">News &amp; Insights</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>{{ .Title }}</span>
+    </nav>
+    <span class="eyebrow">{{ .Date.Format "January 2, 2006" }} · Forge &amp; Flight Holdings</span>
+    <h1>{{ .Title }}</h1>
+  </div>
+</section>
+<section class="section">
+  <div class="container" style="max-width:800px;">
+    <article style="font-size:1.05rem;line-height:1.8;color:var(--text);">
+      {{ .Content }}
+    </article>
+    <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--slate-100);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;">
+      <a href="/news/" class="btn btn-outline">← Back to News</a>
+      <a href="/contact/" class="btn btn-primary">Contact Forge &amp; Flight</a>
+    </div>
+  </div>
+</section>
+{{ end }}

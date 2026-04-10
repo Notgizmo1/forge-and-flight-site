@@ -1111,3 +1111,32 @@ select.form-control { cursor: pointer; }
 }
 .cta-strip h2 { color: var(--white); margin-bottom: 0.75rem; }
 .cta-strip p { color: rgba(255,255,255,0.85); margin-bottom: 1.75rem; }
+
+/* ── ARTICLE CONTENT ───────────────────────────────────────── */
+article h2 {
+  font-size: 1.5rem;
+  color: var(--navy);
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--orange);
+  display: inline-block;
+}
+article p { margin-bottom: 1.25rem; }
+article p:last-child { margin-bottom: 0; }
+
+/* Form success state */
+.form-success {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: var(--off-white);
+  border-radius: var(--radius);
+  border: 2px solid var(--green);
+}
+.form-success strong { font-size: 1.25rem; display: block; color: var(--navy); margin-bottom: 0.5rem; }
+.form-success p { color: var(--text-muted); }
+
+/* Header scrolled state */
+.site-header.scrolled {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+}
