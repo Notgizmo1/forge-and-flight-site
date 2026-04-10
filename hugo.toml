@@ -5,14 +5,8 @@ enableRobotsTXT = true
 enableGitInfo = false
 summaryLength = 70
 
-[outputs]
-  home = ["HTML", "RSS", "SITEMAP"]
-  section = ["HTML", "RSS"]
-  page = ["HTML"]
-
 [sitemap]
   changeFreq = "weekly"
-  filename = "sitemap.xml"
   priority = 0.5
 
 [params]
@@ -51,22 +45,6 @@ summaryLength = 70
     name = "Services"
     url = "/services/"
     weight = 3
-    hasChildren = true
-  [[menu.main]]
-    name = "Federal Services"
-    url = "/services/federal-services/"
-    parent = "Services"
-    weight = 1
-  [[menu.main]]
-    name = "Professional Services"
-    url = "/services/professional-services/"
-    parent = "Services"
-    weight = 2
-  [[menu.main]]
-    name = "Forge Flex"
-    url = "/forge-flex/"
-    parent = "Services"
-    weight = 3
   [[menu.main]]
     name = "Divisions"
     url = "/divisions/"
@@ -88,5 +66,3 @@ summaryLength = 70
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-  [markup.highlight]
-    noClasses = false
