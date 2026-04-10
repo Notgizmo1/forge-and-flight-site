@@ -60,7 +60,7 @@ body {
   overflow-x: hidden;
 }
 
-body.home { background: var(--navy); }
+/* Home page: hero and dark sections handle their own backgrounds */
 
 a {
   color: var(--accent);
@@ -101,6 +101,12 @@ h4 { font-size: 1.25rem; font-weight: 600; font-family: var(--font-body); }
   display: block;
   margin-bottom: 0.5rem;
 }
+/* Eyebrow on dark backgrounds — use lighter blue so it reads against navy */
+.hero .eyebrow,
+.page-hero .eyebrow,
+.section-dark .eyebrow,
+.software-product-header .eyebrow,
+.card-dark .eyebrow { color: #60A5FA; }
 
 /* Dark context overrides — only in explicitly dark sections */
 .hero h1, .hero h2, .hero h3, .hero h4,
@@ -115,6 +121,7 @@ h4 { font-size: 1.25rem; font-weight: 600; font-family: var(--font-body); }
 
 .section {
   padding-block: 6rem;
+  background: var(--off-white);
 }
 .section-sm { padding-block: 4rem; }
 .section-lg { padding-block: 8rem; }
@@ -498,7 +505,7 @@ h4 { font-size: 1.25rem; font-weight: 600; font-family: var(--font-body); }
   background: linear-gradient(to bottom right, transparent 49.5%, var(--off-white) 50%);
   pointer-events: none;
 }
-body.home .hero::after { background: linear-gradient(to bottom right, transparent 49.5%, var(--navy) 50%); }
+/* Hero diagonal cuts into off-white section below */
 
 .hero-grid {
   display: grid;
@@ -514,7 +521,7 @@ body.home .hero::after { background: linear-gradient(to bottom right, transparen
   font-size: 0.75rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: #60A5FA;
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -525,7 +532,7 @@ body.home .hero::after { background: linear-gradient(to bottom right, transparen
   display: block;
   width: 2.5rem;
   height: 2px;
-  background: var(--accent);
+  background: #60A5FA;
 }
 .hero h1 {
   color: var(--white);
@@ -1141,3 +1148,22 @@ article p:last-child { margin-bottom: 0; }
 .site-header.scrolled {
   box-shadow: 0 4px 24px rgba(0,0,0,0.3);
 }
+
+
+/* ── ADDITIONAL CONTRAST FIXES ──────────────────────────────── */
+/* Section header rule color on dark backgrounds */
+.section-dark .section-header::before { background: #60A5FA; }
+
+/* Ensure card-dark links readable */
+.card-dark a { color: #93C5FD; }
+.card-dark a:hover { color: var(--white); }
+
+/* Division card accent border stays readable */
+.division-card { border-left-color: var(--accent); }
+
+/* Software product header eyebrow */
+.software-product-header span.eyebrow { color: #60A5FA; }
+
+/* Quad item — force dark heading regardless of parent context */
+.quad-item h3 { color: var(--navy) !important; }
+.quad-item p { color: var(--text-muted); }
