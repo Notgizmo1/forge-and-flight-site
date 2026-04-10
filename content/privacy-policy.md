@@ -20,7 +20,7 @@ Contact form submissions are used solely to respond to your inquiry. We do not s
 
 ## Data Retention
 
-Contact form submissions are retained for business correspondence purposes. You may request deletion of your submitted information by contacting us at m.ortiz@forgeandflight.com.
+Contact form submissions are retained for business correspondence purposes. You may request deletion of your submitted information by contacting us at info@forgeandflight.com.
 
 ## Third-Party Services
 
@@ -28,4 +28,4 @@ This site uses Google Analytics for traffic measurement and Cloudflare for conte
 
 ## Contact
 
-Questions regarding this Privacy Policy should be directed to m.ortiz@forgeandflight.com.
+Questions regarding this Privacy Policy should be directed to info@forgeandflight.com.

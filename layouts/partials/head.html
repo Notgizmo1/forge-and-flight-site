@@ -2,7 +2,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  {{/* ── Title ──────────────────────────────────────────── */}}
+  {{/*  Title  */}}
   {{ $title := .Title }}
   {{ if .IsHome }}
     {{ $title = "Forge & Flight Holdings | American Defense Technology & Professional Services" }}
@@ -13,23 +13,23 @@
   {{ end }}
   <title>{{ $title }}</title>
 
-  {{/* ── Meta Description ───────────────────────────────── */}}
+  {{/*  Meta Description  */}}
   {{ $desc := .Site.Params.description }}
   {{ if .Params.description }}{{ $desc = .Params.description }}{{ end }}
   <meta name="description" content="{{ $desc }}">
 
-  {{/* ── Keywords ─────────────────────────────────────── */}}
+  {{/*  Keywords  */}}
   {{ $kw := .Site.Params.keywords }}
   {{ if .Params.keywords }}{{ $kw = .Params.keywords }}{{ end }}
   <meta name="keywords" content="{{ $kw }}">
 
-  {{/* ── Canonical ─────────────────────────────────────── */}}
+  {{/*  Canonical  */}}
   <link rel="canonical" href="{{ .Permalink }}">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="msvalidate.01" content="{{ .Site.Params.bing_verify }}">
   <meta name="author" content="{{ .Site.Params.author }}">
 
-  {{/* ── Open Graph ─────────────────────────────────────── */}}
+  {{/*  Open Graph  */}}
   <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
   <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:title" content="{{ $title }}">
@@ -38,26 +38,26 @@
   <meta property="og:site_name" content="Forge &amp; Flight Holdings, Inc.">
   <meta property="og:locale" content="en_US">
 
-  {{/* ── Twitter Card ───────────────────────────────────── */}}
+  {{/*  Twitter Card  */}}
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ $title }}">
   <meta name="twitter:description" content="{{ $desc }}">
   <meta name="twitter:image" content="{{ .Site.Params.og_image }}">
 
-  {{/* ── Favicons ───────────────────────────────────────── */}}
+  {{/*  Favicons  */}}
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.png">
 
-  {{/* ── Fonts ─────────────────────────────────────────── */}}
+  {{/*  Fonts  */}}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Figtree:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-  {{/* ── Stylesheet ─────────────────────────────────────── */}}
+  {{/*  Stylesheet  */}}
   <link rel="stylesheet" href="/css/main.css">
 
-  {{/* ── Google Analytics ──────────────────────────────── */}}
+  {{/*  Google Analytics  */}}
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.ga_id }}"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -66,5 +66,5 @@
     gtag('config', '{{ .Site.Params.ga_id }}');
   </script>
 
-  {{/* ── JSON-LD Schema ─────────────────────────────────── */}}
+  {{/*  JSON-LD Schema  */}}
   {{ partial "schema.html" . }}

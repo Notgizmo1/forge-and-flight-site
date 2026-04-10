@@ -26,4 +26,4 @@ Customers are responsible for ensuring that any re-export, transfer, or re-trans
 
 ## Contact
 
-Export control inquiries should be directed to: m.ortiz@forgeandflight.com
+Export control inquiries should be directed to: info@forgeandflight.com

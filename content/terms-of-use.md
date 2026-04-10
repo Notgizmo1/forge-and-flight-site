@@ -30,4 +30,4 @@ These terms are governed by the laws of the State of North Carolina, without reg
 
 ## Contact
 
-Questions should be directed to m.ortiz@forgeandflight.com.
+Questions should be directed to info@forgeandflight.com.
