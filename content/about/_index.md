@@ -1,5 +1,5 @@
 ---
-title: "About Forge & Flight Holdings"
-description: "Forge & Flight Holdings is an American defense technology and professional services company founded in 2026 by Army Special Operations veterans. Headquartered in Fayetteville, NC near Fort Bragg."
-keywords: "about Forge Flight Holdings, defense technology company founders, Army veteran aerospace company, Fort Bragg defense contractor, Fayetteville NC aerospace"
+title: "About Forge & Flight Holdings | American Defense Technology Company"
+description: "Forge & Flight Holdings, Inc. — American defense technology company founded by Army Special Operations veterans. Headquartered in Fayetteville, NC adjacent to Fort Bragg. NDAA-compliant platforms, CMMC Level 2 software, and defense professional services."
+keywords: "about Forge Flight Holdings, defense technology company North Carolina, Army veteran defense company, Fort Bragg defense contractor, Fayetteville NC aerospace company, American defense technology startup, NDAA compliant defense company, Special Operations veteran company"
 ---

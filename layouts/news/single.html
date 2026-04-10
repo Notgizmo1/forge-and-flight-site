@@ -14,13 +14,51 @@
 </section>
 <section class="section">
   <div class="container" style="max-width:800px;">
-    <article style="font-size:1.05rem;line-height:1.8;color:var(--text);">
-      {{ .Content }}
+    <article itemscope itemtype="https://schema.org/Article">
+      <meta itemprop="headline" content="{{ .Title }}">
+      <meta itemprop="datePublished" content="{{ .Date.Format "2006-01-02" }}">
+      <meta itemprop="author" content="Forge &amp; Flight Holdings, Inc.">
+      <meta itemprop="publisher" content="Forge &amp; Flight Holdings, Inc.">
+      <div itemprop="articleBody" style="font-size:1.05rem;line-height:1.8;color:var(--text);">
+        {{ .Content }}
+      </div>
     </article>
-    <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--slate-100);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;">
-      <a href="/news/" class="btn btn-outline">← Back to News</a>
-      <a href="/contact/" class="btn btn-primary">Contact Forge &amp; Flight</a>
+    <div style="margin-top:3rem;padding:2rem;background:var(--off-white);border-radius:var(--radius);border:1px solid var(--slate-100);">
+      <p style="font-size:0.875rem;color:var(--text-muted);margin-bottom:1rem;"><strong style="color:var(--navy);">About Forge &amp; Flight Holdings</strong> — American defense technology company headquartered in Fayetteville, NC. We design and manufacture NDAA-compliant UAS platforms, develop CMMC Level 2-hardened mission software, and deliver professional defense consulting services. CAGE 18WR3 · SAM Active.</p>
+      <div style="display:flex;gap:0.75rem;flex-wrap:wrap;">
+        <a href="/news/" class="btn btn-outline">← All Articles</a>
+        <a href="/platforms/" class="btn btn-outline">View Platforms</a>
+        <a href="/software/" class="btn btn-outline">View Software</a>
+        <a href="/contact/" class="btn btn-primary">Contact</a>
+      </div>
     </div>
   </div>
 </section>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ .Title }}",
+  "description": "{{ .Description }}",
+  "datePublished": "{{ .Date.Format "2006-01-02" }}",
+  "dateModified": "{{ .Date.Format "2006-01-02" }}",
+  "author": {
+    "@type": "Organization",
+    "name": "Forge & Flight Holdings, Inc.",
+    "url": "https://forgeandflight.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Forge & Flight Holdings, Inc.",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://forgeandflight.com/images/logo.png"
+    }
+  },
+  "url": "{{ .Permalink }}",
+  "mainEntityOfPage": "{{ .Permalink }}",
+  "image": "{{ $.Site.Params.og_image }}",
+  "keywords": "{{ .Params.keywords }}"
+}
+</script>
 {{ end }}

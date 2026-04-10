@@ -1,5 +1,5 @@
 ---
-title: "Compliance & Credentials"
-description: "SAM.gov registration data, CAGE codes, UEIs, CMMC Level 2 SPRS 105/110 compliance status, and NDAA §889 certification for all three Forge & Flight Holdings entities."
-keywords: "CMMC Level 2 contractor, CAGE 18WR3, SAM.gov active registration, NDAA 889 compliant, SPRS 105 110, small business defense contractor Fayetteville NC"
+title: "CMMC Level 2 Compliance | SAM.gov Registration | CAGE Codes | Forge & Flight"
+description: "Complete compliance and registration data for all three Forge & Flight entities. CMMC Level 2 SPRS 105/110, NDAA §889 certified, SAM.gov active registrations. Holdings CAGE 18WR3 | Labs CAGE 18VF2 | Academy CAGE 1A6J3."
+keywords: "CMMC Level 2 contractor, CAGE 18WR3, SAM.gov registered defense contractor, NDAA 889 compliant vendor, SPRS 105 110 score, small business defense contractor Fayetteville NC, CAGE code defense contractor, UEI Z9PWMMZXJ321, NDAA compliant UAS vendor, Blue UAS eligible"
 ---

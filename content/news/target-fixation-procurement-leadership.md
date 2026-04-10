@@ -8,11 +8,11 @@ summary: "The same decision-making failure mode that kills Special Operations mi
 
 It happens when an operator — or an entire element — locks onto a single course of action with such certainty that they stop processing contradicting information. The mission plan becomes the reality, even when the situation on the ground is telling a different story. Actions become automatic. Dissenting information gets filtered out. The commitment to the original plan overrides the evidence that the plan isn't working.
 
-Twenty years in Special Operations, and I watched this failure mode play out more than once. Not because the operators were incompetent. Because they were experienced, confident, and deeply committed to a plan they'd put significant effort into developing. Commitment to a plan is an asset until the moment it becomes a liability. The transition happens faster than most people expect.
+Over decades in Special Operations, this failure mode played out more than once. Not because the operators were incompetent. Because they were experienced, confident, and deeply committed to a plan they had put significant effort into developing. Commitment to a plan is an asset until the moment it becomes a liability. The transition happens faster than most people expect.
 
 ## The Same Failure Mode in Procurement
 
-I see an operationally identical failure mode in government UAS procurement, and the cost is measured in warehouses full of expensive equipment that nobody is flying.
+The same operationally identical failure mode appears in government UAS procurement, and the cost is measured in warehouses full of expensive equipment that nobody is flying.
 
 Here's how it typically unfolds: A program office identifies a requirement. Someone sees a vendor demo early in the process — often before requirements are formally written. The platform looks capable. The vendor relationship develops. Requirements get written, and they happen to align closely with the platform's demonstrated strengths. The evaluation process confirms what the team already believed. Alternative platforms get evaluated against criteria that were shaped by the first demo.
 
@@ -22,7 +22,7 @@ The platform is procured. It underperforms in the operational environment. The s
 
 In operational planning, we addressed target fixation through deliberate red-teaming. Before any significant operation, someone was assigned to argue against the plan. Not to be obstructive, but to surface the assumptions the planning team had stopped questioning because they'd lived with the plan long enough that the assumptions felt like facts.
 
-The best commanders I served under actively sought out the red team's analysis. They understood that a plan stress-tested by an honest adversarial review is stronger than a plan everyone agrees with because nobody wanted to be the one who pushed back. The discipline required isn't intellectual — it's cultural. Organizations that red-team effectively have leaders who've demonstrated that raising concerns is rewarded rather than punished.
+The best commanders actively sought out the red team's analysis. They understood that a plan stress-tested by an honest adversarial review is stronger than a plan everyone agrees with because nobody wanted to be the one who pushed back. The discipline required isn't intellectual — it's cultural. Organizations that red-team effectively have leaders who've demonstrated that raising concerns is rewarded rather than punished.
 
 ## Building the Structural Fix Into Acquisition
 

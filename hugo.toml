@@ -20,8 +20,7 @@ summaryLength = 70
   sam_expires = "March 9, 2027"
   sprs = "105/110"
   address = "Fayetteville, NC 28304"
-  phone = "(347) 678-7690"
-  email = "m.ortiz@forgeandflight.com"
+  email = "info@forgeandflight.com"
   ga_id = "G-4RVS5R9Z6G"
   bing_verify = "CBB3DDC3738AE030F4107D4B0869525F"
   labs_url = "https://forgeandflightlabs.com"
@@ -58,9 +57,14 @@ summaryLength = 70
     url = "/about/"
     weight = 6
   [[menu.main]]
+    name = "FAQ"
+    url = "/faq/"
+    weight = 7
+
+  [[menu.main]]
     name = "Contact"
     url = "/contact/"
-    weight = 7
+    weight = 8
 
 [markup]
   [markup.goldmark]

@@ -1,5 +1,5 @@
 ---
-title: "UAS Platforms"
-description: "NDAA-compliant Group 1-3 UAS platforms from Forge & Flight Labs LLC. Aether-10, Vanguard-14, Titan-20, Longbow-8. American-manufactured, Blue UAS eligible. DoD and commercial pricing available."
-keywords: "NDAA compliant UAS platforms, American drone manufacturer, Blue UAS Aether-10, Group 2 Group 3 UAS, defense drone manufacturer North Carolina"
+title: "NDAA-Compliant UAS Platforms | American Drone Manufacturer | Forge & Flight"
+description: "American-manufactured Group 1–3 NDAA-compliant UAS platforms. Aether-10, Vanguard-14, Titan-20, and Longbow-8. Blue UAS eligible. DoD and commercial pricing. Produced in North Carolina by Forge & Flight Labs LLC, CAGE 18VF2."
+keywords: "NDAA compliant UAS, American drone manufacturer, Blue UAS platform, Group 2 UAS, Group 3 UAS, NDAA drone, domestic UAS manufacturer, American made drone, military drone manufacturer, ATAK compatible drone, Aether-10 drone, Vanguard drone, Titan VTOL drone, North Carolina drone manufacturer"
 ---

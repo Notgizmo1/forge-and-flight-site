@@ -1,5 +1,5 @@
 ---
-title: "News & Insights"
-description: "Analysis from Forge & Flight Holdings on UAS technology, defense acquisition, NDAA compliance, and domestic manufacturing. Defense technology news and insights."
-keywords: "UAS news defense technology, NDAA compliance news, American drone manufacturer news, defense acquisition insights"
+title: "Defense Technology News & Insights | Forge & Flight Holdings"
+description: "Analysis from the Forge & Flight team on NDAA compliance, UAS technology, defense acquisition, domestic manufacturing, and the evolving regulatory landscape. Written for procurement officers, program managers, and defense operators."
+keywords: "NDAA drone news, UAS procurement news, defense acquisition insights, drone technology news, American UAS manufacturer news, Blue UAS news, NDAA compliance analysis, defense contracting news North Carolina"
 ---

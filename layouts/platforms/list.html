@@ -4,46 +4,85 @@
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
       <span class="breadcrumb-sep">›</span>
-      <span>Platforms</span>
+      <span>UAS Platforms</span>
     </nav>
-    <span class="eyebrow">NDAA §889 Compliant · American-Manufactured · Blue UAS Eligible</span>
-    <h1>UAS Platform Catalog</h1>
-    <p>Full platform specifications and pricing are available on the Forge &amp; Flight Labs website. All platforms are NDAA §889 compliant, American-manufactured, and eligible for DoD simplified acquisition under the appropriate schedule.</p>
+    <span class="eyebrow">American-Manufactured · NDAA §889 Compliant · Blue UAS Eligible</span>
+    <h1>NDAA-Compliant UAS Platform Catalog</h1>
+    <p>Group 1–3 platforms designed and manufactured in the United States. Full component-level NDAA documentation, open architecture, and field-maintainable designs. Contracting entity: Forge &amp; Flight Labs LLC (CAGE 18VF2 · SAM Active).</p>
     <div class="badge-row">
       <span class="badge badge-ndaa">NDAA §889 Compliant</span>
       <span class="badge badge-secure">Blue UAS Eligible</span>
-      <span class="badge badge-sam">DoD Schedule A · Commercial Schedule B</span>
+      <span class="badge badge-sam">CAGE 18VF2 · SAM Active</span>
     </div>
   </div>
 </section>
+
 <section class="section">
   <div class="container">
     <div class="section-header">
-      <span class="eyebrow">Contracting Entity: Forge & Flight Labs LLC — CAGE 18VF2</span>
-      <h2>Group 1–3 Platform Line</h2>
-      <p>Platform sales are executed through Forge &amp; Flight Labs LLC. Full technical specifications, payload options, and pricing schedules are available on the Labs site and via direct request.</p>
+      <span class="eyebrow">Why Domestic Matters</span>
+      <h2>American-made. Fully documented. Field-ready.</h2>
+      <p>Every Forge &amp; Flight platform is designed from the ground up for NDAA compliance — not retrofit. That means complete component-level traceability documentation, no prohibited foreign electronics in any data or power path, and supply chains built to sustain government audit requirements over the full program life.</p>
     </div>
-    <div class="grid-2">
-      {{ range slice
-        (dict "name" "Aether-10" "group" "Group 2 · Multi-Role" "desc" "Fixed-wing/VTOL hybrid. NVIDIA Jetson Orin Nano 8GB compute. Gremsy VIO F1 payload. Blue UAS eligible. AI intelligence modules compatible." "link" "/products/aether-10/")
-        (dict "name" "Vanguard-14" "group" "Group 2/3 · AI-Enabled" "desc" "Extended range fixed-wing/VTOL. Jetson Orin NX 16GB — 100 TOPS. Full Intelligence Suite compatible. DoD tactical operations." "link" "/products/vanguard-14/")
-        (dict "name" "Titan-20" "group" "Group 3 · Heavy-Lift VTOL" "desc" "High endurance heavy-lift VTOL. NVIDIA Thor AGX compute. Maximum payload capacity. Fire services, aerial application, and long-duration surveillance." "link" "/products/titan-20/")
-        (dict "name" "Longbow-8" "group" "Group 1 · Development Platform" "desc" "Entry-level fixed-wing/VTOL. Operator training, proof-of-concept, and development work. Land-and-expand pathway to Group 2/3 platforms." "link" "/products/longbow-8/")
-      }}
+
+    <div class="grid-2" style="margin-bottom:4rem;">
       <div class="card">
-        <span class="eyebrow">{{ .group }}</span>
-        <h3>{{ .name }}</h3>
-        <p>{{ .desc }}</p>
-        <a href="{{ $.Site.Params.labs_url }}{{ .link }}" target="_blank" rel="noopener" class="btn btn-outline btn-sm" style="margin-top:1.25rem;">Full Specs on Labs ↗</a>
+        <h4>NDAA Section 848 Compliance</h4>
+        <p>All platforms are compliant with NDAA Section 848 prohibitions on covered unmanned aircraft systems. Full BOM-level documentation available for procurement officers and program offices requiring written compliance certification.</p>
+      </div>
+      <div class="card">
+        <h4>Blue UAS Framework Eligibility</h4>
+        <p>The Aether-10 platform is aligned with the Defense Innovation Unit Blue UAS program framework. Procurement officers can reference Blue UAS documentation as part of their NDAA compliance record. Contact for current certification status.</p>
+      </div>
+      <div class="card">
+        <h4>Open Architecture Design</h4>
+        <p>All platforms use open flight controller standards — ArduPilot and PX4 compatible — with standard MAVLink interfaces. No proprietary ground station lock-in. Integrates with ATAK, existing DoD C2 infrastructure, and the AegisEye Intelligence Suite modules.</p>
+      </div>
+      <div class="card">
+        <h4>Field Maintainability</h4>
+        <p>Designed for organic maintenance by trained operators. Modular airframe construction, standardized fasteners, and replaceable components available through NDAA-compliant domestic supply chains. Forge Flex retainer programs provide ongoing parts access and technical support.</p>
+      </div>
+    </div>
+
+    <div class="section-header">
+      <span class="eyebrow">Platform Catalog — Forge & Flight Labs LLC</span>
+      <h2>Four platforms. One supply chain.</h2>
+      <p>Complete technical specifications, pricing schedules (DoD Schedule A and Commercial Schedule B), and payload configuration options are available on the Forge &amp; Flight Labs website or upon direct request. Pricing is not published publicly — all quotes are entity-verified.</p>
+    </div>
+
+    <div class="grid-2" style="gap:1.5rem;">
+      {{ range slice
+        (dict "name" "Aether-10" "group" "Group 2 · Multi-Role Fixed-Wing/VTOL" "compute" "NVIDIA Jetson AGX Orin" "payload" "Gremsy VIO F1" "status" "Blue UAS Eligible" "desc" "The Aether-10 is a multi-role Group 2 fixed-wing/VTOL hybrid designed for extended area coverage, ISR, and intelligence module deployment. NVIDIA Jetson AGX Orin edge compute enables full AegisEye Intelligence Suite integration — FireWatch wildfire detection, OverWatch SAR, and FloodWatch disaster response — without ground station dependency." "link" "/products/aether-10/")
+        (dict "name" "Vanguard-14" "group" "Group 2/3 · Extended-Range Fixed-Wing/VTOL" "compute" "NVIDIA Jetson Orin / Thor (package dependent)" "payload" "Gremsy Orus L" "status" "NDAA §889 Compliant" "desc" "The Vanguard-14 is an extended-range Group 2/3 platform with higher payload capacity and longer endurance than the Aether-10. Available with Jetson Orin or Thor compute depending on mission package. Designed for persistent ISR, communications relay, and multi-sensor payload operations." "link" "/products/vanguard-14/")
+        (dict "name" "Titan-20" "group" "Group 3 · Heavy-Lift VTOL" "compute" "NVIDIA Thor AGX" "payload" "Gremsy Orus L" "status" "NDAA §889 Compliant" "desc" "The Titan-20 is a heavy-lift Group 3 VTOL designed for maximum payload capacity and long endurance. NVIDIA Thor AGX compute supports full-resolution sensor fusion and simultaneous multi-module operation. Suitable for fire services, aerial application, long-duration surveillance, and payload delivery missions." "link" "/products/titan-20/")
+        (dict "name" "Longbow-8" "group" "Group 1 · Development & Training Platform" "compute" "Jetson Orin Nano" "payload" "Configurable" "status" "NDAA §889 Compliant" "desc" "The Longbow-8 is the entry point to the Forge &amp; Flight platform family — a Group 1 fixed-wing/VTOL used for operator training, proof-of-concept development, and capability validation. Identical architecture to the larger platforms means skills and software developed on the Longbow-8 transfer directly to Aether-10 and Vanguard-14 operations." "link" "/products/longbow-8/")
+      }}
+      <div class="card" style="display:flex;flex-direction:column;gap:1rem;">
+        <div>
+          <span class="eyebrow">{{ .group }}</span>
+          <h3 style="font-size:1.75rem;margin-bottom:0.25rem;">{{ .name }}</h3>
+          <span style="display:inline-block;font-family:var(--font-mono);font-size:0.72rem;padding:0.2rem 0.6rem;background:var(--green-dim);color:var(--green);border-radius:3px;">{{ .status }}</span>
+        </div>
+        <p style="color:var(--text-muted);font-size:0.95rem;flex:1;">{{ .desc }}</p>
+        <table class="spec-table" style="font-size:0.825rem;">
+          <tr><td style="color:var(--slate-500);">Compute</td><td style="color:var(--text);">{{ .compute }}</td></tr>
+          <tr><td style="color:var(--slate-500);">Payload</td><td style="color:var(--text);">{{ .payload }}</td></tr>
+          <tr><td style="color:var(--slate-500);">Intelligence Suite</td><td style="color:var(--text);">FireWatch · WatchTower · OverWatch · FloodWatch compatible</td></tr>
+          <tr><td style="color:var(--slate-500);">C2</td><td style="color:var(--text);">ATAK / TAK Server via IronMesh · MAVLink 2.0</td></tr>
+        </table>
+        <a href="{{ $.Site.Params.labs_url }}{{ .link }}" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Full Specs on Labs ↗</a>
       </div>
       {{ end }}
     </div>
-    <div class="cta-strip" style="margin-top:3rem;">
-      <h2>Platform pricing is not published publicly.</h2>
-      <p>DoD Schedule A and Commercial Schedule B pricing is available upon request. All quotes require entity verification. Contact Forge &amp; Flight Labs for a formal quote.</p>
-      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
-        <a href="/contact/?interest=aether-10" class="btn btn-outline-white">Request Platform Quote</a>
-        <a href="{{ $.Site.Params.labs_url }}" target="_blank" rel="noopener" class="btn btn-outline-white">Visit Forge &amp; Flight Labs ↗</a>
+
+    <div style="margin-top:3rem;padding:2.5rem;background:var(--off-white);border-radius:var(--radius-lg);border:1px solid var(--slate-100);">
+      <h3 style="margin-bottom:0.75rem;">Procurement Guidance</h3>
+      <p style="color:var(--text-muted);margin-bottom:1rem;">Platform sales are executed through Forge &amp; Flight Labs LLC (CAGE 18VF2 · UEI SUVKLZLPBJC1 · SAM Active through Feb 11, 2027). Pricing is available via direct quote — two pricing schedules exist for DoD/Federal/State customers and commercial customers respectively. Payment terms: 50% at order, 50% prior to delivery.</p>
+      <p style="color:var(--text-muted);margin-bottom:1.5rem;">Platforms in the Longbow-8 and Aether-10 range are well-positioned for simplified acquisition at or below the $350,000 Simplified Acquisition Threshold — the fastest procurement pathway for qualifying small business vendors.</p>
+      <div style="display:flex;gap:0.75rem;flex-wrap:wrap;">
+        <a href="/contact/?interest=aether-10" class="btn btn-primary">Request Platform Quote</a>
+        <a href="{{ $.Site.Params.labs_url }}" target="_blank" rel="noopener" class="btn btn-outline">Visit Forge &amp; Flight Labs ↗</a>
+        <a href="/compliance/" class="btn btn-outline">View NDAA Documentation</a>
       </div>
     </div>
   </div>

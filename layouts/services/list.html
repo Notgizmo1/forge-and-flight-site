@@ -6,36 +6,76 @@
       <span class="breadcrumb-sep">›</span>
       <span>Services</span>
     </nav>
-    <span class="eyebrow">Federal Contracting · Professional Services · Mission Platform</span>
+    <span class="eyebrow">Federal Contracting · Professional Services · Manufacturing Retainer</span>
     <h1>Services</h1>
-    <p>Three service lines serving DoD, federal agencies, and commercial clients. All engagements operate under Forge &amp; Flight Holdings, Inc. (CAGE 18WR3) unless otherwise specified.</p>
+    <p>Three service lines grounded in decades of Special Operations experience and technical engineering expertise. Serving DoD units, federal agencies, prime contractors, and commercial clients across North America.</p>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <div class="grid-3">
-      <a href="/services/federal-services/" class="card" style="text-decoration:none;display:block;">
-        <div class="card-icon"></div>
-        <span class="eyebrow">Division of Holdings</span>
-        <h3>Federal Services</h3>
-        <p>Simplified Acquisition Threshold contracting. Professional services, logistics, IT, and aerospace-adjacent support near Fort Bragg. NAICS 541611, 541519, 541614, 541512, 541330.</p>
-        <p style="color:var(--orange);font-weight:600;margin-top:1rem;font-size:0.9rem;">View Federal Services →</p>
-      </a>
-      <a href="/services/professional-services/" class="card" style="text-decoration:none;display:block;">
-        <div class="card-icon"></div>
-        <span class="eyebrow">Expert Consulting</span>
-        <h3>Professional Services</h3>
-        <p>Defense and national security consulting, OSINT intelligence services, UAS regulatory advisory, technical writing, Latin America advisory, and RF communications consulting.</p>
-        <p style="color:var(--orange);font-weight:600;margin-top:1rem;font-size:0.9rem;">View Professional Services →</p>
-      </a>
-      <a href="/forge-flex/" class="card" style="text-decoration:none;display:block;">
-        <div class="card-icon"></div>
-        <span class="eyebrow">Forge &amp; Flight Labs LLC</span>
-        <h3>Forge Flex MPaaS</h3>
-        <p>Mission Platform as a Service. Dedicated fleet support, operator teams, and mission planning under a recurring retainer — from pilot programs to enterprise operations.</p>
-        <p style="color:var(--orange);font-weight:600;margin-top:1rem;font-size:0.9rem;">View Forge Flex →</p>
-      </a>
+    <div class="service-list">
+      <div class="service-item">
+        <div>
+          <p class="service-number">01</p>
+          <p class="service-cat">Federal Contracting</p>
+        </div>
+        <div>
+          <h3><a href="/services/federal-services/" style="color:inherit;">Federal Services Division</a></h3>
+          <p>Forge &amp; Flight Federal Services pursues and fulfills federal contracts at or below the $350,000 Simplified Acquisition Threshold across professional services, logistics, IT, and aerospace-adjacent support. Headquartered in Fayetteville, NC with direct proximity to Fort Bragg, USASOC, and the MICC-Fort Bragg contracting office. CAGE 18WR3 · CMMC Level 2 · SPRS 105/110 · SDB · Minority-Owned.</p>
+          <p style="margin-top:0.75rem;font-size:0.9rem;color:var(--text-muted);">Primary NAICS: 541611, 541519, 541614, 541512, 541330, 541380</p>
+          <a href="/services/federal-services/" class="btn btn-outline btn-sm" style="margin-top:1rem;">Federal Services Detail</a>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div>
+          <p class="service-number">02</p>
+          <p class="service-cat">Consulting</p>
+        </div>
+        <div>
+          <h3><a href="/services/professional-services/" style="color:inherit;">Professional Services</a></h3>
+          <p>Defense and national security consulting, managed open-source intelligence analysis, UAS regulatory advisory, Latin America market entry advisory, and technical writing. Serving defense contractors, DoD program offices, law firms, private equity, and corporate security teams. Grounded in Special Operations expertise and native Spanish fluency across Latin American markets.</p>
+          <p style="margin-top:0.75rem;font-size:0.9rem;color:var(--text-muted);">Defense consulting · OSINT intelligence · UAS advisory · LATAM advisory · Technical writing</p>
+          <a href="/services/professional-services/" class="btn btn-outline btn-sm" style="margin-top:1rem;">Professional Services Detail</a>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div>
+          <p class="service-number">03</p>
+          <p class="service-cat">Manufacturing Retainer</p>
+        </div>
+        <div>
+          <h3><a href="/forge-flex/" style="color:inherit;">Forge Flex — Manufacturing &amp; Procurement Retainer</a></h3>
+          <p>A pre-funded annual retainer providing on-demand NDAA-compliant component procurement, rapid prototyping, complete aircraft fabrication, and engineering services through Forge &amp; Flight Labs LLC. One contract covers procurement, manufacturing, systems integration, and technical consultation. Components delivered in days. Complete aircraft builds from specification to flight-ready. Six tier levels from $150K pilot programs to enterprise-scale partnerships.</p>
+          <p style="margin-top:0.75rem;font-size:0.9rem;color:var(--text-muted);">NDAA-compliant sourcing · Aircraft fabrication · ArduPilot/PX4 integration · End-of-FY fund absorption</p>
+          <a href="/forge-flex/" class="btn btn-outline btn-sm" style="margin-top:1rem;">Forge Flex Detail</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-sm section-dark">
+  <div class="container">
+    <div class="section-header center">
+      <span class="eyebrow">Who We Serve</span>
+      <h2>From Fort Bragg to the Pacific.</h2>
+      <p>Forge &amp; Flight delivers services to customers across the United States and allied partner nations. Our geographic focus is the Fayetteville, NC — Fort Bragg corridor, but all three service lines operate nationally.</p>
+    </div>
+    <div class="grid-4" style="gap:1.5rem;">
+      {{ range slice
+        (dict "label" "DoD Units" "desc" "Special Operations, conventional forces, installations, and program offices across all branches")
+        (dict "label" "Federal Agencies" "desc" "DHS, FEMA, USFS, FBI, CBP, and other federal agencies with UAS or intelligence requirements")
+        (dict "label" "Prime Contractors" "desc" "Defense primes and subcontractors seeking qualified domestic small business teaming partners")
+        (dict "label" "State & Local" "desc" "Law enforcement, fire agencies, emergency management, and public safety organizations")
+      }}
+      <div style="background:var(--navy-mid);border:1px solid var(--navy-border);border-radius:var(--radius);padding:1.5rem;">
+        <h4 style="color:var(--white);font-size:1rem;margin-bottom:0.5rem;">{{ .label }}</h4>
+        <p style="font-size:0.875rem;color:var(--slate-300);">{{ .desc }}</p>
+      </div>
+      {{ end }}
     </div>
   </div>
 </section>

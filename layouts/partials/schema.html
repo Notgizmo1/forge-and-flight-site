@@ -76,7 +76,17 @@
         "Defense Consulting",
         "Latin America Advisory"
       ],
-      "areaServed": ["US", "DoD", "Fort Bragg", "USASOC"],
+      "areaServed": [
+        {"@type": "Country", "name": "United States"},
+        {"@type": "State", "name": "North Carolina"},
+        {"@type": "City", "name": "Fayetteville, NC"},
+        "DoD", "Fort Bragg", "USASOC", "FORSCOM", "18th Airborne Corps"
+      ],
+      "serviceArea": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {"@type": "GeoCoordinates", "latitude": "35.0527", "longitude": "-78.8784"},
+        "geoRadius": "5000000"
+      },
       "subOrganization": [
         {
           "@type": "Organization",
