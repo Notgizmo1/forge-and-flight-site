@@ -1,7 +1,6 @@
 baseURL = "https://forgeandflight.com/"
 languageCode = "en-US"
 title = "Forge & Flight Holdings | Defense Technology & Professional Services"
-theme = ""
 enableRobotsTXT = true
 enableGitInfo = false
 summaryLength = 70
