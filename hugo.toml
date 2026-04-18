@@ -62,9 +62,14 @@ summaryLength = 70
     weight = 7
 
   [[menu.main]]
+    name = "Careers"
+    url = "/careers/"
+    weight = 8
+
+  [[menu.main]]
     name = "Contact"
     url = "/contact/"
-    weight = 8
+    weight = 9
 
 [markup]
   [markup.goldmark]
