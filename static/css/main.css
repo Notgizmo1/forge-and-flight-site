@@ -1167,3 +1167,35 @@ article p:last-child { margin-bottom: 0; }
 /* Quad item — force dark heading regardless of parent context */
 .quad-item h3 { color: var(--navy) !important; }
 .quad-item p { color: var(--text-muted); }
+
+/* ── 480px — Small phones ──────────────────────────────────── */
+@media (max-width: 480px) {
+  h1 { font-size: clamp(2rem, 10vw, 2.8rem); }
+  h2 { font-size: clamp(1.6rem, 7vw, 2rem); }
+
+  .container { width: min(var(--max-w), 100% - 1.5rem); }
+
+  .btn-lg { padding: 0.875rem 1.75rem; font-size: 1rem; }
+  .btn { width: 100%; justify-content: center; }
+  .btn + .btn { margin-top: 0.5rem; }
+
+  /* Hero CTA buttons stack full-width */
+  .hero-cta { flex-direction: column; align-items: stretch; }
+
+  /* Section spacing tighter on small phones */
+  .section { padding-block: 3rem; }
+  .section-sm { padding-block: 2.5rem; }
+
+  /* Page hero title */
+  .page-hero h1 { font-size: clamp(1.8rem, 8vw, 2.4rem); }
+  .page-hero p { font-size: 0.95rem; }
+
+  /* Spec tables scroll horizontally */
+  .spec-table { display: block; overflow-x: auto; }
+
+  /* Cred block stacks */
+  .cred-row { flex-direction: column; gap: 0.75rem; }
+
+  /* Footer nav columns single on very small */
+  .footer-top { grid-template-columns: 1fr !important; gap: 1.5rem; }
+}
