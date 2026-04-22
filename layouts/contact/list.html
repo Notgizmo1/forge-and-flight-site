@@ -150,4 +150,59 @@
     </div>
   </div>
 </section>
+
+<script>
+(function () {
+  var form = document.getElementById('contact-form');
+  if (!form) return;
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    var btn = form.querySelector('button[type="submit"]');
+    var origText = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+
+    var fd = new FormData(form);
+
+    // ── CRM capture — fire and forget, never blocks email delivery ──
+    try {
+      fetch('https://forge-flight-crm.mort82.workers.dev/public/lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          org_name:     (fd.get('organization') || '').toString(),
+          contact_name: ((fd.get('first_name') || '') + ' ' + (fd.get('last_name') || '')).toString().trim(),
+          email:        (fd.get('email') || '').toString(),
+          phone:        fd.get('phone') ? fd.get('phone').toString() : undefined,
+          interest:     (fd.get('inquiry_type') || 'other').toString(),
+          message:      fd.get('message') ? fd.get('message').toString() : undefined,
+          source_page:  window.location.href,
+        }),
+      }).catch(function () {});
+    } catch (_) {}
+
+    // ── Email delivery via formsubmit.co AJAX — preserves existing flow ──
+    try {
+      var res = await fetch('https://formsubmit.co/ajax/info@forgeandflight.com', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: fd,
+      });
+      var data = await res.json();
+      if (data.success === 'true' || data.success === true || res.ok) {
+        window.location.href = '/contact/?success=true';
+        return;
+      }
+    } catch (_) {}
+
+    // Fallback: native submit so email still goes out even if AJAX fails
+    btn.disabled = false;
+    btn.textContent = origText;
+    form.action = 'https://formsubmit.co/info@forgeandflight.com';
+    form.method = 'POST';
+    form.submit();
+  });
+})();
+</script>
 {{ end }}
