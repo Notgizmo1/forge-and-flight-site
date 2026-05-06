@@ -6,17 +6,21 @@ keywords: "Blue UAS program, DIU Blue UAS, NDAA compliant drone procurement, Blu
 summary: "The Defense Innovation Unit's Blue UAS program is the fastest path to a DoD-cleared small UAS acquisition. Here's what it means, who qualifies, and what procurement officers need to understand before engaging the market."
 ---
 
+*Editor's note (May 6, 2026): Since this article was published, the Blue UAS Cleared List has transitioned from DIU to DCMA administration (effective December 3, 2025), and documented supply chain issues — including Chinese-sourced components on listed platforms and the Skydio battery crisis — have raised important questions about what listing actually guarantees. References to DIU as program administrator below reflect the program structure at time of original publication. For a current critical analysis of the certification architecture and what procurement officers should do beyond relying on the list, see our updated piece: [The Blue UAS Cleared List Has a Structural Problem. Procurement Officers Need to Know About It.](/news/blue-uas-cleared-list-structural-problem/)*
+
+---
+
 When procurement officers ask for an NDAA-compliant drone, they often mean they want something on the Blue UAS list. Understanding what that program actually certifies — and what it doesn't — is essential for making a defensible acquisition decision.
 
 ## What Blue UAS Is
 
-Blue UAS is a program administered by the Defense Innovation Unit (DIU) that evaluates small unmanned aircraft systems for cybersecurity, supply chain security, and NDAA compliance. Platforms that pass the evaluation are placed on the Blue UAS Cleared List — a catalog of DoD-assessed UAS options that procurement officers can reference when building a requirement or selecting a vendor.
+Blue UAS is a DoD program that evaluates small unmanned aircraft systems for cybersecurity, supply chain security, and NDAA compliance. It was created by the Defense Innovation Unit (DIU) in August 2020 and administered by DIU until December 3, 2025, when management formally transferred to the Defense Contract Management Agency's Special Programs Unmanned Systems–Experimental Command (DCMA US-X). Platforms that pass evaluation are placed on the Blue UAS Cleared List — a catalog of DoD-assessed UAS options that procurement officers can reference when building a requirement or selecting a vendor.
 
-The program exists because the NDAA Section 848 prohibition on certain foreign-manufactured drones (primarily DJI and other Chinese-linked manufacturers) created an immediate need for a verifiable alternative. Blue UAS provides that alternative in a format that procurement officers can cite, track, and defend.
+The program exists because the NDAA Section 848 prohibition on certain foreign-manufactured drones (primarily DJI and other Chinese-linked manufacturers) created an immediate need for a verifiable domestic alternative. Blue UAS provides that alternative in a format that procurement officers can cite, track, and defend.
 
 ## What Blue UAS Certification Actually Covers
 
-Blue UAS evaluation assesses platforms across three primary dimensions: cybersecurity architecture, component supply chain traceability, and NDAA §889 compliance. A platform that passes has demonstrated to DIU's satisfaction that it does not transmit data to prohibited foreign servers, does not rely on prohibited telecommunications components, and has documented supply chain provenance.
+Blue UAS evaluation assesses platforms across three primary dimensions: cybersecurity architecture, component supply chain traceability, and NDAA §889 compliance. A platform that passes has demonstrated to the program's satisfaction that it does not transmit data to prohibited foreign servers, does not rely on prohibited telecommunications components, and has documented supply chain provenance.
 
 Certification is not a guarantee of operational performance. It does not assess payload capability, flight endurance, weather tolerance, or mission-specific suitability. The certification says the platform is safe to operate on government networks and cleared to procure — it does not say the platform is the right tool for any particular mission. Procurement officers who treat Blue UAS certification as a performance specification are making an error that field experience will quickly correct.
 
@@ -42,4 +46,4 @@ If you are building a UAS requirement for a DoD or federal agency, the most defe
 
 If you are evaluating platforms that are pursuing certification but not yet listed, request documented evidence of where they are in the process and what timeline they are on. Certification status changes. A platform that is actively in the evaluation pipeline with a defined timeline is meaningfully different from one that has no certification activity.
 
-The Blue UAS list is updated periodically. Contracting officers should verify current listing status directly through DIU's published resources rather than relying on vendor-provided certification claims.
+The Blue UAS list is updated periodically. Contracting officers should verify current listing status directly through DCMA's published resources rather than relying on vendor-provided certification claims. Note that listing is not permanent — platforms can be removed for end-of-life, unapproved design changes, or failure to remediate cybersecurity findings.
