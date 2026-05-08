@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "version_tuple": [
+    1,
+    0,
+    0
+  ],
+  "download_url": "https://cdn.forgeandflight.com/releases/AegisEye-1.0.0.zip",
+  "release_notes": "Initial release \u2014 auto-updater, MAVLink auto-detect, mission upload handshake.",
+  "released_at": "2026-05-08",
+  "min_windows": "10.0.19041"
+}
