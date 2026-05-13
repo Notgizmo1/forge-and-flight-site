@@ -1381,3 +1381,21 @@ article p:last-child { margin-bottom: 0; }
   .restricted-card-header { flex-direction: column; gap: 0.75rem; }
   .restricted-card-badges { flex-direction: row; align-items: flex-start; }
 }
+
+/* ── Footer LinkedIn link ───────────────────────────────────── */
+.footer-linkedin {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--text-muted, #64748b);
+  font-size: 0.78rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-linkedin:hover { color: #0A66C2; }
+.footer-bottom-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
