@@ -207,6 +207,130 @@ h4 { font-size: 1.25rem; font-weight: 600; font-family: var(--font-body); }
 .badge-sam    { background: rgba(59,130,246,0.12); color: #60A5FA; border: 1px solid rgba(59,130,246,0.25); }
 .badge-sdb    { background: rgba(168,85,247,0.12); color: #C084FC; border: 1px solid rgba(168,85,247,0.25); }
 .badge-secure { background: rgba(34,197,94,0.08); color: var(--green); border: 1px solid rgba(34,197,94,0.2); }
+.badge-restricted { background: rgba(239,68,68,0.12); color: #F87171; border: 1px solid rgba(239,68,68,0.25); }
+.badge-itar   { background: rgba(249,115,22,0.12); color: #FB923C; border: 1px solid rgba(249,115,22,0.25); }
+.badge-domestic { background: rgba(250,204,21,0.12); color: #FDE047; border: 1px solid rgba(250,204,21,0.25); }
+
+/* ── ITAR Warning Bar ──────────────────────────────────────── */
+.itar-warning-bar {
+  background: rgba(180,60,10,0.18);
+  border-top: 2px solid #c2410c;
+  border-bottom: 1px solid rgba(194,65,12,0.3);
+  padding: 1rem 0;
+}
+.itar-warning-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+.itar-warning-icon {
+  font-size: 1.1rem;
+  color: #fb923c;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+.itar-warning-bar p {
+  margin: 0;
+  font-size: 0.82rem;
+  color: #fdba74;
+  line-height: 1.6;
+}
+.itar-warning-bar p strong { color: #fb923c; }
+
+/* ── Restricted Systems Grid ───────────────────────────────── */
+.restricted-systems-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+.restricted-card {
+  background: var(--card-bg, var(--white));
+  border: 1px solid var(--slate-200);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  border-top: 2px solid rgba(239,68,68,0.35);
+}
+.restricted-card-full { grid-column: 1 / -1; }
+.restricted-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+.restricted-card-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin: 0 0 0.2rem;
+}
+.restricted-card-cat {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin: 0;
+}
+.restricted-card-badges {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.restricted-divider {
+  border: none;
+  border-top: 1px solid var(--slate-100);
+  margin: 0.75rem 0;
+}
+.restricted-effect-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin: 0 0 0.35rem;
+}
+.restricted-effect {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+.restricted-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.875rem;
+}
+.rtag {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  background: var(--off-white);
+  border: 1px solid var(--slate-100);
+  padding: 0.2rem 0.55rem;
+  border-radius: 3px;
+  letter-spacing: 0.04em;
+}
+
+/* ── Legal Notice Block ─────────────────────────────────────── */
+.legal-notice-block {
+  background: var(--off-white);
+  border: 1px solid var(--slate-100);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+}
+.legal-notice-block p {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+.legal-notice-block p strong { color: var(--text-secondary); }
+
+@media (max-width: 640px) {
+  .restricted-systems-grid { grid-template-columns: 1fr; }
+  .restricted-card-full { grid-column: 1; }
+}
 
 /* ── Section Headers ───────────────────────────────────────── */
 .section-header {

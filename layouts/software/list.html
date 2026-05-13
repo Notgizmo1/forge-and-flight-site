@@ -10,7 +10,7 @@
     <h1>Software that answers<br>"What else beyond the drone?"</h1>
     <p>Three product lines built on AI edge compute, Cloudflare-native infrastructure, and a CMMC-hardened codebase. Every product is NDAA §889 compliant, operates without cloud dependency, and integrates natively with the ATAK ecosystem.</p>
     <div class="badge-row">
-      <span class="badge badge-cmmc">CMMC Level 2 · SPRS 105/110</span>
+      <span class="badge badge-cmmc">CMMC Level 2 · SPRS 110/110</span>
       <span class="badge badge-ndaa">NDAA §889 Compliant</span>
       <span class="badge badge-secure">CI Green · All Repos</span>
     </div>
@@ -28,7 +28,7 @@
           <p>Three integrated software components delivering a complete, CMMC Level 2-hardened drone command and control solution for DoD and federal customers. MAVLink-to-CoT bridge, 3D command center, and Windows ground control station — designed to federate across existing DoD networks without additional infrastructure.</p>
         </div>
         <div style="display:flex;flex-direction:column;gap:0.5rem;align-items:flex-end;flex-shrink:0;">
-          <span class="badge badge-cmmc">SPRS 105/110</span>
+          <span class="badge badge-cmmc">SPRS 110/110</span>
           <span class="badge badge-ndaa">NDAA Compliant</span>
         </div>
       </div>
@@ -137,40 +137,42 @@
   </div>
 </section>
 
-{{/*  NEMESIS  */}}
-<section class="section" id="nemesis" aria-labelledby="nemesis-heading">
+{{/*  C-UAS & RESTRICTED SYSTEMS  */}}
+<section class="section" id="cuas" aria-labelledby="cuas-heading">
   <div class="container">
     <div class="software-product">
       <div class="software-product-header">
         <div>
-          <span class="eyebrow">Counter-UAS · Autonomous Intercept · Forge & Flight Labs LLC</span>
-          <h2 id="nemesis-heading">NEMESIS Counter-UAS Platform</h2>
-          <p>Autonomous counter-UAS interceptor simulation and prototype framework. AI computer vision, autonomous formation flying, open flight controller integration, and cryptographic telemetry audit chain. NIST SP 800-171 Rev. 2 aligned. Proprietary License.</p>
+          <span class="eyebrow">Counter-UAS · Autonomous Intercept · DoD Only</span>
+          <h2 id="cuas-heading">C-UAS &amp; Restricted Systems</h2>
+          <p>Forge &amp; Flight operates a suite of autonomous counter-UAS, airborne mission direction, passive RF/direction-finding, and ISR platforms. These systems are available exclusively to verified U.S. Government customers and cleared prime contractors. Technical documentation and pricing require eligibility verification.</p>
         </div>
         <div style="display:flex;flex-direction:column;gap:0.5rem;align-items:flex-end;flex-shrink:0;">
-          <span class="badge badge-ndaa">NIST 800-171</span>
-          <span class="badge badge-cmmc">TRL 4–5</span>
+          <span class="badge badge-restricted">DoD Only</span>
+          <span class="badge badge-ndaa">ITAR Controlled</span>
         </div>
       </div>
       <div class="software-product-body">
         <div class="module-grid">
           <div class="module-card">
-            <h4>Vision & Detection</h4>
-            <p>AI real-time threat detection and tracking. Precision target segmentation for boundary identification. Camera and telemetry fusion for 3D target position computation. Cryptographic model integrity verification.</p>
+            <h4>Airborne Mission Direction</h4>
+            <p>Multi-node fleet coordination and autonomous threat response. Operates in communications-degraded and denied environments. Deployable on Group 2/3 platforms.</p>
           </div>
           <div class="module-card">
             <h4>Autonomous Intercept</h4>
-            <p>Formation flying with leader-follower configuration. Open flight controller compatibility with signed MAVLink telemetry. Full mission autonomy stack. Geofence enforcement prevents fratricide.</p>
+            <p>Fixed-wing kinetic defeat capability. VTOL launch, high-speed intercept profile. GPS-denied capable. Platform-agnostic intercept software licensable independently.</p>
           </div>
           <div class="module-card">
-            <h4>Security Architecture</h4>
-            <p>NIST SP 800-171 Rev. 2 aligned. Encrypted node communication. Cryptographic telemetry audit chain — tamper-evident logging from first contact through mission conclusion.</p>
+            <h4>Passive RF / ISR</h4>
+            <p>Passive spectrum monitoring, direction finding, and persistent ISR verification nodes. Airborne and handheld configurations. Real-time cueing to ATAK and mission director.</p>
           </div>
         </div>
-
+        <div style="margin-top:2rem;padding:1.5rem;background:var(--off-white);border-radius:var(--radius);border:1px solid var(--slate-100);">
+          <p style="margin:0;font-size:0.9rem;color:var(--text-muted);"><strong style="color:var(--text-primary);">Export Control Notice:</strong> These systems may be subject to ITAR/EAR controls. Access to specifications, documentation, and pricing is restricted to U.S. Persons as defined under 22 C.F.R. § 120.15. Distribution to foreign nationals without prior U.S. Government authorization is prohibited.</p>
+        </div>
         <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;">
-          <a href="/contact/?interest=nemesis" class="btn btn-primary">Request Product Brief</a>
-          <a href="/contact/?interest=sbir" class="btn btn-outline">SBIR Inquiry</a>
+          <a href="/government-systems/" class="btn btn-primary">View Restricted Systems</a>
+          <a href="/contact/?interest=cuas" class="btn btn-outline">Request Capability Brief</a>
         </div>
       </div>
     </div>

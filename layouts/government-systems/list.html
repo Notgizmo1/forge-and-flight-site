@@ -1,0 +1,216 @@
+{{ define "main" }}
+
+<section class="page-hero">
+  <div class="container page-hero-inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>C-UAS &amp; Restricted Systems</span>
+    </nav>
+    <span class="eyebrow">Counter-UAS · Airborne Mission Direction · Passive RF/DF · ISR · DoD Only</span>
+    <h1>Restricted Capability Lines<br>U.S. Government Access</h1>
+    <p>The following systems are available exclusively to qualified U.S. Government customers, cleared prime contractors, and allied partners operating under applicable export control regulations. Technical documentation, capability briefs, and pricing require eligibility verification prior to release.</p>
+    <div class="badge-row">
+      <span class="badge badge-restricted">DoD Only</span>
+      <span class="badge badge-ndaa">ITAR Controlled</span>
+      <span class="badge badge-sam">CAGE 18WR3 · SAM Active</span>
+    </div>
+  </div>
+</section>
+
+{{/* ITAR WARNING BANNER */}}
+<div class="itar-warning-bar" role="alert" aria-label="Export control notice">
+  <div class="container">
+    <div class="itar-warning-inner">
+      <div class="itar-warning-icon" aria-hidden="true">⚠</div>
+      <p><strong>Export Control Notice:</strong> These systems may be subject to the International Traffic in Arms Regulations (ITAR) and/or Export Administration Regulations (EAR). Access to technical specifications, documentation, and pricing is restricted to U.S. Persons as defined under 22 C.F.R. § 120.15. Distribution to foreign nationals or non-U.S. entities without prior written authorization from the U.S. Government is prohibited.</p>
+    </div>
+  </div>
+</div>
+
+{{/* SYSTEMS GRID */}}
+<section class="section" aria-labelledby="systems-heading">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Individual Capability Units</span>
+      <h2 id="systems-heading">Fielded Systems</h2>
+      <p>Five integrated capability lines available as standalone units or as a coordinated fleet. Each system is NDAA §889 compliant and designed for operation without commercial cloud dependency.</p>
+    </div>
+
+    <div class="restricted-systems-grid">
+
+      <div class="restricted-card">
+        <div class="restricted-card-header">
+          <div>
+            <h3 class="restricted-card-name">SOVEREIGN</h3>
+            <p class="restricted-card-cat">Airborne Mission Director</p>
+          </div>
+          <div class="restricted-card-badges">
+            <span class="badge badge-restricted">DoD Only</span>
+            <span class="badge badge-itar">ITAR</span>
+          </div>
+        </div>
+        <hr class="restricted-divider">
+        <p class="restricted-effect-label">Mission Effect</p>
+        <p class="restricted-effect">Coordinated multi-node fleet command and autonomous threat response. Operates in communications-degraded and denied environments. Compatible with Group 2 and Group 3 platforms.</p>
+        <div class="restricted-tags">
+          <span class="rtag">C-UAS</span>
+          <span class="rtag">Autonomous</span>
+          <span class="rtag">Multi-Node Fleet</span>
+          <span class="rtag">Group 2/3 Compatible</span>
+        </div>
+      </div>
+
+      <div class="restricted-card">
+        <div class="restricted-card-header">
+          <div>
+            <h3 class="restricted-card-name">NEMESIS</h3>
+            <p class="restricted-card-cat">C-UAS Intercept Software</p>
+          </div>
+          <div class="restricted-card-badges">
+            <span class="badge badge-restricted">DoD Only</span>
+            <span class="badge badge-itar">ITAR</span>
+          </div>
+        </div>
+        <hr class="restricted-divider">
+        <p class="restricted-effect-label">Mission Effect</p>
+        <p class="restricted-effect">Autonomous intercept decision and terminal engagement software. Platform-agnostic — licensable to any qualified interceptor platform. NIST SP 800-171 aligned. Proprietary License.</p>
+        <div class="restricted-tags">
+          <span class="rtag">C-UAS Software</span>
+          <span class="rtag">Platform-Agnostic</span>
+          <span class="rtag">Licensable</span>
+          <span class="rtag">SBIR Eligible</span>
+        </div>
+      </div>
+
+      <div class="restricted-card">
+        <div class="restricted-card-header">
+          <div>
+            <h3 class="restricted-card-name">KESTREL</h3>
+            <p class="restricted-card-cat">C-UAS Interceptor Platform</p>
+          </div>
+          <div class="restricted-card-badges">
+            <span class="badge badge-restricted">DoD Only</span>
+            <span class="badge badge-itar">ITAR</span>
+          </div>
+        </div>
+        <hr class="restricted-divider">
+        <p class="restricted-effect-label">Mission Effect</p>
+        <p class="restricted-effect">Fixed-wing kinetic defeat platform. VTOL launch, high-speed intercept profile. GPS-denied capable. Zero RF emissions in terminal phase. American-manufactured.</p>
+        <div class="restricted-tags">
+          <span class="rtag">Kinetic Defeat</span>
+          <span class="rtag">Fixed-Wing</span>
+          <span class="rtag">GPS-Denied</span>
+          <span class="rtag">VTOL Launch</span>
+        </div>
+      </div>
+
+      <div class="restricted-card">
+        <div class="restricted-card-header">
+          <div>
+            <h3 class="restricted-card-name">SCOUT</h3>
+            <p class="restricted-card-cat">ISR Verification Node</p>
+          </div>
+          <div class="restricted-card-badges">
+            <span class="badge badge-restricted">DoD Only</span>
+            <span class="badge badge-itar">ITAR</span>
+          </div>
+        </div>
+        <hr class="restricted-divider">
+        <p class="restricted-effect-label">Mission Effect</p>
+        <p class="restricted-effect">Persistent ISR and threat verification node. Multi-track EO/IR detection with real-time track reporting to SOVEREIGN mission director. ADS-B deconfliction native.</p>
+        <div class="restricted-tags">
+          <span class="rtag">ISR</span>
+          <span class="rtag">EO/IR</span>
+          <span class="rtag">SOVEREIGN Node</span>
+          <span class="rtag">Group 1 Platform</span>
+        </div>
+      </div>
+
+      <div class="restricted-card restricted-card-full">
+        <div class="restricted-card-header">
+          <div>
+            <h3 class="restricted-card-name">WRAITH</h3>
+            <p class="restricted-card-cat">Passive RF / Direction Finding</p>
+          </div>
+          <div class="restricted-card-badges">
+            <span class="badge badge-restricted">DoD Only</span>
+            <span class="badge badge-domestic">Domestic Use Only</span>
+          </div>
+        </div>
+        <hr class="restricted-divider">
+        <p class="restricted-effect-label">Mission Effect</p>
+        <p class="restricted-effect">Passive RF spectrum monitoring and direction finding. Available in airborne payload and handheld configurations. Real-time threat cueing to mission director and ATAK. No active emissions — undetectable during operation.</p>
+        <div class="restricted-tags">
+          <span class="rtag">Passive RF</span>
+          <span class="rtag">Direction Finding</span>
+          <span class="rtag">ATAK Native</span>
+          <span class="rtag">Airborne + Handheld</span>
+          <span class="rtag">Domestic Use Only</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{{/* FLEET KIT */}}
+<section class="section" style="background:var(--off-white);" aria-labelledby="fleet-heading">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Integrated Configuration</span>
+      <h2 id="fleet-heading">C-UAS Entry Fleet Kit</h2>
+      <p>All five systems delivered as a pre-integrated, coordinated solution. SOVEREIGN AMD mission director paired with KESTREL interceptors, SCOUT ISR node, WRAITH passive RF, and AegisEye HIL console. Configured for immediate operational deployment. Pricing and technical specifications available to verified DoD customers under NDA.</p>
+    </div>
+    <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;">
+      <a href="/contact/?interest=fleet-kit" class="btn btn-primary">Request Fleet Kit Brief</a>
+      <a href="/contact/?interest=sbir" class="btn btn-outline">SBIR / Program Inquiry</a>
+    </div>
+  </div>
+</section>
+
+{{/* ACCESS GATE */}}
+<section class="section section-dark" aria-labelledby="access-heading">
+  <div class="container">
+    <div class="section-header center">
+      <span class="eyebrow">Eligibility &amp; Access</span>
+      <h2 id="access-heading">Request Capability Documentation</h2>
+      <p>Technical documentation, capability briefs, and pricing are available to U.S. Government customers, cleared prime contractors, and verified DoD-affiliated organizations. Non-.mil requests require eligibility verification and NDA execution prior to documentation release.</p>
+    </div>
+
+    <div class="grid-4" style="gap:1.5rem;margin-bottom:2.5rem;">
+      <div class="stat-card-dark">
+        <p class="stat-label">Preferred Contact</p>
+        <p class="stat-val">.mil email</p>
+      </div>
+      <div class="stat-card-dark">
+        <p class="stat-label">Prime / Industry</p>
+        <p class="stat-val">NDA required</p>
+      </div>
+      <div class="stat-card-dark">
+        <p class="stat-label">SBIR Reference</p>
+        <p class="stat-val">CAGE 18VF2</p>
+      </div>
+      <div class="stat-card-dark">
+        <p class="stat-label">Response Time</p>
+        <p class="stat-val">1 BD (.mil) · 3 BD (other)</p>
+      </div>
+    </div>
+
+    <div style="text-align:center;display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;">
+      <a href="/contact/?interest=restricted-systems" class="btn btn-primary btn-lg">Request Capability Brief</a>
+      <a href="/contact/?interest=sbir" class="btn btn-outline-white btn-lg">SBIR / Program Inquiry</a>
+    </div>
+  </div>
+</section>
+
+{{/* LEGAL NOTICE */}}
+<section class="section-sm">
+  <div class="container">
+    <div class="legal-notice-block">
+      <p><strong>Note to procurement officers and program managers:</strong> These systems are managed under Forge &amp; Flight Holdings, Inc. (CAGE 18WR3) and Forge &amp; Flight Labs LLC (CAGE 18VF2), both registered on SAM.gov with active status. ITAR/EAR classification review is in progress. All sales, teaming arrangements, and technology transfers are subject to applicable export control laws and require review by qualified export counsel. This page does not constitute an offer to transfer controlled technology to any person or entity.</p>
+    </div>
+  </div>
+</section>
+
+{{ end }}
