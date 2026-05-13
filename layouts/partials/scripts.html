@@ -1,1 +1,3 @@
 <script src="/js/main.js" defer></script>
+<!-- FFH First-Party Analytics — no cookies, no PII, respects DNT -->
+<script>(function(){if(navigator.doNotTrack==='1')return;var h=window.location.hostname;var s=h.indexOf('labs')>-1?'labs':h.indexOf('academy')>-1?'academy':'holdings';var p=JSON.stringify({site:s,url:window.location.href,referrer:document.referrer||'',title:document.title||''});if(navigator.sendBeacon){navigator.sendBeacon('https://analytics.forgeandflight.com/collect',p);}else{fetch('https://analytics.forgeandflight.com/collect',{method:'POST',body:p,headers:{'Content-Type':'application/json'},keepalive:true}).catch(function(){});}})();</script>
