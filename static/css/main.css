@@ -1292,6 +1292,57 @@ article p:last-child { margin-bottom: 0; }
 .quad-item h3 { color: var(--navy) !important; }
 .quad-item p { color: var(--text-muted); }
 
+/* ── Stat card dark (used on restricted systems page) ───────── */
+.stat-card-dark {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+}
+.stat-card-dark .stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--slate-500);
+  margin: 0 0 0.3rem;
+}
+.stat-card-dark .stat-val {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--slate-300);
+  margin: 0;
+}
+
+/* ── Spec tables — scrollable at all mobile widths ──────────── */
+@media (max-width: 768px) {
+  .spec-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+}
+
+/* ── Software product — mobile layout ───────────────────────── */
+@media (max-width: 640px) {
+  .software-product-header {
+    grid-template-columns: 1fr;
+  }
+  .software-product-header > div:last-child {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+  .software-product-body { padding: 1.5rem; }
+}
+
+/* ── Org chart (divisions) — stack on mobile ─────────────────── */
+@media (max-width: 768px) {
+  .org-level {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .org-node { min-width: 0; width: 100%; max-width: 320px; }
+}
+
 /* ── 480px — Small phones ──────────────────────────────────── */
 @media (max-width: 480px) {
   h1 { font-size: clamp(2rem, 10vw, 2.8rem); }
@@ -1322,4 +1373,11 @@ article p:last-child { margin-bottom: 0; }
 
   /* Footer nav columns single on very small */
   .footer-top { grid-template-columns: 1fr !important; gap: 1.5rem; }
+
+  /* Software product body tighter on very small phones */
+  .software-product-body { padding: 1.25rem; }
+
+  /* Restricted systems card header stacks on very small */
+  .restricted-card-header { flex-direction: column; gap: 0.75rem; }
+  .restricted-card-badges { flex-direction: row; align-items: flex-start; }
 }
