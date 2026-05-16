@@ -18,12 +18,7 @@
 
       {{/*  FORM  */}}
       <div>
-        <form id="contact-form" action="https://formsubmit.co/info@forgeandflight.com" method="POST" novalidate>
-          <input type="hidden" name="_subject" value="Forge & Flight Holdings — Website Inquiry">
-          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-          <input type="hidden" name="_next" value="https://forgeandflight.com/contact/?success=true">
-          <input type="hidden" name="_captcha" value="false">
-
+        <form id="contact-form" novalidate>
           <div class="form-group">
             <label class="form-label" for="inquiry-type">Inquiry Type <span style="color:var(--orange)">*</span></label>
             <select class="form-control" id="inquiry-type" name="inquiry_type" required>
@@ -156,6 +151,11 @@
   var form = document.getElementById('contact-form');
   if (!form) return;
 
+  // Success state handling via query param (from redirect after native fallback)
+  if (window.location.search.includes('success=true')) {
+    form.innerHTML = '<div style="text-align:center;padding:2rem;"><p style="font-size:1.1rem;font-weight:600;color:var(--navy);margin-bottom:0.5rem;">Inquiry Received</p><p style="color:var(--text-muted);">We respond within one business day.</p></div>';
+  }
+
   form.addEventListener('submit', async function (e) {
     e.preventDefault();
     var btn = form.querySelector('button[type="submit"]');
@@ -165,43 +165,36 @@
 
     var fd = new FormData(form);
 
-    // ── CRM capture — fire and forget, never blocks email delivery ──
     try {
-      fetch('https://forge-flight-crm.mort82.workers.dev/public/lead', {
+      var res = await fetch('https://forge-flight-crm.mort82.workers.dev/public/lead', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          org_name:     (fd.get('organization') || '').toString(),
+          org_name:     (fd.get('organization') || '').toString().trim(),
           contact_name: ((fd.get('first_name') || '') + ' ' + (fd.get('last_name') || '')).toString().trim(),
-          email:        (fd.get('email') || '').toString(),
+          email:        (fd.get('email') || '').toString().trim(),
           phone:        fd.get('phone') ? fd.get('phone').toString() : undefined,
           interest:     (fd.get('inquiry_type') || 'other').toString(),
           message:      fd.get('message') ? fd.get('message').toString() : undefined,
           source_page:  window.location.href,
         }),
-      }).catch(function () {});
-    } catch (_) {}
-
-    // ── Email delivery via formsubmit.co AJAX — preserves existing flow ──
-    try {
-      var res = await fetch('https://formsubmit.co/ajax/info@forgeandflight.com', {
-        method: 'POST',
-        headers: { 'Accept': 'application/json' },
-        body: fd,
       });
       var data = await res.json();
-      if (data.success === 'true' || data.success === true || res.ok) {
-        window.location.href = '/contact/?success=true';
+      if (data.success || data.received) {
+        form.innerHTML = '<div style="text-align:center;padding:2rem;"><p style="font-size:1.1rem;font-weight:600;color:var(--navy);margin-bottom:0.5rem;">Inquiry Received</p><p style="color:var(--text-muted);">We respond within one business day. Contracting matters call (347) 678-7690.</p></div>';
+        window.scrollTo({ top: form.offsetTop - 80, behavior: 'smooth' });
         return;
       }
     } catch (_) {}
 
-    // Fallback: native submit so email still goes out even if AJAX fails
+    // If CRM call fails, show a human fallback
     btn.disabled = false;
     btn.textContent = origText;
-    form.action = 'https://formsubmit.co/info@forgeandflight.com';
-    form.method = 'POST';
-    form.submit();
+    var errMsg = form.querySelector('#crm-error') || document.createElement('p');
+    errMsg.id = 'crm-error';
+    errMsg.style.cssText = 'color:#c0392b;font-size:0.85rem;margin-top:0.75rem;text-align:center;';
+    errMsg.textContent = 'Submission failed — please email info@forgeandflight.com directly.';
+    if (!form.querySelector('#crm-error')) form.appendChild(errMsg);
   });
 })();
 </script>
