@@ -2074,6 +2074,87 @@
   </div>
 </section>
 
+<!-- ── University & Research Partnerships ───────────────────── -->
+<section class="section" style="border-top: 1px solid var(--slate-100);">
+  <div class="container">
+
+    <div class="section-header">
+      <span class="eyebrow">Academic Partnerships</span>
+      <h2>University &amp; Research Partnerships</h2>
+      <p>Forge &amp; Flight Holdings actively partners with universities for internship placement, applied research, and STTR teaming. We are a veteran-founded defense technology company building NDAA-compliant unmanned aircraft systems in Fayetteville, NC — directly adjacent to Fort Bragg and the USASOC ecosystem. Students and faculty work on real platforms, real software, and real government programs.</p>
+    </div>
+
+    <div class="partnership-grid">
+
+      <div class="partnership-card">
+        <div class="partnership-icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </div>
+        <h3>Internship Placement Agreements</h3>
+        <p class="partnership-desc">We maintain formal placement relationships with university career centers and engineering departments. Agreements cover internship terms, student eligibility, and on-site learning objectives. We post open positions on partner job boards and give partner-school students priority review.</p>
+        <ul class="partnership-list">
+          <li>Summer and semester internship tracks</li>
+          <li>Engineering, software, marketing, and Academy instruction roles</li>
+          <li>All paid positions — no academic credit requirements</li>
+          <li>Students work on flight-ready platforms used by operational DoD customers</li>
+          <li>Security clearance sponsorship pathway for high-performing interns</li>
+        </ul>
+      </div>
+
+      <div class="partnership-card">
+        <div class="partnership-icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+          </svg>
+        </div>
+        <h3>STTR Research Teaming</h3>
+        <p class="partnership-desc">Forge &amp; Flight Labs LLC submits to DoD SBIR/STTR programs through DSIP. STTR topics require a formal university research partner. We are actively seeking faculty collaborators in areas aligned with our platform and software portfolio.</p>
+        <ul class="partnership-list">
+          <li>Autonomous systems and AI-edge compute for Group 2/3 UAS</li>
+          <li>RF spectrum awareness, electronic warfare, and multi-domain operations</li>
+          <li>Composite airframe structures and additive manufacturing for UAS sustainment</li>
+          <li>Computer vision and target detection pipelines on embedded hardware</li>
+          <li>Counter-UAS detection and engagement algorithms</li>
+        </ul>
+        <p class="partnership-note">STTR teaming agreements address IP ownership, indirect cost rates, and publication rights prior to any proposal submission. Foreground IP developed under STTR programs is retained by Forge &amp; Flight Labs LLC per standard DoD STTR terms.</p>
+      </div>
+
+      <div class="partnership-card">
+        <div class="partnership-icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+          </svg>
+        </div>
+        <h3>Academy Curriculum Partnerships</h3>
+        <p class="partnership-desc">Forge &amp; Flight Academy delivers professional UAS certification and advanced operator training to DoD, federal, and commercial cohorts. We welcome discussions with aviation programs, ROTC units, and workforce development offices on curriculum alignment, course delivery, and student certification pathways.</p>
+        <ul class="partnership-list">
+          <li>FAA Part 107 ground school and certification support</li>
+          <li>AI-edge computing, autonomy, and advanced UAS operations courses</li>
+          <li>RF fundamentals, electronic warfare, and spectrum awareness</li>
+          <li>Fixed-wing UAS integration and field sustainment (with student-retained aircraft)</li>
+          <li>FPV master trainer certification — 24-month post-course support included</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="partnership-cta">
+      <div class="partnership-cta-inner">
+        <div>
+          <p class="partnership-cta-label">Career Centers &amp; Research Offices</p>
+          <h3>Ready to establish a partnership?</h3>
+          <p>Contact us to discuss internship placement agreements, STTR research teaming, or Academy curriculum arrangements. Include your institution, department, and the type of partnership you have in mind — we respond to every inquiry.</p>
+        </div>
+        <a href="mailto:partnerships@forgeandflight.com?subject=University Partnership Inquiry" class="btn btn-primary">partnerships@forgeandflight.com</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 <!-- ── General CTA ─────────────────────────────────────────── -->
 <section class="section-sm" style="background: var(--off-white); border-top: 1px solid var(--slate-100);">
   <div class="container" style="text-align: center; max-width: 700px;">
@@ -2218,6 +2299,31 @@
 .intern-note p { font-size: 0.875rem; color: var(--text-muted); line-height: 1.7; margin: 0; }
 
 .coming-soon-note { margin-top: 2.5rem; text-align: center; font-size: 0.875rem; color: var(--text-muted); font-style: italic; border-top: 1px solid var(--slate-100); padding-top: 1.5rem; }
+
+/* ── University Partnership Section ───────────────────────── */
+.partnership-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 3rem; }
+@media (max-width: 1100px) { .partnership-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px)  { .partnership-grid { grid-template-columns: 1fr; } }
+
+.partnership-card { background: var(--white); border: 1px solid var(--slate-100); border-radius: var(--radius); padding: 2rem; display: flex; flex-direction: column; gap: 0.75rem; transition: border-color 0.2s var(--ease-out), box-shadow 0.2s var(--ease-out); }
+.partnership-card:hover { border-color: rgba(0,87,168,0.4); box-shadow: 0 4px 24px rgba(13,27,42,0.06); }
+
+.partnership-icon { width: 3rem; height: 3rem; background: var(--accent-dim); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; color: var(--accent); flex-shrink: 0; }
+
+.partnership-card h3 { font-size: 1.15rem; color: var(--navy); margin: 0; line-height: 1.3; }
+.partnership-desc { font-size: 0.875rem; color: var(--text-muted); line-height: 1.65; margin: 0; }
+.partnership-note { font-size: 0.8rem; color: var(--slate-500); line-height: 1.6; font-style: italic; padding: 0.75rem 1rem; background: var(--off-white); border-radius: var(--radius-sm); border: 1px solid var(--slate-100); margin-top: auto; }
+
+.partnership-list { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; margin: 0; padding: 0; }
+.partnership-list li { font-size: 0.85rem; color: var(--text-muted); padding-left: 1.1rem; position: relative; line-height: 1.5; }
+.partnership-list li::before { content: "›"; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+
+.partnership-cta { background: var(--navy); border-radius: var(--radius); padding: 2.5rem 3rem; }
+.partnership-cta-inner { display: flex; align-items: center; justify-content: space-between; gap: 2.5rem; }
+@media (max-width: 768px) { .partnership-cta-inner { flex-direction: column; align-items: flex-start; } .partnership-cta-inner .btn { width: 100%; justify-content: center; } .partnership-cta { padding: 2rem 1.5rem; } }
+.partnership-cta-label { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--slate-300); margin-bottom: 0.5rem; }
+.partnership-cta h3 { font-size: 1.35rem; color: var(--white); margin: 0 0 0.75rem; }
+.partnership-cta p { font-size: 0.9rem; color: var(--slate-300); line-height: 1.65; margin: 0; max-width: 580px; }
 
 /* ── Why List ──────────────────────────────────────────────── */
 .why-list { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; margin-top: 0.75rem; }
