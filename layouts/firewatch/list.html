@@ -5,8 +5,8 @@
 <section class="page-hero">
   <div class="container page-hero-inner">
     <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="/">Home</a><span class="breadcrumb-sep">›</span>
-      <a href="/solutions/">Solutions</a><span class="breadcrumb-sep">›</span>
+      <a href="/">Home</a><span class="breadcrumb-sep">&#8250;</span>
+      <a href="/solutions/">Solutions</a><span class="breadcrumb-sep">&#8250;</span>
       <span>{{ $sol | title }}</span>
     </nav>
     <span class="eyebrow">{{ .Params.market }}</span>
@@ -14,7 +14,7 @@
     <p>{{ .Description }}</p>
     <div class="badge-row">
       <span class="badge">{{ .Params.platform }}</span>
-      <span class="badge badge-sam">NDAA §889 Compliant</span>
+      <span class="badge badge-sam">NDAA &#167;889 Compliant</span>
       <span class="badge badge-cmmc">{{ .Params.status }}</span>
     </div>
   </div>
@@ -30,14 +30,14 @@
           <h2>Detect it before it spreads.</h2>
         </div>
         <p style="color:var(--text-muted);">FireWatch runs AI inference on thermal and EO sensor data in real time, detecting fire, smoke, and hotspots with sub-500 millisecond detection-to-alert latency. The moment a detection is confirmed, the gimbal locks on the target and a georeferenced alert fires to operators and incident command.</p>
-        <p style="color:var(--text-muted);margin-top:1rem;">Fire perimeter GeoJSON is generated and updated continuously as the aircraft orbits — giving incident commanders real-time mapping of fire extent and spread direction, delivered directly to AegisEye, ATAK, or any GeoJSON-compatible incident management platform.</p>
+        <p style="color:var(--text-muted);margin-top:1rem;">Fire perimeter GeoJSON is generated and updated continuously as the aircraft orbits &#8212; giving incident commanders real-time mapping of fire extent and spread direction, delivered directly to AegisEye, ATAK, or any GeoJSON-compatible incident management platform.</p>
         <p style="color:var(--text-muted);margin-top:1rem;">Available on Aether-10 (Group 2, up to 5-hour endurance) and Vanguard-14 (Group 2/3, up to 12-hour endurance) with thermal and EO sensor payload configurations.</p>
         {{ else if eq $sol "floodwatch" }}
         <div class="section-header">
           <span class="eyebrow">Flood &amp; Disaster Response</span>
           <h2>Real-time intelligence when every minute matters.</h2>
         </div>
-        <p style="color:var(--text-muted);">FloodWatch provides aerial disaster response intelligence for flood events, infrastructure failures, and mass casualty incidents. Seven AI detection classes cover the full disaster response triage picture — from people in the water to structural damage to vehicles and debris.</p>
+        <p style="color:var(--text-muted);">FloodWatch provides aerial disaster response intelligence for flood events, infrastructure failures, and mass casualty incidents. Seven AI detection classes cover the full disaster response triage picture &#8212; from people in the water to structural damage to vehicles and debris.</p>
         <p style="color:var(--text-muted);margin-top:1rem;">Flood extent maps are generated in GeoJSON and updated in real time. Unrescued survivor detections automatically escalate to CRITICAL priority, triggering immediate alert dispatch to incident command. ICS triage codes are assigned automatically by detection class.</p>
         <p style="color:var(--text-muted);margin-top:1rem;">Available on Aether-10 (Group 2) with multi-sensor payload. Integrates natively with AegisEye GCS and ATAK for government-adjacent response operations.</p>
         {{ else if eq $sol "overwatch" }}
@@ -46,7 +46,7 @@
           <h2>Find them faster.</h2>
         </div>
         <p style="color:var(--text-muted);">OverWatch provides autonomous aerial SAR detection for law enforcement, fire, and search and rescue teams. AI detection runs across systematic search patterns day and night, using thermal and EO fusion to detect people, vehicles, and wreckage in degraded visibility conditions.</p>
-        <p style="color:var(--text-muted);margin-top:1rem;">Cross-pass re-identification prevents duplicate detection counts across multiple search passes. Every confirmed detection delivers a georeferenced GPS coordinate accurate to ±10 meters — transmitted directly to ground teams via AegisEye, ATAK, or SMS alert.</p>
+        <p style="color:var(--text-muted);margin-top:1rem;">Cross-pass re-identification prevents duplicate detection counts across multiple search passes. Every confirmed detection delivers a georeferenced GPS coordinate accurate to &#177;10 meters &#8212; transmitted directly to ground teams via AegisEye, ATAK, or SMS alert.</p>
         <p style="color:var(--text-muted);margin-top:1rem;">Available on Vanguard-14 (Group 2/3, up to 12-hour endurance) for extended operations and Aether-10 (Group 2) for shorter-duration missions.</p>
         {{ end }}
       </div>
@@ -57,31 +57,31 @@
           <table class="spec-table">
             <tbody>
               {{ if eq $sol "firewatch" }}
-              <tr><td>Detection classes</td><td>Fire · Smoke · Hotspot</td></tr>
+              <tr><td>Detection classes</td><td>Fire &#183; Smoke &#183; Hotspot</td></tr>
               <tr><td>Detection latency</td><td>&lt;500ms detection-to-alert</td></tr>
               <tr><td>Sensor</td><td>Thermal + EO fusion</td></tr>
               <tr><td>Gimbal track</td><td>Auto-lock on confirmed fire</td></tr>
               <tr><td>Mapping output</td><td>Real-time fire perimeter GeoJSON</td></tr>
-              <tr><td>Platform</td><td>Aether-10 · Vanguard-14</td></tr>
+              <tr><td>Platform</td><td>Aether-10 &#183; Vanguard-14</td></tr>
               <tr><td>Endurance</td><td>Up to 12 hrs (Vanguard-14)</td></tr>
               {{ else if eq $sol "floodwatch" }}
-              <tr><td>Detection classes</td><td>7 classes · ICS triage coded</td></tr>
+              <tr><td>Detection classes</td><td>7 classes &#183; ICS triage coded</td></tr>
               <tr><td>Survivor priority</td><td>Auto-escalation to CRITICAL</td></tr>
               <tr><td>Mapping output</td><td>Real-time flood extent GeoJSON</td></tr>
-              <tr><td>Sensor</td><td>EO · thermal fusion (night ops)</td></tr>
+              <tr><td>Sensor</td><td>EO &#183; thermal fusion (night ops)</td></tr>
               <tr><td>Platform</td><td>Aether-10 (Group 2)</td></tr>
               <tr><td>Endurance</td><td>Up to 5 hrs (Aether-10)</td></tr>
               {{ else if eq $sol "overwatch" }}
-              <tr><td>Detection targets</td><td>Person · vehicle · wreckage · signal</td></tr>
-              <tr><td>GPS accuracy</td><td>±10 meters georeferenced</td></tr>
+              <tr><td>Detection targets</td><td>Person &#183; vehicle &#183; wreckage &#183; signal</td></tr>
+              <tr><td>GPS accuracy</td><td>&#177;10 meters georeferenced</td></tr>
               <tr><td>Re-identification</td><td>Cross-pass deduplication</td></tr>
               <tr><td>Night capability</td><td>Thermal + EO fusion</td></tr>
-              <tr><td>Platform</td><td>Vanguard-14 · Aether-10</td></tr>
+              <tr><td>Platform</td><td>Vanguard-14 &#183; Aether-10</td></tr>
               <tr><td>Endurance</td><td>Up to 12 hrs (Vanguard-14)</td></tr>
               {{ end }}
-              <tr><td>Integration</td><td>AegisEye · ATAK · MQTT · SMS</td></tr>
-              <tr><td>NDAA status</td><td>§889 compliant · all components</td></tr>
-              <tr><td>Cloud dependency</td><td>None · fully on-device AI</td></tr>
+              <tr><td>Integration</td><td>AegisEye &#183; ATAK &#183; MQTT &#183; SMS</td></tr>
+              <tr><td>NDAA status</td><td>&#167;889 compliant &#183; all components</td></tr>
+              <tr><td>Cloud dependency</td><td>None &#183; fully on-device AI</td></tr>
             </tbody>
           </table>
           <a href="/contact/?interest={{ $sol }}" class="btn btn-primary" style="width:100%;text-align:center;display:block;margin-top:1.5rem;">Request a Capability Brief</a>
@@ -94,38 +94,51 @@
 <section class="section-sm section-dark">
   <div class="container">
     <div class="section-header center">
-      {{ if eq $sol "firewatch" }}<h2>Built for the agencies on the front line of fire.</h2>
-      {{ else if eq $sol "floodwatch" }}<h2>Built for the first responders who go in when others can&#39;t.</h2>
-      {{ else if eq $sol "overwatch" }}<h2>Built for the teams searching when time runs out.</h2>
+      {{ if eq $sol "firewatch" }}
+      <h2>Built for the agencies on the front line of fire.</h2>
+      {{ else if eq $sol "floodwatch" }}
+      <h2>Built for the first responders who go in when others can&#39;t.</h2>
+      {{ else if eq $sol "overwatch" }}
+      <h2>Built for the teams searching when time runs out.</h2>
       {{ end }}
     </div>
     <div class="grid-4" style="gap:1.5rem;">
       {{ if eq $sol "firewatch" }}
-      {{ range slice
-        (dict "label" "Fire Agencies" "desc" "State and local fire agencies requiring early aerial detection and real-time fire perimeter mapping.")
-        (dict "label" "State Forestry" "desc" "Forestry services managing large wildland areas where ground-level detection is too slow.")
-        (dict "label" "Utilities" "desc" "Electric utilities and pipeline operators managing fire risk across remote right-of-way corridors.")
-        (dict "label" "Private Land & Insurance" "desc" "Private land managers and insurance carriers requiring proactive fire monitoring for high-value assets.")
-      }}
+        {{ range slice
+          (dict "label" "Fire Agencies" "desc" "State and local fire agencies requiring early aerial detection and real-time fire perimeter mapping.")
+          (dict "label" "State Forestry" "desc" "Forestry services managing large wildland areas where ground-level detection is too slow.")
+          (dict "label" "Utilities" "desc" "Electric utilities and pipeline operators managing fire risk across remote right-of-way corridors.")
+          (dict "label" "Private Land & Insurance" "desc" "Private land managers and insurance carriers requiring proactive fire monitoring for high-value assets.")
+        }}
+        <div style="background:var(--navy-mid);border:1px solid var(--navy-border);border-radius:var(--radius);padding:1.5rem;">
+          <h4 style="color:var(--white);font-size:1rem;margin-bottom:0.5rem;">{{ .label }}</h4>
+          <p style="font-size:0.875rem;color:var(--slate-300);">{{ .desc }}</p>
+        </div>
+        {{ end }}
       {{ else if eq $sol "floodwatch" }}
-      {{ range slice
-        (dict "label" "Emergency Management" "desc" "County and state emergency management agencies coordinating flood response in real time.")
-        (dict "label" "Municipalities" "desc" "City and county governments managing flood events, damage assessment, and evacuation coordination.")
-        (dict "label" "Federal Agencies" "desc" "FEMA, USACE, and HHS field teams requiring aerial intelligence for disaster response prioritization.")
-        (dict "label" "NGOs & Relief Organizations" "desc" "American Red Cross, Team Rubicon, and relief organizations conducting survivor search and needs assessment.")
-      }}
+        {{ range slice
+          (dict "label" "Emergency Management" "desc" "County and state emergency management agencies coordinating flood response in real time.")
+          (dict "label" "Municipalities" "desc" "City and county governments managing flood events, damage assessment, and evacuation coordination.")
+          (dict "label" "Federal Agencies" "desc" "FEMA, USACE, and HHS field teams requiring aerial intelligence for disaster response prioritization.")
+          (dict "label" "NGOs & Relief Organizations" "desc" "American Red Cross, Team Rubicon, and relief organizations conducting survivor search and needs assessment.")
+        }}
+        <div style="background:var(--navy-mid);border:1px solid var(--navy-border);border-radius:var(--radius);padding:1.5rem;">
+          <h4 style="color:var(--white);font-size:1rem;margin-bottom:0.5rem;">{{ .label }}</h4>
+          <p style="font-size:0.875rem;color:var(--slate-300);">{{ .desc }}</p>
+        </div>
+        {{ end }}
       {{ else if eq $sol "overwatch" }}
-      {{ range slice
-        (dict "label" "Law Enforcement" "desc" "Sheriff offices, state police, and police departments conducting missing person searches and fugitive tracking.")
-        (dict "label" "Fire Departments" "desc" "Fire departments supporting SAR in wildland, structural collapse, and water rescue environments.")
-        (dict "label" "SAR Teams" "desc" "Volunteer and professional SAR organizations conducting systematic ground and aerial search operations.")
-        (dict "label" "Emergency Management" "desc" "Incident commanders requiring real-time detection data during mass casualty and large-scale search events.")
-      }}
-      {{ end }}
-      <div style="background:var(--navy-mid);border:1px solid var(--navy-border);border-radius:var(--radius);padding:1.5rem;">
-        <h4 style="color:var(--white);font-size:1rem;margin-bottom:0.5rem;">{{ .label }}</h4>
-        <p style="font-size:0.875rem;color:var(--slate-300);">{{ .desc }}</p>
-      </div>
+        {{ range slice
+          (dict "label" "Law Enforcement" "desc" "Sheriff offices, state police, and police departments conducting missing person searches and fugitive tracking.")
+          (dict "label" "Fire Departments" "desc" "Fire departments supporting SAR in wildland, structural collapse, and water rescue environments.")
+          (dict "label" "SAR Teams" "desc" "Volunteer and professional SAR organizations conducting systematic ground and aerial search operations.")
+          (dict "label" "Emergency Management" "desc" "Incident commanders requiring real-time detection data during mass casualty and large-scale search events.")
+        }}
+        <div style="background:var(--navy-mid);border:1px solid var(--navy-border);border-radius:var(--radius);padding:1.5rem;">
+          <h4 style="color:var(--white);font-size:1rem;margin-bottom:0.5rem;">{{ .label }}</h4>
+          <p style="font-size:0.875rem;color:var(--slate-300);">{{ .desc }}</p>
+        </div>
+        {{ end }}
       {{ end }}
     </div>
   </div>
