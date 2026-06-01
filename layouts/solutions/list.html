@@ -1,5 +1,7 @@
 {{ define "main" }}
-<!-- DEBUG sol={{ .Params.solution }} type={{ .Type }} kind={{ .Kind }} section={{ .Section }} relPermalink={{ .RelPermalink }} -->
+{{ if .Content }}
+{{ .Content }}
+{{ else }}
 
 <section class="page-hero">
   <div class="container page-hero-inner">
@@ -47,7 +49,7 @@
         <div><p class="service-number">04</p><p class="service-cat">Search &amp; Rescue</p></div>
         <div>
           <h3><a href="/solutions/overwatch/" style="color:inherit;">OverWatch — Aerial Search &amp; Rescue</a></h3>
-          <p>Autonomous aerial SAR detection with thermal and EO fusion. Detects people, vehicles, and wreckage across systematic search patterns day or night. Cross-pass re-identification. GPS coordinates delivered to ground teams at ±10 meter accuracy.</p>
+          <p>Autonomous aerial SAR detection with thermal and EO fusion. Detects people, vehicles, and wreckage across systematic search patterns day or night. Cross-pass re-identification. GPS coordinates at ±10 meter accuracy delivered to ground teams.</p>
           <p style="margin-top:0.75rem;font-size:0.9rem;color:var(--text-muted);">Law enforcement · Fire departments · SAR teams · Emergency management</p>
           <a href="/solutions/overwatch/" class="btn btn-outline btn-sm" style="margin-top:1rem;">OverWatch Detail →</a>
         </div>
@@ -61,7 +63,7 @@
     <div class="section-header center">
       <span class="eyebrow">Common Platform</span>
       <h2>One AI stack. Four deployable applications.</h2>
-      <p>Every solution runs on the same NDAA-compliant hardware and AI software stack — cloud-independent and ATAK-native. For customers requiring DoD-grade integration, all platforms are available under government pricing through Forge &amp; Flight Labs.</p>
+      <p>Every solution runs on the same NDAA-compliant hardware and AI software stack — cloud-independent and ATAK-native. All platforms available under government pricing through Forge &amp; Flight Labs for DoD-grade integration requirements.</p>
     </div>
     <div class="grid-4" style="gap:1.5rem;">
       {{ range slice
@@ -83,7 +85,7 @@
   <div class="container">
     <div class="cta-strip">
       <h2>Request a capability brief or site assessment.</h2>
-      <p>All solutions are contact-for-proposal. We assess your specific site, mission, or incident type before recommending hardware configuration and deployment scope.</p>
+      <p>All solutions are contact-for-proposal. We assess your site, mission, or incident type before recommending hardware configuration and deployment scope.</p>
       <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
         <a href="/contact/?interest=solutions" class="btn btn-outline-white btn-lg">Contact Solutions Team</a>
         <a href="/software/" class="btn btn-outline-white btn-lg">View Underlying Technology</a>
@@ -92,4 +94,5 @@
   </div>
 </section>
 
+{{ end }}
 {{ end }}
