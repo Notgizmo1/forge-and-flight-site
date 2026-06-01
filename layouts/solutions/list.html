@@ -1,6 +1,7 @@
 {{ define "main" }}
-{{ if .Content }}
+{{ if .Params.seo_title }}
 {{ .Content }}
+{{ .RawContent | safeHTML }}
 {{ else }}
 
 <section class="page-hero">
