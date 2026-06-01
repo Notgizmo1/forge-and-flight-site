@@ -1,8 +1,10 @@
 {{ define "main" }}
+<span data-debug-sol="{{ .Params.seo_title }}" data-kind="{{ .Kind }}" data-section="{{ .Section }}" data-relp="{{ .RelPermalink }}" style="display:none"></span>
 {{ if .Params.seo_title }}
+<span data-branch="individual" style="display:none"></span>
 {{ .Content }}
-{{ .RawContent | safeHTML }}
 {{ else }}
+<span data-branch="landing" style="display:none"></span>
 
 <section class="page-hero">
   <div class="container page-hero-inner">
@@ -10,88 +12,8 @@
       <a href="/">Home</a><span class="breadcrumb-sep">›</span>
       <span>Solutions</span>
     </nav>
-    <span class="eyebrow">Commercial AI Systems · NDAA-Compliant Hardware · Rapid Deployment</span>
     <h1>Solutions</h1>
-    <p>Four deployable AI systems built on the same technology stack that powers DoD missions — packaged for commercial customers. Hardware, software, and deployment included. No cloud dependency. No existing infrastructure required.</p>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="service-list">
-      <div class="service-item">
-        <div><p class="service-number">01</p><p class="service-cat">Perimeter Security</p></div>
-        <div>
-          <h3><a href="/solutions/bastion/" style="color:inherit;">Bastion — Autonomous Perimeter Security</a></h3>
-          <p>AI cameras detect intrusions and dispatch an autonomous drone to the exact GPS location in under 60 seconds. Your security officer sees live overhead video on a tablet, confirms the threat, and calls response. One guard. Full-site awareness. 24/7.</p>
-          <p style="margin-top:0.75rem;font-size:0.9rem;color:var(--text-muted);">Construction sites · Industrial facilities · Commercial security · Open perimeter</p>
-          <a href="/solutions/bastion/" class="btn btn-outline btn-sm" style="margin-top:1rem;">Bastion Detail →</a>
-        </div>
-      </div>
-      <div class="service-item">
-        <div><p class="service-number">02</p><p class="service-cat">Fire Detection</p></div>
-        <div>
-          <h3><a href="/solutions/firewatch/" style="color:inherit;">FireWatch — Aerial Wildfire &amp; Fire Detection</a></h3>
-          <p>AI-powered aerial fire detection with thermal and EO sensor fusion. Detects fire, smoke, and hotspots in under 500 milliseconds. Gimbal auto-locks on confirmed detections. Generates real-time fire perimeter GeoJSON for incident commanders.</p>
-          <p style="margin-top:0.75rem;font-size:0.9rem;color:var(--text-muted);">Fire agencies · State forestry · Utilities · Private land management · Insurance</p>
-          <a href="/solutions/firewatch/" class="btn btn-outline btn-sm" style="margin-top:1rem;">FireWatch Detail →</a>
-        </div>
-      </div>
-      <div class="service-item">
-        <div><p class="service-number">03</p><p class="service-cat">Disaster Response</p></div>
-        <div>
-          <h3><a href="/solutions/floodwatch/" style="color:inherit;">FloodWatch — Flood &amp; Disaster Response</a></h3>
-          <p>Real-time flood extent mapping, survivor detection, and ICS triage. Seven detection classes. Automatic priority escalation on unrescued survivor detection. GeoJSON flood maps delivered directly to incident command.</p>
-          <p style="margin-top:0.75rem;font-size:0.9rem;color:var(--text-muted);">Emergency management agencies · Municipalities · FEMA · Red Cross · Insurance</p>
-          <a href="/solutions/floodwatch/" class="btn btn-outline btn-sm" style="margin-top:1rem;">FloodWatch Detail →</a>
-        </div>
-      </div>
-      <div class="service-item">
-        <div><p class="service-number">04</p><p class="service-cat">Search &amp; Rescue</p></div>
-        <div>
-          <h3><a href="/solutions/overwatch/" style="color:inherit;">OverWatch — Aerial Search &amp; Rescue</a></h3>
-          <p>Autonomous aerial SAR detection with thermal and EO fusion. Detects people, vehicles, and wreckage across systematic search patterns day or night. Cross-pass re-identification. GPS coordinates at ±10 meter accuracy delivered to ground teams.</p>
-          <p style="margin-top:0.75rem;font-size:0.9rem;color:var(--text-muted);">Law enforcement · Fire departments · SAR teams · Emergency management</p>
-          <a href="/solutions/overwatch/" class="btn btn-outline btn-sm" style="margin-top:1rem;">OverWatch Detail →</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section-sm section-dark">
-  <div class="container">
-    <div class="section-header center">
-      <span class="eyebrow">Common Platform</span>
-      <h2>One AI stack. Four deployable applications.</h2>
-      <p>Every solution runs on the same NDAA-compliant hardware and AI software stack — cloud-independent and ATAK-native. All platforms available under government pricing through Forge &amp; Flight Labs for DoD-grade integration requirements.</p>
-    </div>
-    <div class="grid-4" style="gap:1.5rem;">
-      {{ range slice
-        (dict "label" "NDAA §889 Compliant" "desc" "All hardware verified against Section 889 prohibited components lists at procurement")
-        (dict "label" "No Cloud Dependency" "desc" "All AI inference runs on-device. No internet connection required for detection and alert")
-        (dict "label" "ATAK Native" "desc" "All solutions integrate natively with ATAK and CoT for government-adjacent customers")
-        (dict "label" "Rapid Deployment" "desc" "Standard sites operational in 30 days from contract. No existing infrastructure required")
-      }}
-      <div style="background:var(--navy-mid);border:1px solid var(--navy-border);border-radius:var(--radius);padding:1.5rem;">
-        <h4 style="color:var(--white);font-size:1rem;margin-bottom:0.5rem;">{{ .label }}</h4>
-        <p style="font-size:0.875rem;color:var(--slate-300);">{{ .desc }}</p>
-      </div>
-      {{ end }}
-    </div>
-  </div>
-</section>
-
-<section class="section-sm">
-  <div class="container">
-    <div class="cta-strip">
-      <h2>Request a capability brief or site assessment.</h2>
-      <p>All solutions are contact-for-proposal. We assess your site, mission, or incident type before recommending hardware configuration and deployment scope.</p>
-      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
-        <a href="/contact/?interest=solutions" class="btn btn-outline-white btn-lg">Contact Solutions Team</a>
-        <a href="/software/" class="btn btn-outline-white btn-lg">View Underlying Technology</a>
-      </div>
-    </div>
+    <p>Four deployable AI systems built on the same technology stack that powers DoD missions.</p>
   </div>
 </section>
 
