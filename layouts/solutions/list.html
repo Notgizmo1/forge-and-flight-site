@@ -1,19 +1,107 @@
 {{ define "main" }}
-<span data-debug-sol="{{ .Params.seo_title }}" data-kind="{{ .Kind }}" data-section="{{ .Section }}" data-relp="{{ .RelPermalink }}" style="display:none"></span>
+
 {{ if .Params.seo_title }}
-<span data-branch="individual" style="display:none"></span>
 {{ .Content }}
 {{ else }}
-<span data-branch="landing" style="display:none"></span>
 
 <section class="page-hero">
   <div class="container page-hero-inner">
     <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="/">Home</a><span class="breadcrumb-sep">›</span>
+      <a href="/">Home</a><span class="breadcrumb-sep">&#8250;</span>
       <span>Solutions</span>
     </nav>
+    <span class="eyebrow">Commercial AI Systems &#183; NDAA-Compliant Hardware &#183; Rapid Deployment</span>
     <h1>Solutions</h1>
-    <p>Four deployable AI systems built on the same technology stack that powers DoD missions.</p>
+    <p>Four deployable AI systems built on the same technology stack that powers DoD missions &#8212; packaged for commercial customers. Hardware, software, and deployment included. No cloud dependency. No existing infrastructure required.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="service-list">
+
+      <div class="service-item">
+        <div><p class="service-number">01</p><p class="service-cat">Perimeter Security</p></div>
+        <div>
+          <h3><a href="/solutions/bastion/" style="color:inherit;">Bastion &#8212; Autonomous Perimeter Security</a></h3>
+          <p>AI cameras detect intrusions and dispatch an autonomous drone to the exact GPS location in under 60 seconds. One guard. Full-site awareness. 24/7.</p>
+          <p style="margin-top:0.75rem;font-size:0.9rem;color:var(--text-muted);">Construction sites &#183; Industrial facilities &#183; Commercial security</p>
+          <a href="/solutions/bastion/" class="btn btn-outline btn-sm" style="margin-top:1rem;">Bastion Detail &#8594;</a>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div><p class="service-number">02</p><p class="service-cat">Fire Detection</p></div>
+        <div>
+          <h3><a href="/solutions/firewatch/" style="color:inherit;">FireWatch &#8212; Aerial Wildfire &amp; Fire Detection</a></h3>
+          <p>AI-powered aerial fire detection with thermal and EO sensor fusion. Sub-500ms detection-to-alert. Real-time fire perimeter GeoJSON for incident commanders.</p>
+          <p style="margin-top:0.75rem;font-size:0.9rem;color:var(--text-muted);">Fire agencies &#183; State forestry &#183; Utilities &#183; Private land &#183; Insurance</p>
+          <a href="/solutions/firewatch/" class="btn btn-outline btn-sm" style="margin-top:1rem;">FireWatch Detail &#8594;</a>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div><p class="service-number">03</p><p class="service-cat">Disaster Response</p></div>
+        <div>
+          <h3><a href="/solutions/floodwatch/" style="color:inherit;">FloodWatch &#8212; Flood &amp; Disaster Response</a></h3>
+          <p>Real-time flood extent mapping, survivor detection, and ICS triage. Seven detection classes. Automatic priority escalation on unrescued survivors.</p>
+          <p style="margin-top:0.75rem;font-size:0.9rem;color:var(--text-muted);">Emergency management &#183; Municipalities &#183; FEMA &#183; Red Cross</p>
+          <a href="/solutions/floodwatch/" class="btn btn-outline btn-sm" style="margin-top:1rem;">FloodWatch Detail &#8594;</a>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div><p class="service-number">04</p><p class="service-cat">Search &amp; Rescue</p></div>
+        <div>
+          <h3><a href="/solutions/overwatch/" style="color:inherit;">OverWatch &#8212; Aerial Search &amp; Rescue</a></h3>
+          <p>Autonomous aerial SAR detection with thermal and EO fusion. Cross-pass re-identification. GPS coordinates at &#177;10 meter accuracy delivered to ground teams.</p>
+          <p style="margin-top:0.75rem;font-size:0.9rem;color:var(--text-muted);">Law enforcement &#183; Fire departments &#183; SAR teams</p>
+          <a href="/solutions/overwatch/" class="btn btn-outline btn-sm" style="margin-top:1rem;">OverWatch Detail &#8594;</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section-sm section-dark">
+  <div class="container">
+    <div class="section-header center">
+      <span class="eyebrow">Common Platform</span>
+      <h2>One AI stack. Four deployable applications.</h2>
+      <p>Every solution runs on the same NDAA-compliant hardware and AI software stack &#8212; cloud-independent and ATAK-native.</p>
+    </div>
+    <div class="grid-4" style="gap:1.5rem;">
+      <div style="background:var(--navy-mid);border:1px solid var(--navy-border);border-radius:var(--radius);padding:1.5rem;">
+        <h4 style="color:var(--white);font-size:1rem;margin-bottom:0.5rem;">NDAA &#167;889 Compliant</h4>
+        <p style="font-size:0.875rem;color:var(--slate-300);">All hardware verified against Section 889 prohibited components lists at procurement</p>
+      </div>
+      <div style="background:var(--navy-mid);border:1px solid var(--navy-border);border-radius:var(--radius);padding:1.5rem;">
+        <h4 style="color:var(--white);font-size:1rem;margin-bottom:0.5rem;">No Cloud Dependency</h4>
+        <p style="font-size:0.875rem;color:var(--slate-300);">All AI inference runs on-device. No internet connection required for detection and alert</p>
+      </div>
+      <div style="background:var(--navy-mid);border:1px solid var(--navy-border);border-radius:var(--radius);padding:1.5rem;">
+        <h4 style="color:var(--white);font-size:1rem;margin-bottom:0.5rem;">ATAK Native</h4>
+        <p style="font-size:0.875rem;color:var(--slate-300);">All solutions integrate natively with ATAK and CoT for government-adjacent customers</p>
+      </div>
+      <div style="background:var(--navy-mid);border:1px solid var(--navy-border);border-radius:var(--radius);padding:1.5rem;">
+        <h4 style="color:var(--white);font-size:1rem;margin-bottom:0.5rem;">Rapid Deployment</h4>
+        <p style="font-size:0.875rem;color:var(--slate-300);">Standard sites operational in 30 days from contract. No existing infrastructure required</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-sm">
+  <div class="container">
+    <div class="cta-strip">
+      <h2>Request a capability brief or site assessment.</h2>
+      <p>All solutions are contact-for-proposal. We assess your site, mission, or incident type before recommending hardware and deployment scope.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href="/contact/?interest=solutions" class="btn btn-outline-white btn-lg">Contact Solutions Team</a>
+        <a href="/software/" class="btn btn-outline-white btn-lg">View Underlying Technology</a>
+      </div>
+    </div>
   </div>
 </section>
 
