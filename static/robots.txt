@@ -1,8 +1,4 @@
 User-agent: *
-Allow: /
-
-# Block admin and internal paths
-Disallow: /admin/
-Disallow: /.git/
+Disallow:
 
 Sitemap: https://forgeandflight.com/sitemap.xml
