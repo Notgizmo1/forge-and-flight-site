@@ -1,5 +1,6 @@
 ---
 title: "Forge Flex | UAS Manufacturing & Procurement Retainer | Forge & Flight Labs"
-description: "Forge Flex is a pre-funded annual retainer providing on-demand NDAA-compliant UAS component procurement, rapid prototyping, complete aircraft fabrication, and engineering services. One contract covers everything from component sourcing to flight-ready aircraft. CAGE 18VF2."
+seo_title: "Forge Flex | NDAA-Compliant Manufacturing Retainer"
+description: "Forge Flex delivers on-demand NDAA-compliant manufacturing capacity on retainer — dedicated engineering hours for component sourcing, rapid prototyping, and aircraft fabrication. DoD and commercial programs. Contact for proposal."
 keywords: "UAS manufacturing service, drone procurement service, NDAA compliant component sourcing, UAS rapid prototyping, drone fabrication service, ArduPilot PX4 integration service, drone manufacturing retainer, UAS development contract, NDAA drone components, American UAS manufacturing"
 ---
