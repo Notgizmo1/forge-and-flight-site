@@ -54,6 +54,18 @@
       <p>Active openings available for immediate application. All positions are W-2 employees of Forge &amp; Flight Holdings, Inc. Federal Services Division positions are subcontract roles contingent on contract award — applying now places you in the pipeline.</p>
     </div>
 
+
+    <!-- ── Jobs Filter Bar ──────────────────────────────────── -->
+    <div class="jobs-filter-bar" id="jobs-filter">
+      <button class="filter-tab is-active" data-jsec="all"      onclick="filterJobs(this)">All Positions</button>
+      <button class="filter-tab"           data-jsec="deers"    onclick="filterJobs(this)">DEERS/RAPIDS <span class="fpill">22</span></button>
+      <button class="filter-tab"           data-jsec="corporate" onclick="filterJobs(this)">Corporate &amp; Ops <span class="fpill">2</span></button>
+      <button class="filter-tab"           data-jsec="perry"    onclick="filterJobs(this)">Federal Services <span class="fpill">9</span></button>
+      <button class="filter-tab"           data-jsec="planned"  onclick="filterJobs(this)">Planned Roles <span class="fpill">20</span></button>
+      <button class="filter-tab"           data-jsec="intern"   onclick="filterJobs(this)">Internships <span class="fpill">4</span></button>
+    </div>
+
+    <div data-job-section="deers">
     <!-- ── DEERS/RAPIDS Contract: W91247-26-Q-A017 ── -->
     <div style="background: var(--off-white); border: 1px solid var(--slate-100); border-left: 4px solid var(--accent); border-radius: var(--radius); padding: 1.25rem 1.75rem; margin-bottom: 1.5rem; display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
       <div>
@@ -307,6 +319,14 @@
       </div>
     </div>
 
+    </div><!-- /deers -->
+
+    <div data-job-section="corporate">
+      <div class="job-group-divider">
+        <span class="eyebrow">Corporate &amp; Operations</span>
+        <span class="job-group-sub">2 positions &nbsp;·&nbsp; Direct hire &nbsp;·&nbsp; Non-contingent</span>
+      </div>
+
     <!-- ── Job: Independent Sales Representative ── -->
     <div class="job-card" id="sales-rep">
       <div class="job-card-header">
@@ -500,6 +520,14 @@
         </div>
       </div>
     </div>
+
+    </div><!-- /corporate -->
+
+    <div data-job-section="perry">
+      <div class="job-group-divider">
+        <span class="eyebrow">Federal Services Division — USAR Analytical Support</span>
+        <span class="job-group-sub">9 positions &nbsp;·&nbsp; Fort Bragg + 8 distributed sites &nbsp;·&nbsp; <em>Contingent on contract award</em></span>
+      </div>
 
     <!-- Program Lead Analyst (PLA) -->
     <div class="job-card" id="program-lead-analyst" style="margin-top:1.5rem;">
@@ -1027,536 +1055,108 @@
       </div>
     </div>
 
-    <!-- Real Property Analyst / Specialist — Fort Jackson, SC -->
-    <div class="job-card" id="rp-fort-jackson" style="margin-top:1.5rem;">
+    <!-- ── Real Property Analyst / Specialist — Distributed Locations ── -->
+    <div class="job-card" id="rp-distributed" style="margin-top:1.5rem;">
       <div class="job-card-header">
         <div class="job-card-meta">
           <div class="job-badges">
             <span class="badge badge-open">&#9679; Now Hiring</span>
             <span class="badge badge-type">W-2 · Full-Time · SCA Applies</span>
-            <span class="badge badge-location">Fort Jackson, SC · 81st Readiness Division · Secret Required</span>
+            <span class="badge badge-location">7 Distributed Locations · Secret Required</span>
           </div>
-          <h3 class="job-title">Real Property Analyst / Specialist — Fort Jackson, SC</h3>
-          <p class="job-subtitle">Federal Services Division &nbsp;·&nbsp; Forge &amp; Flight Holdings, Inc. &nbsp;·&nbsp; $55,000 – $67,000/yr</p>
+          <h3 class="job-title">Real Property Analyst / Specialist — Distributed Locations</h3>
+          <p class="job-subtitle">Federal Services Division &nbsp;·&nbsp; Forge &amp; Flight Holdings, Inc. &nbsp;·&nbsp; 7 Positions &nbsp;·&nbsp; Contingent on contract award</p>
         </div>
-        <button class="job-toggle" aria-expanded="false" aria-controls="rp-fort-jackson-detail" onclick="toggleJob(this)">
+        <button class="job-toggle" aria-expanded="false" aria-controls="rp-distributed-detail" onclick="toggleJob(this)">
           <span class="toggle-label">View Details</span>
           <svg class="toggle-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
       </div>
-      <div class="job-detail" id="rp-fort-jackson-detail" hidden>
+      <div class="job-detail" id="rp-distributed-detail" hidden>
         <div class="job-detail-inner">
+
           <div class="job-summary-row">
             <div class="job-summary-item"><span class="cred-label">Clearance</span><span class="job-summary-val">Active Secret · U.S. citizenship required</span></div>
-            <div class="job-summary-item"><span class="cred-label">Salary</span><span class="job-summary-val">$55,000 – $67,000 annually (SCA wage determination applies)</span></div>
             <div class="job-summary-item"><span class="cred-label">Experience</span><span class="job-summary-val">2+ years DoD real property management</span></div>
-            <div class="job-summary-item"><span class="cred-label">Unit</span><span class="job-summary-val">81st Readiness Division</span></div>
+            <div class="job-summary-item"><span class="cred-label">Hard Requirement</span><span class="job-summary-val">GFEBS RP roles — name all four in application</span></div>
+            <div class="job-summary-item"><span class="cred-label">Type</span><span class="job-summary-val">W-2 · SCA wage determination by location · Contingent on award</span></div>
           </div>
+
           <div class="job-section">
-            <h4>Position Summary</h4>
-            <p>Supports the USAR 81st Readiness Division at Fort Jackson, SC executing daily GFEBS real property transactions, InSITE remediation, and monthly status reporting. Operates as a single FTE embedded within local DPW Realty staff, coordinating daily with on-site government personnel and the anchor specialist at Fort Bragg. Perry's home market. USAR 81st RD primary support area. Highest volume of InSITE Phase 2 remediation. <strong>GFEBS RP system roles are the non-negotiable screening requirement — list them in your application.</strong></p>
+            <h4>Positions &amp; Locations</h4>
+            <table class="rp-location-table">
+              <thead>
+                <tr><th>Location</th><th>Unit</th><th>Salary</th><th>Status</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Fort Jackson, SC</td><td>81st Readiness Division</td><td>$55K–$67K</td><td>Open</td></tr>
+                <tr class="rp-priority"><td><strong>Fort McCoy, WI</strong></td><td>88th Readiness Division</td><td>$58K–$72K</td><td><strong>HIGHEST PRIORITY</strong></td></tr>
+                <tr><td>JB McGuire-Dix, NJ</td><td>99th Readiness Division</td><td>$72K–$90K</td><td>Open</td></tr>
+                <tr><td>Mountain View, CA</td><td>63rd Readiness Division</td><td>$85K–$108K</td><td>Open</td></tr>
+                <tr><td>Dublin, CA (Parks RFTA)</td><td>63rd Readiness Division</td><td>$80K–$105K</td><td>Open</td></tr>
+                <tr><td>Devens, MA</td><td>Devens Reserve Forces TA</td><td>$70K–$88K</td><td>Open</td></tr>
+                <tr><td>Fort Shafter, HI</td><td>9th Mission Support Command</td><td>$72K–$92K</td><td>Open · OCONUS</td></tr>
+              </tbody>
+            </table>
+            <p style="font-size:0.85rem; color:var(--text-muted); margin-top:0.75rem;">All positions operate as single FTEs embedded in local DPW Realty staff, coordinating daily with the anchor specialist at Fort Bragg. Local recruits strongly preferred. Government Travel Card, valid passport, and Real ID required prior to performance start.</p>
           </div>
+
           <div class="job-section">
             <h4>Key Responsibilities</h4>
             <ul class="job-list">
               <li>Execute daily GFEBS real property transactions within assigned Readiness Division accounts</li>
               <li>Conduct InSITE Phase 1 administrative remediation and Phase 2 on-site survey support</li>
               <li>Conduct physical inventories of real property assets per AR 405-45</li>
-              <li>Produce Monthly Status Report directly to USARC G-3/5/7 — due 5th of each month</li>
+              <li>Produce Monthly Status Report to USARC G-3/5/7 — due 5th of each month</li>
               <li>Prepare DD Form 1354 capitalization packets for all qualifying asset transactions</li>
               <li>Produce Health Check briefings for Readiness Division leadership</li>
-              <li>Coordinate daily with local DPW Realty staff and the anchor specialist at Fort Bragg</li>
-              <li>Maintain surge support availability within 5 business days for CONUS missions</li>
+              <li>Coordinate daily with local DPW Realty staff and the Fort Bragg anchor specialist</li>
             </ul>
           </div>
+
           <div class="job-section">
             <h4>Required</h4>
             <ul class="job-list">
               <li>Active Secret clearance; U.S. citizenship required</li>
               <li>2+ years DoD real property management experience</li>
-              <li>GFEBS RP system roles — Maintainer, Inventory Processor, BI Reporter, Asset Master Data — REQUIRED. List by name in application.</li>
-              <li>HQIIS proficiency</li>
+              <li><strong>GFEBS RP system roles — Maintainer, Inventory Processor, BI Reporter, Asset Master Data — REQUIRED. List all four by name in your application. Applications without this will not advance.</strong></li>
+              <li>HQIIS proficiency — inventory management and reporting</li>
               <li>AR 405-45 and InSITE remediation knowledge</li>
               <li>DD Form 1354 preparation experience</li>
-              <li>Active Government Travel Card and valid passport/Real ID required prior to performance</li>
             </ul>
           </div>
+
           <div class="job-section">
             <h4>Preferred</h4>
             <ul class="job-list">
-              <li>Experience as Army RPAO or assistant RPAO</li>
-              <li>Background at an IMCOM, USARC, or Readiness Division real property office</li>
+              <li>Experience as Army RPAO or assistant RPAO at installation or command level</li>
+              <li>Background at ACSIM, IMCOM, or USARC G-3/5/7 installation management staff</li>
               <li>TRIRIGA or advanced HQIIS reporting experience</li>
-              <li>Real property or real estate certification (RPA, CFM)</li>
+              <li>Real property certification (RPA, CFM)</li>
             </ul>
           </div>
+
           <div class="job-apply-block">
             <div>
               <p class="job-apply-label">How to Apply</p>
-              <p>Email <strong>careers@forgeandflight.com</strong> — subject line: <code>Real Property Analyst Fort Jackson SC</code></p>
-              <p style="margin-top:0.5rem; color:var(--slate-300); font-size:0.9rem;">Include resume, clearance level, specific GFEBS Real Property system roles by name, and available start date. Applications without confirmed GFEBS RP roles will not advance. Contingent on contract award.</p>
+              <p>Email <strong>careers@forgeandflight.com</strong> — subject line: <code>Real Property Analyst [YOUR LOCATION]</code></p>
+              <p style="margin-top:0.5rem; color:var(--slate-300); font-size:0.9rem;">Include: your target location, resume, clearance level, and your specific GFEBS Real Property system roles by name. Applications missing GFEBS RP roles will not advance. Contingent on contract award.</p>
             </div>
-            <a href="mailto:careers@forgeandflight.com?subject=Real Property Analyst Fort Jackson SC" class="btn btn-primary btn-lg" style="white-space:nowrap;">Apply Now</a>
+            <a href="mailto:careers@forgeandflight.com?subject=Real Property Analyst" class="btn btn-primary btn-lg" style="white-space:nowrap;">Apply Now</a>
           </div>
+
         </div>
       </div>
     </div>
 
-    <!-- Real Property Analyst / Specialist — Fort McCoy, WI -->
-    <div class="job-card" id="rp-fort-mccoy" style="margin-top:1.5rem;">
-      <div class="job-card-header">
-        <div class="job-card-meta">
-          <div class="job-badges">
-            <span class="badge badge-open">&#9679; Now Hiring</span>
-            <span class="badge badge-type">W-2 · Full-Time · SCA Applies</span>
-            <span class="badge badge-location">Fort McCoy, WI · 88th Readiness Division · HIGHEST PRIORITY · Secret Required</span>
-          </div>
-          <h3 class="job-title">Real Property Analyst / Specialist — Fort McCoy, WI</h3>
-          <p class="job-subtitle">Federal Services Division &nbsp;·&nbsp; Forge &amp; Flight Holdings, Inc. &nbsp;·&nbsp; $58,000 – $72,000/yr</p>
-        </div>
-        <button class="job-toggle" aria-expanded="false" aria-controls="rp-fort-mccoy-detail" onclick="toggleJob(this)">
-          <span class="toggle-label">View Details</span>
-          <svg class="toggle-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </div>
-      <div class="job-detail" id="rp-fort-mccoy-detail" hidden>
-        <div class="job-detail-inner">
-          <div class="job-summary-row">
-            <div class="job-summary-item"><span class="cred-label">Clearance</span><span class="job-summary-val">Active Secret · U.S. citizenship required</span></div>
-            <div class="job-summary-item"><span class="cred-label">Salary</span><span class="job-summary-val">$58,000 – $72,000 annually (SCA wage determination applies)</span></div>
-            <div class="job-summary-item"><span class="cred-label">Experience</span><span class="job-summary-val">2+ years DoD real property management</span></div>
-            <div class="job-summary-item"><span class="cred-label">Unit</span><span class="job-summary-val">88th Readiness Division</span></div>
-          </div>
-          <div class="job-section">
-            <h4>Position Summary</h4>
-            <p>Supports the USAR 88th Readiness Division at Fort McCoy, WI executing daily GFEBS real property transactions, InSITE remediation, and monthly status reporting. Operates as a single FTE embedded within local DPW Realty staff, coordinating daily with on-site government personnel and the anchor specialist at Fort Bragg. HIGHEST PRIORITY LOCATION — over 40% of contract high-value real property discrepancies. Local WI recruit preferred. <strong>HIGHEST PRIORITY LOCATION.</strong> <strong>GFEBS RP system roles are the non-negotiable screening requirement — list them in your application.</strong></p>
-          </div>
-          <div class="job-section">
-            <h4>Key Responsibilities</h4>
-            <ul class="job-list">
-              <li>Execute daily GFEBS real property transactions within assigned Readiness Division accounts</li>
-              <li>Conduct InSITE Phase 1 administrative remediation and Phase 2 on-site survey support</li>
-              <li>Conduct physical inventories of real property assets per AR 405-45</li>
-              <li>Produce Monthly Status Report directly to USARC G-3/5/7 — due 5th of each month</li>
-              <li>Prepare DD Form 1354 capitalization packets for all qualifying asset transactions</li>
-              <li>Produce Health Check briefings for Readiness Division leadership</li>
-              <li>Coordinate daily with local DPW Realty staff and the anchor specialist at Fort Bragg</li>
-              <li>Maintain surge support availability within 5 business days for CONUS missions</li>
-            </ul>
-          </div>
-          <div class="job-section">
-            <h4>Required</h4>
-            <ul class="job-list">
-              <li>Active Secret clearance; U.S. citizenship required</li>
-              <li>2+ years DoD real property management experience</li>
-              <li>GFEBS RP system roles — Maintainer, Inventory Processor, BI Reporter, Asset Master Data — REQUIRED. List by name in application.</li>
-              <li>HQIIS proficiency</li>
-              <li>AR 405-45 and InSITE remediation knowledge</li>
-              <li>DD Form 1354 preparation experience</li>
-              <li>Active Government Travel Card and valid passport/Real ID required prior to performance</li>
-            </ul>
-          </div>
-          <div class="job-section">
-            <h4>Preferred</h4>
-            <ul class="job-list">
-              <li>Experience as Army RPAO or assistant RPAO</li>
-              <li>Background at an IMCOM, USARC, or Readiness Division real property office</li>
-              <li>TRIRIGA or advanced HQIIS reporting experience</li>
-              <li>Real property or real estate certification (RPA, CFM)</li>
-            </ul>
-          </div>
-          <div class="job-apply-block">
-            <div>
-              <p class="job-apply-label">How to Apply</p>
-              <p>Email <strong>careers@forgeandflight.com</strong> — subject line: <code>Real Property Analyst Fort McCoy WI</code></p>
-              <p style="margin-top:0.5rem; color:var(--slate-300); font-size:0.9rem;">Include resume, clearance level, specific GFEBS Real Property system roles by name, and available start date. Applications without confirmed GFEBS RP roles will not advance. Contingent on contract award.</p>
-            </div>
-            <a href="mailto:careers@forgeandflight.com?subject=Real Property Analyst Fort McCoy WI" class="btn btn-primary btn-lg" style="white-space:nowrap;">Apply Now</a>
-          </div>
-        </div>
-      </div>
-    </div>
+    </div><!-- /perry -->
 
-    <!-- Real Property Analyst / Specialist — JB McGuire-Dix-Lakehurst, NJ -->
-    <div class="job-card" id="rp-mcguire" style="margin-top:1.5rem;">
-      <div class="job-card-header">
-        <div class="job-card-meta">
-          <div class="job-badges">
-            <span class="badge badge-open">&#9679; Now Hiring</span>
-            <span class="badge badge-type">W-2 · Full-Time · SCA Applies</span>
-            <span class="badge badge-location">McGuire-Dix-Lakehurst, NJ · 99th Readiness Division · Secret Required</span>
-          </div>
-          <h3 class="job-title">Real Property Analyst / Specialist — JB McGuire-Dix-Lakehurst, NJ</h3>
-          <p class="job-subtitle">Federal Services Division &nbsp;·&nbsp; Forge &amp; Flight Holdings, Inc. &nbsp;·&nbsp; $72,000 – $90,000/yr</p>
-        </div>
-        <button class="job-toggle" aria-expanded="false" aria-controls="rp-mcguire-detail" onclick="toggleJob(this)">
-          <span class="toggle-label">View Details</span>
-          <svg class="toggle-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </div>
-      <div class="job-detail" id="rp-mcguire-detail" hidden>
-        <div class="job-detail-inner">
-          <div class="job-summary-row">
-            <div class="job-summary-item"><span class="cred-label">Clearance</span><span class="job-summary-val">Active Secret · U.S. citizenship required</span></div>
-            <div class="job-summary-item"><span class="cred-label">Salary</span><span class="job-summary-val">$72,000 – $90,000 annually (SCA wage determination applies)</span></div>
-            <div class="job-summary-item"><span class="cred-label">Experience</span><span class="job-summary-val">2+ years DoD real property management</span></div>
-            <div class="job-summary-item"><span class="cred-label">Unit</span><span class="job-summary-val">99th Readiness Division</span></div>
-          </div>
-          <div class="job-section">
-            <h4>Position Summary</h4>
-            <p>Supports the USAR 99th Readiness Division at JB McGuire-Dix-Lakehurst, NJ executing daily GFEBS real property transactions, InSITE remediation, and monthly status reporting. Operates as a single FTE embedded within local DPW Realty staff, coordinating daily with on-site government personnel and the anchor specialist at Fort Bragg. Tri-state labor market. High cost of living. Local NJ/PA recruit preferred. <strong>GFEBS RP system roles are the non-negotiable screening requirement — list them in your application.</strong></p>
-          </div>
-          <div class="job-section">
-            <h4>Key Responsibilities</h4>
-            <ul class="job-list">
-              <li>Execute daily GFEBS real property transactions within assigned Readiness Division accounts</li>
-              <li>Conduct InSITE Phase 1 administrative remediation and Phase 2 on-site survey support</li>
-              <li>Conduct physical inventories of real property assets per AR 405-45</li>
-              <li>Produce Monthly Status Report directly to USARC G-3/5/7 — due 5th of each month</li>
-              <li>Prepare DD Form 1354 capitalization packets for all qualifying asset transactions</li>
-              <li>Produce Health Check briefings for Readiness Division leadership</li>
-              <li>Coordinate daily with local DPW Realty staff and the anchor specialist at Fort Bragg</li>
-              <li>Maintain surge support availability within 5 business days for CONUS missions</li>
-            </ul>
-          </div>
-          <div class="job-section">
-            <h4>Required</h4>
-            <ul class="job-list">
-              <li>Active Secret clearance; U.S. citizenship required</li>
-              <li>2+ years DoD real property management experience</li>
-              <li>GFEBS RP system roles — Maintainer, Inventory Processor, BI Reporter, Asset Master Data — REQUIRED. List by name in application.</li>
-              <li>HQIIS proficiency</li>
-              <li>AR 405-45 and InSITE remediation knowledge</li>
-              <li>DD Form 1354 preparation experience</li>
-              <li>Active Government Travel Card and valid passport/Real ID required prior to performance</li>
-            </ul>
-          </div>
-          <div class="job-section">
-            <h4>Preferred</h4>
-            <ul class="job-list">
-              <li>Experience as Army RPAO or assistant RPAO</li>
-              <li>Background at an IMCOM, USARC, or Readiness Division real property office</li>
-              <li>TRIRIGA or advanced HQIIS reporting experience</li>
-              <li>Real property or real estate certification (RPA, CFM)</li>
-            </ul>
-          </div>
-          <div class="job-apply-block">
-            <div>
-              <p class="job-apply-label">How to Apply</p>
-              <p>Email <strong>careers@forgeandflight.com</strong> — subject line: <code>Real Property Analyst McGuire-Dix-Lakehurst NJ</code></p>
-              <p style="margin-top:0.5rem; color:var(--slate-300); font-size:0.9rem;">Include resume, clearance level, specific GFEBS Real Property system roles by name, and available start date. Applications without confirmed GFEBS RP roles will not advance. Contingent on contract award.</p>
-            </div>
-            <a href="mailto:careers@forgeandflight.com?subject=Real Property Analyst McGuire-Dix-Lakehurst NJ" class="btn btn-primary btn-lg" style="white-space:nowrap;">Apply Now</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Real Property Analyst / Specialist — Mountain View, CA -->
-    <div class="job-card" id="rp-mountain-view" style="margin-top:1.5rem;">
-      <div class="job-card-header">
-        <div class="job-card-meta">
-          <div class="job-badges">
-            <span class="badge badge-open">&#9679; Now Hiring</span>
-            <span class="badge badge-type">W-2 · Full-Time · SCA Applies</span>
-            <span class="badge badge-location">Mountain View, CA · 63rd Readiness Division · Secret Required</span>
-          </div>
-          <h3 class="job-title">Real Property Analyst / Specialist — Mountain View, CA</h3>
-          <p class="job-subtitle">Federal Services Division &nbsp;·&nbsp; Forge &amp; Flight Holdings, Inc. &nbsp;·&nbsp; $85,000 – $108,000/yr</p>
-        </div>
-        <button class="job-toggle" aria-expanded="false" aria-controls="rp-mountain-view-detail" onclick="toggleJob(this)">
-          <span class="toggle-label">View Details</span>
-          <svg class="toggle-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </div>
-      <div class="job-detail" id="rp-mountain-view-detail" hidden>
-        <div class="job-detail-inner">
-          <div class="job-summary-row">
-            <div class="job-summary-item"><span class="cred-label">Clearance</span><span class="job-summary-val">Active Secret · U.S. citizenship required</span></div>
-            <div class="job-summary-item"><span class="cred-label">Salary</span><span class="job-summary-val">$85,000 – $108,000 annually (SCA wage determination applies)</span></div>
-            <div class="job-summary-item"><span class="cred-label">Experience</span><span class="job-summary-val">2+ years DoD real property management</span></div>
-            <div class="job-summary-item"><span class="cred-label">Unit</span><span class="job-summary-val">63rd Readiness Division</span></div>
-          </div>
-          <div class="job-section">
-            <h4>Position Summary</h4>
-            <p>Supports the USAR 63rd Readiness Division at Mountain View, CA executing daily GFEBS real property transactions, InSITE remediation, and monthly status reporting. Operates as a single FTE embedded within local DPW Realty staff, coordinating daily with on-site government personnel and the anchor specialist at Fort Bragg. Bay Area labor market. Local CA recruit required. May share coverage with Dublin CA — confirm with Perry. <strong>GFEBS RP system roles are the non-negotiable screening requirement — list them in your application.</strong></p>
-          </div>
-          <div class="job-section">
-            <h4>Key Responsibilities</h4>
-            <ul class="job-list">
-              <li>Execute daily GFEBS real property transactions within assigned Readiness Division accounts</li>
-              <li>Conduct InSITE Phase 1 administrative remediation and Phase 2 on-site survey support</li>
-              <li>Conduct physical inventories of real property assets per AR 405-45</li>
-              <li>Produce Monthly Status Report directly to USARC G-3/5/7 — due 5th of each month</li>
-              <li>Prepare DD Form 1354 capitalization packets for all qualifying asset transactions</li>
-              <li>Produce Health Check briefings for Readiness Division leadership</li>
-              <li>Coordinate daily with local DPW Realty staff and the anchor specialist at Fort Bragg</li>
-              <li>Maintain surge support availability within 5 business days for CONUS missions</li>
-            </ul>
-          </div>
-          <div class="job-section">
-            <h4>Required</h4>
-            <ul class="job-list">
-              <li>Active Secret clearance; U.S. citizenship required</li>
-              <li>2+ years DoD real property management experience</li>
-              <li>GFEBS RP system roles — Maintainer, Inventory Processor, BI Reporter, Asset Master Data — REQUIRED. List by name in application.</li>
-              <li>HQIIS proficiency</li>
-              <li>AR 405-45 and InSITE remediation knowledge</li>
-              <li>DD Form 1354 preparation experience</li>
-              <li>Active Government Travel Card and valid passport/Real ID required prior to performance</li>
-            </ul>
-          </div>
-          <div class="job-section">
-            <h4>Preferred</h4>
-            <ul class="job-list">
-              <li>Experience as Army RPAO or assistant RPAO</li>
-              <li>Background at an IMCOM, USARC, or Readiness Division real property office</li>
-              <li>TRIRIGA or advanced HQIIS reporting experience</li>
-              <li>Real property or real estate certification (RPA, CFM)</li>
-            </ul>
-          </div>
-          <div class="job-apply-block">
-            <div>
-              <p class="job-apply-label">How to Apply</p>
-              <p>Email <strong>careers@forgeandflight.com</strong> — subject line: <code>Real Property Analyst Mountain View CA</code></p>
-              <p style="margin-top:0.5rem; color:var(--slate-300); font-size:0.9rem;">Include resume, clearance level, specific GFEBS Real Property system roles by name, and available start date. Applications without confirmed GFEBS RP roles will not advance. Contingent on contract award.</p>
-            </div>
-            <a href="mailto:careers@forgeandflight.com?subject=Real Property Analyst Mountain View CA" class="btn btn-primary btn-lg" style="white-space:nowrap;">Apply Now</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Real Property Analyst / Specialist — Dublin, CA -->
-    <div class="job-card" id="rp-dublin" style="margin-top:1.5rem;">
-      <div class="job-card-header">
-        <div class="job-card-meta">
-          <div class="job-badges">
-            <span class="badge badge-open">&#9679; Now Hiring</span>
-            <span class="badge badge-type">W-2 · Full-Time · SCA Applies</span>
-            <span class="badge badge-location">Dublin, CA · Parks Reserve Forces Training Area · Secret Required</span>
-          </div>
-          <h3 class="job-title">Real Property Analyst / Specialist — Dublin, CA</h3>
-          <p class="job-subtitle">Federal Services Division &nbsp;·&nbsp; Forge &amp; Flight Holdings, Inc. &nbsp;·&nbsp; $80,000 – $105,000/yr</p>
-        </div>
-        <button class="job-toggle" aria-expanded="false" aria-controls="rp-dublin-detail" onclick="toggleJob(this)">
-          <span class="toggle-label">View Details</span>
-          <svg class="toggle-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </div>
-      <div class="job-detail" id="rp-dublin-detail" hidden>
-        <div class="job-detail-inner">
-          <div class="job-summary-row">
-            <div class="job-summary-item"><span class="cred-label">Clearance</span><span class="job-summary-val">Active Secret · U.S. citizenship required</span></div>
-            <div class="job-summary-item"><span class="cred-label">Salary</span><span class="job-summary-val">$80,000 – $105,000 annually (SCA wage determination applies)</span></div>
-            <div class="job-summary-item"><span class="cred-label">Experience</span><span class="job-summary-val">2+ years DoD real property management</span></div>
-            <div class="job-summary-item"><span class="cred-label">Unit</span><span class="job-summary-val">Parks Reserve Forces Training Area</span></div>
-          </div>
-          <div class="job-section">
-            <h4>Position Summary</h4>
-            <p>Supports the USAR Parks Reserve Forces Training Area at Dublin, CA executing daily GFEBS real property transactions, InSITE remediation, and monthly status reporting. Operates as a single FTE embedded within local DPW Realty staff, coordinating daily with on-site government personnel and the anchor specialist at Fort Bragg. Northern California. Local CA recruit preferred. Geographic proximity to Mountain View — joint coverage possible. <strong>GFEBS RP system roles are the non-negotiable screening requirement — list them in your application.</strong></p>
-          </div>
-          <div class="job-section">
-            <h4>Key Responsibilities</h4>
-            <ul class="job-list">
-              <li>Execute daily GFEBS real property transactions within assigned Readiness Division accounts</li>
-              <li>Conduct InSITE Phase 1 administrative remediation and Phase 2 on-site survey support</li>
-              <li>Conduct physical inventories of real property assets per AR 405-45</li>
-              <li>Produce Monthly Status Report directly to USARC G-3/5/7 — due 5th of each month</li>
-              <li>Prepare DD Form 1354 capitalization packets for all qualifying asset transactions</li>
-              <li>Produce Health Check briefings for Readiness Division leadership</li>
-              <li>Coordinate daily with local DPW Realty staff and the anchor specialist at Fort Bragg</li>
-              <li>Maintain surge support availability within 5 business days for CONUS missions</li>
-            </ul>
-          </div>
-          <div class="job-section">
-            <h4>Required</h4>
-            <ul class="job-list">
-              <li>Active Secret clearance; U.S. citizenship required</li>
-              <li>2+ years DoD real property management experience</li>
-              <li>GFEBS RP system roles — Maintainer, Inventory Processor, BI Reporter, Asset Master Data — REQUIRED. List by name in application.</li>
-              <li>HQIIS proficiency</li>
-              <li>AR 405-45 and InSITE remediation knowledge</li>
-              <li>DD Form 1354 preparation experience</li>
-              <li>Active Government Travel Card and valid passport/Real ID required prior to performance</li>
-            </ul>
-          </div>
-          <div class="job-section">
-            <h4>Preferred</h4>
-            <ul class="job-list">
-              <li>Experience as Army RPAO or assistant RPAO</li>
-              <li>Background at an IMCOM, USARC, or Readiness Division real property office</li>
-              <li>TRIRIGA or advanced HQIIS reporting experience</li>
-              <li>Real property or real estate certification (RPA, CFM)</li>
-            </ul>
-          </div>
-          <div class="job-apply-block">
-            <div>
-              <p class="job-apply-label">How to Apply</p>
-              <p>Email <strong>careers@forgeandflight.com</strong> — subject line: <code>Real Property Analyst Dublin CA</code></p>
-              <p style="margin-top:0.5rem; color:var(--slate-300); font-size:0.9rem;">Include resume, clearance level, specific GFEBS Real Property system roles by name, and available start date. Applications without confirmed GFEBS RP roles will not advance. Contingent on contract award.</p>
-            </div>
-            <a href="mailto:careers@forgeandflight.com?subject=Real Property Analyst Dublin CA" class="btn btn-primary btn-lg" style="white-space:nowrap;">Apply Now</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Real Property Analyst / Specialist — Devens, MA -->
-    <div class="job-card" id="rp-devens" style="margin-top:1.5rem;">
-      <div class="job-card-header">
-        <div class="job-card-meta">
-          <div class="job-badges">
-            <span class="badge badge-open">&#9679; Now Hiring</span>
-            <span class="badge badge-type">W-2 · Full-Time · SCA Applies</span>
-            <span class="badge badge-location">Devens, MA · Devens Reserve Forces Training Area · Secret Required</span>
-          </div>
-          <h3 class="job-title">Real Property Analyst / Specialist — Devens, MA</h3>
-          <p class="job-subtitle">Federal Services Division &nbsp;·&nbsp; Forge &amp; Flight Holdings, Inc. &nbsp;·&nbsp; $70,000 – $88,000/yr</p>
-        </div>
-        <button class="job-toggle" aria-expanded="false" aria-controls="rp-devens-detail" onclick="toggleJob(this)">
-          <span class="toggle-label">View Details</span>
-          <svg class="toggle-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </div>
-      <div class="job-detail" id="rp-devens-detail" hidden>
-        <div class="job-detail-inner">
-          <div class="job-summary-row">
-            <div class="job-summary-item"><span class="cred-label">Clearance</span><span class="job-summary-val">Active Secret · U.S. citizenship required</span></div>
-            <div class="job-summary-item"><span class="cred-label">Salary</span><span class="job-summary-val">$70,000 – $88,000 annually (SCA wage determination applies)</span></div>
-            <div class="job-summary-item"><span class="cred-label">Experience</span><span class="job-summary-val">2+ years DoD real property management</span></div>
-            <div class="job-summary-item"><span class="cred-label">Unit</span><span class="job-summary-val">Devens Reserve Forces Training Area</span></div>
-          </div>
-          <div class="job-section">
-            <h4>Position Summary</h4>
-            <p>Supports the USAR Devens Reserve Forces Training Area at Devens, MA executing daily GFEBS real property transactions, InSITE remediation, and monthly status reporting. Operates as a single FTE embedded within local DPW Realty staff, coordinating daily with on-site government personnel and the anchor specialist at Fort Bragg. Local Devens/Ayer area recruit preferred. Boston-Cambridge locality SCA WD applies. <strong>GFEBS RP system roles are the non-negotiable screening requirement — list them in your application.</strong></p>
-          </div>
-          <div class="job-section">
-            <h4>Key Responsibilities</h4>
-            <ul class="job-list">
-              <li>Execute daily GFEBS real property transactions within assigned Readiness Division accounts</li>
-              <li>Conduct InSITE Phase 1 administrative remediation and Phase 2 on-site survey support</li>
-              <li>Conduct physical inventories of real property assets per AR 405-45</li>
-              <li>Produce Monthly Status Report directly to USARC G-3/5/7 — due 5th of each month</li>
-              <li>Prepare DD Form 1354 capitalization packets for all qualifying asset transactions</li>
-              <li>Produce Health Check briefings for Readiness Division leadership</li>
-              <li>Coordinate daily with local DPW Realty staff and the anchor specialist at Fort Bragg</li>
-              <li>Maintain surge support availability within 5 business days for CONUS missions</li>
-            </ul>
-          </div>
-          <div class="job-section">
-            <h4>Required</h4>
-            <ul class="job-list">
-              <li>Active Secret clearance; U.S. citizenship required</li>
-              <li>2+ years DoD real property management experience</li>
-              <li>GFEBS RP system roles — Maintainer, Inventory Processor, BI Reporter, Asset Master Data — REQUIRED. List by name in application.</li>
-              <li>HQIIS proficiency</li>
-              <li>AR 405-45 and InSITE remediation knowledge</li>
-              <li>DD Form 1354 preparation experience</li>
-              <li>Active Government Travel Card and valid passport/Real ID required prior to performance</li>
-            </ul>
-          </div>
-          <div class="job-section">
-            <h4>Preferred</h4>
-            <ul class="job-list">
-              <li>Experience as Army RPAO or assistant RPAO</li>
-              <li>Background at an IMCOM, USARC, or Readiness Division real property office</li>
-              <li>TRIRIGA or advanced HQIIS reporting experience</li>
-              <li>Real property or real estate certification (RPA, CFM)</li>
-            </ul>
-          </div>
-          <div class="job-apply-block">
-            <div>
-              <p class="job-apply-label">How to Apply</p>
-              <p>Email <strong>careers@forgeandflight.com</strong> — subject line: <code>Real Property Analyst Devens MA</code></p>
-              <p style="margin-top:0.5rem; color:var(--slate-300); font-size:0.9rem;">Include resume, clearance level, specific GFEBS Real Property system roles by name, and available start date. Applications without confirmed GFEBS RP roles will not advance. Contingent on contract award.</p>
-            </div>
-            <a href="mailto:careers@forgeandflight.com?subject=Real Property Analyst Devens MA" class="btn btn-primary btn-lg" style="white-space:nowrap;">Apply Now</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Real Property Analyst / Specialist — Fort Shafter, HI -->
-    <div class="job-card" id="rp-fort-shafter" style="margin-top:1.5rem;">
-      <div class="job-card-header">
-        <div class="job-card-meta">
-          <div class="job-badges">
-            <span class="badge badge-open">&#9679; Now Hiring</span>
-            <span class="badge badge-type">W-2 · Full-Time · SCA Applies</span>
-            <span class="badge badge-location">Fort Shafter, HI · 9th Mission Support Command · OCONUS · Secret Required</span>
-          </div>
-          <h3 class="job-title">Real Property Analyst / Specialist — Fort Shafter, HI</h3>
-          <p class="job-subtitle">Federal Services Division &nbsp;·&nbsp; Forge &amp; Flight Holdings, Inc. &nbsp;·&nbsp; $72,000 – $92,000/yr</p>
-        </div>
-        <button class="job-toggle" aria-expanded="false" aria-controls="rp-fort-shafter-detail" onclick="toggleJob(this)">
-          <span class="toggle-label">View Details</span>
-          <svg class="toggle-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </div>
-      <div class="job-detail" id="rp-fort-shafter-detail" hidden>
-        <div class="job-detail-inner">
-          <div class="job-summary-row">
-            <div class="job-summary-item"><span class="cred-label">Clearance</span><span class="job-summary-val">Active Secret · U.S. citizenship required</span></div>
-            <div class="job-summary-item"><span class="cred-label">Salary</span><span class="job-summary-val">$72,000 – $92,000 annually (SCA wage determination applies)</span></div>
-            <div class="job-summary-item"><span class="cred-label">Experience</span><span class="job-summary-val">2+ years DoD real property management</span></div>
-            <div class="job-summary-item"><span class="cred-label">Unit</span><span class="job-summary-val">9th Mission Support Command</span></div>
-          </div>
-          <div class="job-section">
-            <h4>Position Summary</h4>
-            <p>Supports the USAR 9th Mission Support Command at Fort Shafter, HI executing daily GFEBS real property transactions, InSITE remediation, and monthly status reporting. Operates as a single FTE embedded within local DPW Realty staff, coordinating daily with on-site government personnel and the anchor specialist at Fort Bragg. OCONUS. Hawaii SCA WD applies. Local HI recruit only — do not apply if not Hawaii-based. 10-day OCONUS deploy readiness required. <strong>GFEBS RP system roles are the non-negotiable screening requirement — list them in your application.</strong></p>
-          </div>
-          <div class="job-section">
-            <h4>Key Responsibilities</h4>
-            <ul class="job-list">
-              <li>Execute daily GFEBS real property transactions within assigned Readiness Division accounts</li>
-              <li>Conduct InSITE Phase 1 administrative remediation and Phase 2 on-site survey support</li>
-              <li>Conduct physical inventories of real property assets per AR 405-45</li>
-              <li>Produce Monthly Status Report directly to USARC G-3/5/7 — due 5th of each month</li>
-              <li>Prepare DD Form 1354 capitalization packets for all qualifying asset transactions</li>
-              <li>Produce Health Check briefings for Readiness Division leadership</li>
-              <li>Coordinate daily with local DPW Realty staff and the anchor specialist at Fort Bragg</li>
-              <li>Maintain surge support availability within 10 business days for OCONUS missions</li>
-            </ul>
-          </div>
-          <div class="job-section">
-            <h4>Required</h4>
-            <ul class="job-list">
-              <li>Active Secret clearance; U.S. citizenship required</li>
-              <li>2+ years DoD real property management experience</li>
-              <li>GFEBS RP system roles — Maintainer, Inventory Processor, BI Reporter, Asset Master Data — REQUIRED. List by name in application.</li>
-              <li>HQIIS proficiency</li>
-              <li>AR 405-45 and InSITE remediation knowledge</li>
-              <li>DD Form 1354 preparation experience</li>
-              <li>Active Government Travel Card and valid passport/Real ID required prior to performance</li>
-              <li>Willingness and ability to deploy OCONUS within 10 business days</li>
-            </ul>
-          </div>
-          <div class="job-section">
-            <h4>Preferred</h4>
-            <ul class="job-list">
-              <li>Experience as Army RPAO or assistant RPAO</li>
-              <li>Background at an IMCOM, USARC, or Readiness Division real property office</li>
-              <li>TRIRIGA or advanced HQIIS reporting experience</li>
-              <li>Real property or real estate certification (RPA, CFM)</li>
-            </ul>
-          </div>
-          <div class="job-apply-block">
-            <div>
-              <p class="job-apply-label">How to Apply</p>
-              <p>Email <strong>careers@forgeandflight.com</strong> — subject line: <code>Real Property Analyst Fort Shafter HI</code></p>
-              <p style="margin-top:0.5rem; color:var(--slate-300); font-size:0.9rem;">Include resume, clearance level, specific GFEBS Real Property system roles by name, and available start date. Applications without confirmed GFEBS RP roles will not advance. Contingent on contract award.</p>
-            </div>
-            <a href="mailto:careers@forgeandflight.com?subject=Real Property Analyst Fort Shafter HI" class="btn btn-primary btn-lg" style="white-space:nowrap;">Apply Now</a>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 
+<!-- ── Growing Our Team
 <!-- ── Growing Our Team ────────────────────────────────────── -->
-<section class="section" style="background: var(--white); border-top: 1px solid var(--slate-100);">
+<section class="section" data-job-section="planned" style="background: var(--white); border-top: 1px solid var(--slate-100);">
   <div class="container">
 
     <div class="section-header">
@@ -2838,7 +2438,7 @@
 </section>
 
 <!-- ── Summer Internship Program ──────────────────────────── -->
-<section class="section" style="background: var(--white); border-top: 1px solid var(--slate-100);">
+<section class="section" data-job-section="intern" style="background: var(--white); border-top: 1px solid var(--slate-100);">
   <div class="container">
 
     <div class="section-header">
@@ -3261,6 +2861,43 @@ function toggleCard(btn) {
   btn.setAttribute('aria-expanded', !expanded);
   detail.hidden = expanded;
   label.textContent = expanded ? 'Full Description' : 'Hide Description';
+}
+</script>
+
+<style>
+/* ── Filter bar ──────────────────────────────────────────── */
+.jobs-filter-bar{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:2rem;padding:.75rem 0;border-bottom:1px solid var(--slate-100);}
+.filter-tab{padding:.45rem 1rem;font-size:.8rem;font-family:var(--font-mono);letter-spacing:.04em;border:1px solid var(--slate-100);border-radius:var(--radius-sm);background:var(--white);color:var(--text-muted);cursor:pointer;transition:all .18s;white-space:nowrap;}
+.filter-tab:hover{border-color:var(--accent);color:var(--accent);}
+.filter-tab.is-active{background:var(--accent);border-color:var(--accent);color:var(--white);}
+.fpill{display:inline-flex;align-items:center;justify-content:center;background:rgba(255,255,255,.25);color:inherit;font-size:.7rem;border-radius:99px;padding:0 .45rem;margin-left:.35rem;line-height:1.6;}
+.filter-tab:not(.is-active) .fpill{background:var(--accent-dim);color:var(--accent);}
+/* ── Group dividers ──────────────────────────────────────── */
+.job-group-divider{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:.5rem;padding:.75rem 0 1rem;border-top:2px solid var(--accent);margin-top:2.5rem;}
+.job-group-divider:first-child{margin-top:0;border-top:none;}
+.job-group-sub{font-size:.8rem;color:var(--text-muted);}
+/* ── RP location table ───────────────────────────────────── */
+.rp-location-table{width:100%;border-collapse:collapse;font-size:.875rem;margin-top:.25rem;}
+.rp-location-table th{font-family:var(--font-mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);padding:.5rem .75rem;border-bottom:2px solid var(--slate-100);text-align:left;}
+.rp-location-table td{padding:.6rem .75rem;border-bottom:1px solid var(--slate-100);color:var(--text-muted);}
+.rp-location-table tr:last-child td{border-bottom:none;}
+.rp-priority td{background:rgba(0,87,168,.04);}
+.rp-priority td strong{color:var(--navy);}
+</style>
+<script>
+function filterJobs(btn){
+  var cat=btn.dataset.jsec;
+  document.querySelectorAll('.filter-tab').forEach(function(b){b.classList.remove('is-active');});
+  btn.classList.add('is-active');
+  if(cat==='all'){
+    document.querySelectorAll('[data-job-section]').forEach(function(s){s.style.display='';});
+    return;
+  }
+  document.querySelectorAll('[data-job-section]').forEach(function(s){
+    s.style.display=(s.dataset.jobSection===cat)?'':'none';
+  });
+  // Always keep non-job sections visible
+  document.querySelectorAll('[data-job-section="why"]').forEach(function(s){s.style.display='';});
 }
 </script>
 
