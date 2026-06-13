@@ -5,9 +5,11 @@
   {{/*  Title  */}}
   {{ $title := .Title }}
   {{ if .IsHome }}
-    {{ $title = "Forge & Flight Holdings | American Defense Technology & Professional Services" }}
+    {{ $title = "Forge & Flight Holdings | American Defense Technology" }}
   {{ else if .Params.seo_title }}
     {{ $title = .Params.seo_title }}
+  {{ else if strings.Contains .Title "Forge" }}
+    {{ $title = .Title }}
   {{ else }}
     {{ $title = printf "%s | Forge & Flight Holdings" .Title }}
   {{ end }}
