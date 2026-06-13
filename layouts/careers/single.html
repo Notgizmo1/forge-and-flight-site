@@ -57,15 +57,18 @@
 
     <!-- ── Jobs Filter Bar ──────────────────────────────────── -->
     <div class="jobs-filter-bar" id="jobs-filter">
-      <button class="filter-tab is-active" data-jsec="all"      onclick="filterJobs(this)">All Positions</button>
-      <button class="filter-tab"           data-jsec="deers"    onclick="filterJobs(this)">DEERS/RAPIDS <span class="fpill">22</span></button>
-      <button class="filter-tab"           data-jsec="corporate" onclick="filterJobs(this)">Corporate &amp; Ops <span class="fpill">2</span></button>
-      <button class="filter-tab"           data-jsec="perry"    onclick="filterJobs(this)">Federal Services <span class="fpill">9</span></button>
-      <button class="filter-tab"           data-jsec="planned"  onclick="filterJobs(this)">Planned Roles <span class="fpill">20</span></button>
-      <button class="filter-tab"           data-jsec="intern"   onclick="filterJobs(this)">Internships <span class="fpill">4</span></button>
+      <button class="filter-tab is-active"  data-jsec="all"       onclick="filterJobs(this)">All Positions</button>
+      <button class="filter-tab"            data-jsec="federal"   onclick="filterJobs(this)">Federal Services</button>
+      <button class="filter-tab"            data-jsec="corporate" onclick="filterJobs(this)">Corporate &amp; Ops</button>
+      <button class="filter-tab"            data-jsec="planned"   onclick="filterJobs(this)">Planned Roles</button>
+      <button class="filter-tab"            data-jsec="intern"    onclick="filterJobs(this)">Internships</button>
     </div>
 
-    <div data-job-section="deers">
+    <div data-job-section="federal">
+      <div class="job-group-divider">
+        <span class="eyebrow">Federal Services Division — DEERS/RAPIDS ID Card Services</span>
+        <span class="job-group-sub">W91247-26-Q-A017 &nbsp;·&nbsp; Fort Bragg, NC &nbsp;·&nbsp; Phase-In Aug 1, 2026</span>
+      </div>
     <!-- ── DEERS/RAPIDS Contract: W91247-26-Q-A017 ── -->
     <div style="background: var(--off-white); border: 1px solid var(--slate-100); border-left: 4px solid var(--accent); border-radius: var(--radius); padding: 1.25rem 1.75rem; margin-bottom: 1.5rem; display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
       <div>
@@ -523,7 +526,7 @@
 
     </div><!-- /corporate -->
 
-    <div data-job-section="perry">
+    <div data-job-section="federal">
       <div class="job-group-divider">
         <span class="eyebrow">Federal Services Division — USAR Analytical Support</span>
         <span class="job-group-sub">9 positions &nbsp;·&nbsp; Fort Bragg + 8 distributed sites &nbsp;·&nbsp; <em>Contingent on contract award</em></span>
@@ -2720,22 +2723,26 @@
 @media (max-width: 640px)  { .careers-grid { grid-template-columns: 1fr; } }
 
 /* ── Coming Soon Cards ─────────────────────────────────────── */
-.coming-soon-card { background: var(--white); border: 1px solid var(--slate-100); border-radius: var(--radius); padding: 2rem; display: flex; flex-direction: column; gap: 0.75rem; transition: border-color 0.2s var(--ease-out), box-shadow 0.2s var(--ease-out); }
-.coming-soon-card:hover { border-color: rgba(0,87,168,0.4); box-shadow: 0 4px 24px rgba(13,27,42,0.06); }
-.coming-soon-badge { display: inline-flex; align-self: flex-start; background: rgba(0,87,168,0.08); color: var(--accent); border: 1px solid rgba(0,87,168,0.2); font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.2rem 0.6rem; border-radius: 3px; }
+.coming-soon-card { background: var(--white); border: 1px solid var(--slate-100); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; gap: 0; transition: border-color 0.2s var(--ease-out); }
+.coming-soon-card:hover { border-color: rgba(0,87,168,0.4); box-shadow: none; }
+.coming-soon-card-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 1.5rem; padding: 1.75rem 2rem; }
+.coming-soon-card .coming-soon-icon { display: none; }
+.coming-soon-card-body { padding: 0 2rem 1.75rem; display: flex; flex-direction: column; gap: 0.75rem; }
+.coming-soon-badge { display: inline-flex; align-self: flex-start; background: var(--accent-dim); color: var(--accent); border: 1px solid rgba(0,87,168,0.25); font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.2rem 0.6rem; border-radius: 3px; margin-bottom: 0.5rem; }
 .coming-soon-icon { width: 3rem; height: 3rem; background: var(--accent-dim); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; color: var(--accent); margin-top: 0.25rem; }
-.coming-soon-card h3 { font-size: 1.2rem; color: var(--navy); margin: 0; line-height: 1.25; }
-.coming-soon-entity { font-family: var(--font-mono); font-size: 0.72rem; color: var(--slate-500); letter-spacing: 0.02em; }
-.coming-soon-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.25rem 0; }
-.coming-soon-tags span { font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.06em; text-transform: uppercase; background: var(--off-white); color: var(--slate-500); border: 1px solid var(--slate-100); padding: 0.2rem 0.55rem; border-radius: 3px; }
+.coming-soon-card h3 { font-size: 1.4rem; font-family: var(--font-head); font-weight: 700; color: var(--navy); margin: 0 0 0.2rem; line-height: 1.2; }
+.coming-soon-entity { font-family: var(--font-mono); font-size: 0.875rem; color: var(--text-muted); letter-spacing: 0.02em; margin-bottom: 0.25rem; }
+.coming-soon-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem; }
+.coming-soon-tags span { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase; background: var(--accent-dim); color: var(--accent); border: 1px solid rgba(0,87,168,0.25); padding: 0.2rem 0.6rem; border-radius: 3px; }
 .coming-soon-desc { font-size: 0.875rem; color: var(--text-muted); line-height: 1.65; }
 .coming-soon-benefits { display: flex; flex-direction: column; gap: 0.25rem; padding: 0.75rem 1rem; background: var(--off-white); border-radius: var(--radius-sm); border: 1px solid var(--slate-100); margin-top: auto; }
 .coming-soon-benefits span { font-size: 0.78rem; color: var(--text-muted); font-family: var(--font-mono); }
 .coming-soon-btn { align-self: flex-start; }
 
 /* ── Card expand toggle ────────────────────────────────────── */
-.job-toggle-card { display: flex; align-items: center; gap: 0.4rem; padding: 0.4rem 0; background: transparent; border: none; color: var(--accent); font-family: var(--font-body); font-size: 0.85rem; font-weight: 600; cursor: pointer; transition: color 0.2s; }
-.job-toggle-card:hover { color: var(--accent-light); }
+.job-toggle-card { display: flex; align-items: center; gap: 0.5rem; padding: 0.6rem 1.25rem; background: transparent; border: 2px solid var(--accent); border-radius: var(--radius-sm); color: var(--accent); font-family: var(--font-body); font-size: 0.875rem; font-weight: 600; cursor: pointer; transition: all 0.2s var(--ease-out); white-space: nowrap; align-self: flex-start; }
+.job-toggle-card:hover { background: var(--accent-dim); }
+.job-toggle-card[aria-expanded="true"] { background: var(--accent); color: var(--white); }
 .job-toggle-card[aria-expanded="true"] .toggle-icon { transform: rotate(180deg); }
 .card-detail { border-top: 1px solid var(--slate-100); margin-top: 0.5rem; padding-top: 1rem; }
 .card-detail-inner { display: flex; flex-direction: column; gap: 0.25rem; }
@@ -2748,26 +2755,27 @@
   background: var(--white);
   border: 1px solid var(--slate-100);
   border-radius: var(--radius);
-  padding: 2rem;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
-  transition: border-color 0.2s var(--ease-out), box-shadow 0.2s var(--ease-out);
+  gap: 0;
+  transition: border-color 0.2s var(--ease-out);
 }
-.intern-card:hover { border-color: rgba(0,87,168,0.4); box-shadow: 0 4px 24px rgba(13,27,42,0.06); }
+.intern-card:hover { border-color: rgba(0,87,168,0.4); box-shadow: none; }
+.intern-card-inner { padding: 1.75rem 2rem; display: flex; flex-direction: column; gap: 0.6rem; }
 
 .intern-track-badge {
   display: inline-flex;
   align-self: flex-start;
   font-family: var(--font-mono);
-  font-size: 0.65rem;
-  letter-spacing: 0.1em;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   padding: 0.2rem 0.6rem;
   border-radius: 3px;
 }
 .intern-track-badge.paid {
-  background: rgba(34,197,94,0.1);
+  background: var(--green-dim);
   color: var(--green);
   border: 1px solid rgba(34,197,94,0.25);
 }
@@ -2777,7 +2785,7 @@
   border: 1px solid rgba(245,158,11,0.25);
 }
 
-.intern-card h3 { font-size: 1.25rem; color: var(--navy); margin: 0; }
+.intern-card h3 { font-size: 1.4rem; font-family: var(--font-head); font-weight: 700; color: var(--navy); margin: 0 0 0.2rem; line-height: 1.2; }
 .intern-desc { font-size: 0.875rem; color: var(--text-muted); line-height: 1.65; }
 
 .intern-details {
@@ -2870,8 +2878,7 @@ function toggleCard(btn) {
 .filter-tab{padding:.45rem 1rem;font-size:.8rem;font-family:var(--font-mono);letter-spacing:.04em;border:1px solid var(--slate-100);border-radius:var(--radius-sm);background:var(--white);color:var(--text-muted);cursor:pointer;transition:all .18s;white-space:nowrap;}
 .filter-tab:hover{border-color:var(--accent);color:var(--accent);}
 .filter-tab.is-active{background:var(--accent);border-color:var(--accent);color:var(--white);}
-.fpill{display:inline-flex;align-items:center;justify-content:center;background:rgba(255,255,255,.25);color:inherit;font-size:.7rem;border-radius:99px;padding:0 .45rem;margin-left:.35rem;line-height:1.6;}
-.filter-tab:not(.is-active) .fpill{background:var(--accent-dim);color:var(--accent);}
+/* pills removed — clean text-only filter tabs */
 /* ── Group dividers ──────────────────────────────────────── */
 .job-group-divider{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:.5rem;padding:.75rem 0 1rem;border-top:2px solid var(--accent);margin-top:2.5rem;}
 .job-group-divider:first-child{margin-top:0;border-top:none;}
