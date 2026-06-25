@@ -64,32 +64,4 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
-// ── Contact form basic handling ─────────────────────────────
-const contactForm = document.getElementById('contact-form');
-if (contactForm) {
-  contactForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const btn = contactForm.querySelector('[type="submit"]');
-    const orig = btn.textContent;
-    btn.textContent = 'Sending…';
-    btn.disabled = true;
-    // Formspree or similar endpoint — update action attribute in HTML
-    try {
-      const res = await fetch(contactForm.action, {
-        method: 'POST',
-        body: new FormData(contactForm),
-        headers: { Accept: 'application/json' }
-      });
-      if (res.ok) {
-        contactForm.innerHTML = '<div class="form-success"><strong>Message received.</strong><p>We will respond within one business day.</p></div>';
-      } else {
-        btn.textContent = orig;
-        btn.disabled = false;
-        alert('Submission error. Please email m.ortiz@forgeandflight.com directly.');
-      }
-    } catch {
-      btn.textContent = orig;
-      btn.disabled = false;
-    }
-  });
-}
+// Contact form handling is managed by per-page inline scripts.
