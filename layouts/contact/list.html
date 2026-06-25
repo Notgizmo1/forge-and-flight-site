@@ -89,7 +89,7 @@
           </div>
 
           <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">Submit Inquiry</button>
-          <p style="font-size:0.78rem;color:var(--text-muted);margin-top:0.75rem;text-align:center;">We respond within one business day. For urgent contracting matters, call <a href="tel:+13476787690"></a>.</p>
+          <p style="font-size:0.78rem;color:var(--text-muted);margin-top:0.75rem;text-align:center;">We respond within one business day.</p>
         </form>
       </div>
 
@@ -99,7 +99,6 @@
           <p style="font-family:var(--font-mono);font-size:0.65rem;color:var(--slate-500);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:1.25rem;padding-bottom:0.75rem;border-bottom:1px solid var(--navy-border);">Direct Contact</p>
           <p style="color:var(--white);font-weight:600;margin-bottom:0.25rem;">Forge &amp; Flight Holdings</p>
           <p style="font-size:0.875rem;margin-bottom:0.75rem;"><a href="mailto:info@forgeandflight.com" style="color:var(--orange);">info@forgeandflight.com</a></p>
-          <p style="font-size:0.875rem;"><a href="tel:+13476787690" style="color:var(--slate-300);"></a></p>
         </div>
 
         <div class="card" style="margin-bottom:1.5rem;">
@@ -181,7 +180,7 @@
       });
       var data = await res.json();
       if (data.success || data.received) {
-        form.innerHTML = '<div style="text-align:center;padding:2rem;"><p style="font-size:1.1rem;font-weight:600;color:var(--navy);margin-bottom:0.5rem;">Inquiry Received</p><p style="color:var(--text-muted);">We respond within one business day. Contracting matters call (347) 678-7690.</p></div>';
+        form.innerHTML = '<div style="text-align:center;padding:2rem;"><p style="font-size:1.1rem;font-weight:600;color:var(--navy);margin-bottom:0.5rem;">Inquiry Received</p><p style="color:var(--text-muted);">We respond within one business day.</p></div>';
         window.scrollTo({ top: form.offsetTop - 80, behavior: 'smooth' });
         return;
       }
