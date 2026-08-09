@@ -75,3 +75,10 @@ summaryLength = 70
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[minify]
+  [minify.tdewolff]
+    [minify.tdewolff.html]
+      keepQuotes = true
+      keepWhitespace = false
+      keepConditionalComments = false
