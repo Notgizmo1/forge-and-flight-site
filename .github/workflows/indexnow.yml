@@ -1,0 +1,45 @@
+name: IndexNow Submission
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for Cloudflare Pages deployment
+        run: sleep 120
+
+      - name: Fetch sitemap and submit to IndexNow
+        run: |
+          # Fetch sitemap
+          SITEMAP=$(curl -s --retry 3 --retry-delay 15 "https://forgeandflight.com/sitemap.xml")
+          
+          # Extract URLs from sitemap into JSON array
+          URLS=$(echo "$SITEMAP" | grep -oP '(?<=<loc>)[^<]+' | python3 -c "
+          import sys, json
+          urls = [line.strip() for line in sys.stdin if line.strip()]
+          print(json.dumps(urls))
+          ")
+          
+          echo "Submitting $(echo "$URLS" | python3 -c "import sys,json; print(len(json.load(sys.stdin)))") URLs to IndexNow"
+          
+          # Submit to IndexNow API
+          RESPONSE=$(curl -s -o /dev/null -w "%{http_code}" -X POST \
+            -H "Content-Type: application/json" \
+            -d "{
+              \"host\": \"forgeandflight.com\",
+              \"key\": \"7e3ded4af3298769f7d37e4fd4f55bbb\",
+              \"keyLocation\": \"https://forgeandflight.com/7e3ded4af3298769f7d37e4fd4f55bbb.txt\",
+              \"urlList\": $URLS
+            }" \
+            "https://api.indexnow.org/indexnow")
+          
+          echo "IndexNow response: $RESPONSE"
+          
+          if [ "$RESPONSE" = "200" ] || [ "$RESPONSE" = "202" ]; then
+            echo "IndexNow submission successful"
+          else
+            echo "IndexNow returned HTTP $RESPONSE — may retry on next push"
+          fi
