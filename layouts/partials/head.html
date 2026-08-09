@@ -27,7 +27,8 @@
 
   {{/*  Canonical  */}}
   <link rel="canonical" href="{{ .Permalink }}">
-  <meta name="robots" content="index, follow, max-image-preview:large">
+  {{ $robots := .Params.robots | default "index, follow, max-image-preview:large" }}
+  <meta name="robots" content="{{ $robots }}">
   <meta name="msvalidate.01" content="{{ .Site.Params.bing_verify }}">
   <meta name="author" content="{{ .Site.Params.author }}">
 
