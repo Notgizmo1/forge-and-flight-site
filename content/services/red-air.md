@@ -4,6 +4,7 @@ description: "Forge & Flight provides adversary air replication using our own ai
 keywords: "red air drone service military, adversary air UAS, drone as a service military exercise, red force drone replication, aggressor UAS service DoD, aerial gunnery target drone service, FPV attack drone replication, EW payload drone exercise, red air contract military training, UAS red force exercise support, adversary ISR replication, one way attack drone exercise"
 date: 2026-09-21
 robots: "index, follow, max-image-preview:large"
+layout: "red-air"
 ---
 
 ## What Red Air Operations Delivers

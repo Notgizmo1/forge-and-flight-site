@@ -1,0 +1,40 @@
+{{ define "main" }}
+<section class="page-hero" style="padding-top:calc(80px + var(--section-padding)); padding-bottom:2rem;">
+  <div class="section-container" style="max-width:900px; margin:0 auto;">
+    <nav style="font-size:0.8rem; color:#64748b; margin-bottom:1.25rem;">
+      <a href="/" style="color:#64748b; text-decoration:none;">Home</a>
+      <span style="margin:0 0.4rem;">›</span>
+      <a href="/services/" style="color:#64748b; text-decoration:none;">Services</a>
+      <span style="margin:0 0.4rem;">›</span>
+      <span>Red Air Operations</span>
+    </nav>
+    <div style="font-size:0.8rem; font-weight:600; text-transform:uppercase; letter-spacing:0.5px; color:#e0622a; margin-bottom:0.75rem;">
+      Forge & Flight Holdings · Defense Services
+    </div>
+    <h1 style="font-size:clamp(1.6rem,3vw,2.2rem); line-height:1.2; color:#0b1d33; margin:0;">{{ .Title }}</h1>
+    {{ if .Description }}
+    <p style="font-size:1.05rem; color:#475569; margin-top:1rem; line-height:1.6; max-width:700px;">{{ .Description }}</p>
+    {{ end }}
+    <div style="display:flex; gap:0.75rem; flex-wrap:wrap; margin-top:1.5rem;">
+      <a href="/contact/?interest=red-air" class="btn btn-primary">Request Mission Proposal</a>
+      <a href="/compliance/" class="btn btn-outline">CAGE 18WR3 · SAM Active</a>
+    </div>
+  </div>
+</section>
+
+<section style="padding-bottom:4rem;">
+  <div class="section-container" style="max-width:900px; margin:0 auto;">
+    <div class="content prose" style="font-size:1.05rem; line-height:1.8; color:#1e293b;">
+      {{ .Content }}
+    </div>
+    <div style="margin-top:3rem; padding:2rem; background:#f0f4ff; border-radius:8px; border-left:4px solid #0b1d33;">
+      <h3 style="margin:0 0 0.5rem; color:#0b1d33;">Ready to support your next exercise?</h3>
+      <p style="color:#475569; margin:0 0 1rem;">We respond to mission proposals within 48 hours. Minimum lead time 30 days for standard missions, 60 days for EW payload configurations.</p>
+      <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
+        <a href="/contact/?interest=red-air" class="btn btn-primary">Request Proposal</a>
+        <a href="/services/" class="btn btn-outline">All Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
