@@ -24,9 +24,9 @@ Most UAS training programs are organized around individual courses or platform t
 
 ## Who We Are Hiring
 
-**Pillar I Instructor — Unmanned & Autonomous Systems.** W-2 hourly, $35–$50/hr, per-cohort schedule. Requires demonstrated hands-on expertise across the Pillar I domain — building, configuring, and repairing platforms in field conditions. FAA Part 107 required. FSI Level 1 preferred. Based in Fayetteville, NC with customer site travel.
+**Pillar I Instructor — Unmanned & Autonomous Systems.** W-2 hourly, $35–$50/hr, per-cohort schedule. Requires demonstrated hands-on expertise across the Pillar I domain — building, configuring, and repairing platforms in field conditions. FAA Part 107 required. FSI Level 1 preferred. Based in Carthage, NC (NC Sandhills Region) with customer site travel.
 
-**Pillar III Instructor — Field Fabrication & Sustainment.** W-2 hourly, $30–$45/hr, per-cohort schedule. Requires demonstrated capability across electronics repair, soldering, power systems modification, and additive manufacturing for structural applications. Military sustainment background strongly preferred. Based in Fayetteville, NC with customer site travel.
+**Pillar III Instructor — Field Fabrication & Sustainment.** W-2 hourly, $30–$45/hr, per-cohort schedule. Requires demonstrated capability across electronics repair, soldering, power systems modification, and additive manufacturing for structural applications. Military sustainment background strongly preferred. Based in Carthage, NC (NC Sandhills Region) with customer site travel.
 
 Instructors are hired for a pillar and deliver courses across that domain. Not single-course assignments.
 

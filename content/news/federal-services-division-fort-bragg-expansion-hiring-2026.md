@@ -2,7 +2,7 @@
 title: "Forge & Flight Federal Services Division Is Hiring Cleared Professionals at Fort Bragg and Distributed Federal Installations"
 date: 2026-06-24
 description: "Forge & Flight's Federal Services Division is expanding professional services operations at Fort Bragg and across distributed federal installations. The division is hiring cleared professionals for program support, analytics, and government services roles."
-keywords: "federal services contractor Fort Bragg, cleared professional services Fort Bragg, defense contractor hiring Fayetteville NC, federal contractor jobs North Carolina, SCA contractor jobs Fort Bragg, government services contractor, cleared analyst jobs Fort Bragg, professional services federal contract"
+keywords: "federal services contractor Fort Bragg, cleared professional services Fort Bragg, defense contractor hiring Carthage NC, federal contractor jobs North Carolina, SCA contractor jobs Fort Bragg, government services contractor, cleared analyst jobs Fort Bragg, professional services federal contract"
 summary: "Forge & Flight's Federal Services Division is expanding and actively hiring cleared professionals across Fort Bragg and distributed federal installations nationwide. The division operates professional services contracts staffed with W-2 employees — U.S. citizens with active Secret clearances or eligibility."
 ---
 
@@ -12,7 +12,7 @@ Forge & Flight Holdings operates a Federal Services Division that delivers profe
 
 Fort Bragg is home to U.S. Army Reserve Command, Forces Command, the Mission and Installation Contracting Command, and the largest Special Operations community in the world. Each generates sustained demand for professional services contracts across program management, analytics, planning, and administrative support functions.
 
-A defense company based in Fayetteville, NC does not discover the Fort Bragg market from a business development trip. We are in that market — adjacent to the commands we serve, employing personnel who live in this community, and positioned to respond to opportunities that remote companies cannot compete for on the same terms.
+A defense company based in Carthage, NC (Sandhills Region, 35 miles from Fort Bragg) does not discover the Fort Bragg market from a business development trip. We are in that market — adjacent to the commands we serve, employing personnel who live in this community, and positioned to respond to opportunities that remote companies cannot compete for on the same terms.
 
 The personnel we hire for federal services are not temporary contract workers. They become a permanent cleared bench — professionals we retain, develop, and redeploy across programs as our portfolio grows. That bench is an asset, and we are building it deliberately.
 

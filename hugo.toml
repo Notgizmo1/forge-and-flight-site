@@ -11,7 +11,7 @@ summaryLength = 70
 
 [params]
   description = "American defense technology holding company. NDAA-compliant UAS platforms, AI-powered mission software, federal contracting services, and professional consulting. CAGE: 18WR3 | CMMC Level 2 | Fort Bragg, NC."
-  keywords = "NDAA compliant defense contractor, American UAS manufacturer, defense technology company, CMMC Level 2 contractor, Fort Bragg contractor, Fayetteville NC defense, counter-UAS software, MAVLink ATAK integration, Blue UAS, small business defense contractor"
+  keywords = "NDAA compliant defense contractor, American UAS manufacturer, defense technology company, CMMC Level 2 contractor, Fort Bragg contractor, Carthage NC defense, counter-UAS software, MAVLink ATAK integration, Blue UAS, small business defense contractor"
   author = "Forge & Flight Holdings, Inc."
   entity = "Forge & Flight Holdings, Inc."
   cage = "18WR3"
@@ -19,7 +19,7 @@ summaryLength = 70
   ein = "41-3413730"
   sam_expires = "March 9, 2027"
   sprs = "110/110"
-  address = "Fayetteville, NC 28304"
+  address = "Carthage, NC 28327"
   email = "info@forgeandflight.com"
   ga_id = "G-4RVS5R9Z6G"
   bing_verify = "14004303FC294B3ABCE4718C3F1E32E6"
