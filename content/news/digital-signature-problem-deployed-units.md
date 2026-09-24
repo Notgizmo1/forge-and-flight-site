@@ -1,6 +1,6 @@
 ---
 title: "The Digital Signature Problem Every Deployed Unit Has and Nobody Is Training For"
-date: 2026-09-24
+date: 2026-09-10
 description: "Annual OPSEC training is a compliance event. It does not change what an operator's device broadcasts, what data brokers have indexed about them, or how their personal accounts behave under targeted collection. The training gap is real and the consequence is not theoretical."
 keywords: "digital signature reduction training DoD, operator OPSEC training, personal device security military, deployed unit digital security, military personal security training, digital footprint reduction training, OPSEC training hands-on DoD, operator digital threat training"
 ---
@@ -29,7 +29,7 @@ None of this requires sophisticated adversary capability. Much of it is accessib
 
 The training that closes this gap does not look like an annual briefing. It looks like building a personal threat model, configuring a hardened mobile device, migrating credentials to hardware-backed authentication, and standing up a live encrypted communications plan, hands on, with working equipment, under instruction from personnel who have operated in the environments where this matters.
 
-[Forge and Flight Academy's FFP-201 Digital Force Protection Course](/courses/ffp-201/) is built around exactly that model. Five days. Student-retained fully configured hardware. Continuous graded performance from Day 1 afternoon. Instructors with special operations and Cyber Command backgrounds.
+[Forge and Flight Academy's FFP-201 Digital Force Protection Course](https://forgeandflightacademy.com/courses/ffp-201/) is built around exactly that model. Five days. Student-retained fully configured hardware. Continuous graded performance from Day 1 afternoon. Instructors with special operations and Cyber Command backgrounds.
 
 The course does not replace annual OPSEC training. It does what annual OPSEC training was never designed to do: produce an operator who can actually control their digital signature, not just one who has been reminded that signatures exist.
 

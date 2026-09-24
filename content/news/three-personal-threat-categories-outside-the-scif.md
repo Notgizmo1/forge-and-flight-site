@@ -1,6 +1,6 @@
 ---
 title: "Three Categories of Personal Threat That Live Outside the SCIF"
-date: 2026-09-24
+date: 2026-09-05
 description: "The information security framework inside a classified facility is rigorous. The security posture most personnel carry when they leave it is not. Three categories of personal threat fill that gap, and none of them require sophisticated adversary capability to exploit."
 keywords: "personal security threat DoD military, operator threat categories, personal device threat military, digital threat outside SCIF, personal security training military DoD, operator force protection digital, military personnel security training"
 ---
@@ -39,7 +39,7 @@ Travel router configuration, masked-identity booking practices, and awareness of
 
 None of these three categories require sophisticated adversary capability. They require persistence and commercial access. The personal device attack surface is exploitable by anyone with basic technical capability and patience. The data broker ecosystem is accessible by anyone with a subscription. The travel signature problem is a function of commercial record-keeping that requires no targeting at all.
 
-Training that addresses these threats has to be hands-on. [FFP-201 at Forge and Flight Academy](/courses/ffp-201/) covers all three categories across five days: personal threat modeling, mobile device hardening, data-broker footprint reduction, and masked-identity operation. Students leave with a working, configured security posture, not a checklist.
+Training that addresses these threats has to be hands-on. [FFP-201 at Forge and Flight Academy](https://forgeandflightacademy.com/courses/ffp-201/) covers all three categories across five days: personal threat modeling, mobile device hardening, data-broker footprint reduction, and masked-identity operation. Students leave with a working, configured security posture, not a checklist.
 
 [Electronic warfare awareness at the signal level](/software/) and personal digital security are two sides of the same threat environment. The platforms and the people who operate them both require it.
 
