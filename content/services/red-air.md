@@ -11,7 +11,7 @@ layout: "red-air"
 
 Forge & Flight flies red. Our aircraft, our pilots, your training event.
 
-Red Air Operations is Forge & Flight's Drone as a Service offering for military exercises, training events, and operational test and evaluation. We provide the aircraft, the certified flight crew, the mission planning, and the threat replication. Units train against a real, capable adversary system — not a notional threat or a contractor-operated quadcopter at pattern altitude.
+Red Air Operations is Forge & Flight's Drone as a Service offering for military exercises, training events, and operational test and evaluation. We provide the aircraft, the certified flight crew, the mission planning, and the threat replication. Units train against a real, capable adversary system, not a notional threat or a contractor-operated quadcopter at pattern altitude.
 
 All platforms are NDAA-compliant. All crews hold FAA certifications appropriate to the operating environment. We coordinate directly with range control, airspace deconfliction, and unit S3 elements.
 
@@ -21,7 +21,7 @@ All platforms are NDAA-compliant. All crews hold FAA certifications appropriate 
 
 Adversary ISR using Forge & Flight fixed-wing and VTOL platforms. We replicate adversary reconnaissance patterns, sensor apertures, and operating altitudes so units practice detection, tracking, reporting, and engagement against a threat that behaves like the one they will face downrange.
 
-Applicable for air defense exercises, C-UAS system testing, EW team qualification, and signal intelligence training events. Units control the threat model — we execute the mission as tasked.
+Applicable for air defense exercises, C-UAS system testing, EW team qualification, and signal intelligence training events. Units control the threat model, we execute the mission as tasked.
 
 **Pricing:** Per platform fee + flight operations fee per day.
 
@@ -29,7 +29,7 @@ Applicable for air defense exercises, C-UAS system testing, EW team qualificatio
 
 ### One-Way Attack Replication
 
-FPV attack drone replication for C-UAS exercises and quick reaction force training. Our crews fly inbound attack profiles that replicate the tactics, techniques, and procedures documented from current conflict analysis — one-way attack trajectories, pop-up approaches, multi-axis simultaneous employment.
+FPV attack drone replication for C-UAS exercises and quick reaction force training. Our crews fly inbound attack profiles that replicate the tactics, techniques, and procedures documented from current conflict analysis, one-way attack trajectories, pop-up approaches, multi-axis simultaneous employment.
 
 Units train their C-UAS response procedures, EW defeat teams, and direct fire response against a threat that actually maneuvers. This is not a straight-and-level target drone.
 
@@ -59,7 +59,7 @@ Targets are expended per engagement. We provide the aircraft, crew, and safety c
 
 ## Contracting
 
-Forge & Flight Holdings, Inc. — CAGE 18WR3 | UEI Z9PWMMZXJ321 | SAM Active through March 2027.
+Forge & Flight Holdings, Inc.: CAGE 18WR3 | UEI Z9PWMMZXJ321 | SAM Active through March 2027.
 
 Red Air services are available through simplified acquisition, GPC, MIPR, and standard DoD contracting vehicles. We respond to mission proposals and RFQs within 48 hours.
 

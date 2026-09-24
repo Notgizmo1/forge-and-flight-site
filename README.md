@@ -1,11 +1,11 @@
-# forgeandflight.com — Hugo Site
+# forgeandflight.com: Hugo Site
 
 Forge & Flight Holdings, Inc. corporate website. Built with Hugo SSG, deployed to Cloudflare Pages via GitHub Actions.
 
 ## Stack
 - Hugo (static site generator)
 - Cloudflare Pages (hosting)
-- GitHub Actions (CI/CD — auto-deploys on push to main)
+- GitHub Actions (CI/CD, auto-deploys on push to main)
 
 ## Credentials
 - Cloudflare Account ID: 91fbd2ec539a1f2ab4696f69ab566c3b

@@ -1,5 +1,5 @@
 ---
-title: "OverWatch — Aerial Search & Rescue System | Forge & Flight"
+title: "OverWatch: Aerial Search & Rescue System | Forge & Flight"
 description: "OverWatch provides autonomous aerial SAR detection for law enforcement, fire, and search and rescue teams. AI detection runs across systematic search patterns day and night, using thermal and EO fusion to detect people, vehicles, and wreckage in degraded visibility conditions."
 ---
 
@@ -11,7 +11,7 @@ description: "OverWatch provides autonomous aerial SAR detection for law enforce
       <span>Overwatch</span>
     </nav>
     <span class="eyebrow">Law Enforcement &middot; Fire Departments &middot; SAR Teams</span>
-    <h1>OverWatch — Aerial Search &amp; Rescue System | Forge &amp; Flight</h1>
+    <h1>OverWatch: Aerial Search &amp; Rescue System | Forge &amp; Flight</h1>
     <p>OverWatch provides autonomous aerial SAR detection for law enforcement, fire, and search and rescue teams. AI detection runs across systematic search patterns day and night, using thermal and EO fusion to detect people, vehicles, and wreckage in degraded visibility conditions.</p>
     <div class="badge-row">
       <span class="badge">Vanguard-14 &middot; Aether-10</span>
@@ -30,7 +30,7 @@ description: "OverWatch provides autonomous aerial SAR detection for law enforce
           <h2>Find them faster.</h2>
         </div>
         <p style="color:var(--text-muted);">OverWatch provides autonomous aerial SAR detection for law enforcement, fire, and search and rescue teams. AI detection runs across systematic search patterns day and night, using thermal and EO fusion to detect people, vehicles, and wreckage in degraded visibility conditions.</p>
-        <p style="color:var(--text-muted);margin-top:1rem;">Cross-pass re-identification prevents duplicate detection counts across multiple search passes. Every confirmed detection delivers a georeferenced GPS coordinate accurate to &plusmn;10 meters &mdash; transmitted directly to ground teams via AegisEye, ATAK, or SMS alert.</p>
+        <p style="color:var(--text-muted);margin-top:1rem;">Cross-pass re-identification prevents duplicate detection counts across multiple search passes. Every confirmed detection delivers a georeferenced GPS coordinate accurate to &plusmn;10 meters, transmitted directly to ground teams via AegisEye, ATAK, or SMS alert.</p>
         <p style="color:var(--text-muted);margin-top:1rem;">Available on Vanguard-14 (Group 2/3, up to 12-hour endurance) for extended operations and Aether-10 (Group 2) for shorter-duration missions.</p>
       </div>
       <div>

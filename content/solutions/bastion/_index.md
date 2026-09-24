@@ -1,5 +1,5 @@
 ---
-title: "Bastion — Autonomous Perimeter Security System | Forge & Flight"
+title: "Bastion: Autonomous Perimeter Security System | Forge & Flight"
 description: "AI-cued autonomous drone perimeter security for construction sites and industrial facilities. AI cameras detect intrusions and dispatch a drone to the exact GPS coordinate in under 60 seconds. One guard. 24/7 coverage. 30-day deployment. NDAA-compliant."
 seo_title: "Bastion Autonomous Perimeter Security | AI Cameras + Drone Dispatch | Forge & Flight"
 ---
@@ -12,7 +12,7 @@ seo_title: "Bastion Autonomous Perimeter Security | AI Cameras + Drone Dispatch 
       <span>Bastion</span>
     </nav>
     <span class="eyebrow">Construction &middot; Industrial &middot; Commercial Security</span>
-    <h1>Bastion &mdash; Autonomous Perimeter Security</h1>
+    <h1>Bastion. Autonomous Perimeter Security</h1>
     <p>AI cameras detect intrusions and dispatch an autonomous drone to the exact GPS coordinate in under 60 seconds. One guard. Full-site awareness. 24/7 coverage. 30-day deployment. NDAA-compliant.</p>
     <div class="badge-row">
       <span class="badge">Dart FPV &middot; NDAA Cameras &middot; Jetson AI</span>
@@ -30,8 +30,8 @@ seo_title: "Bastion Autonomous Perimeter Security | AI Cameras + Drone Dispatch 
           <span class="eyebrow">The Problem</span>
           <h2>One guard can&#8217;t be everywhere. Bastion can.</h2>
         </div>
-        <p style="color:var(--text-muted);">Construction sites are among the most frequently targeted properties in the United States. Equipment theft, vandalism, copper theft, and unauthorized access are daily risks &mdash; yet most sites rely on a single guard making periodic rounds. The gaps between rounds are when incidents happen.</p>
-        <p style="color:var(--text-muted);margin-top:1rem;">Bastion closes those gaps. AI cameras monitor the full perimeter continuously. When a person is detected crossing a restricted zone, an autonomous drone launches to that exact location in under 60 seconds. Your guard reviews the live video feed, confirms the threat, and calls police &mdash; all without leaving the guard post.</p>
+        <p style="color:var(--text-muted);">Construction sites are among the most frequently targeted properties in the United States. Equipment theft, vandalism, copper theft, and unauthorized access are daily risks, yet most sites rely on a single guard making periodic rounds. The gaps between rounds are when incidents happen.</p>
+        <p style="color:var(--text-muted);margin-top:1rem;">Bastion closes those gaps. AI cameras monitor the full perimeter continuously. When a person is detected crossing a restricted zone, an autonomous drone launches to that exact location in under 60 seconds. Your guard reviews the live video feed, confirms the threat, and calls police, all without leaving the guard post.</p>
         <p style="color:var(--text-muted);margin-top:1rem;">No infrastructure required. Operational in 30 days. Sized for sites up to one acre with expansion packages for larger facilities.</p>
       </div>
       <div>
@@ -77,7 +77,7 @@ seo_title: "Bastion Autonomous Perimeter Security | AI Cameras + Drone Dispatch 
       <div style="background:var(--navy-mid);border:1px solid var(--navy-border);border-radius:var(--radius);padding:1.5rem;">
         <p style="font-family:var(--font-mono);font-size:0.75rem;color:var(--orange);margin-bottom:0.5rem;font-weight:600;">03</p>
         <h4 style="color:var(--white);font-size:1.1rem;margin-bottom:0.5rem;">Drone Launch</h4>
-        <p style="font-size:0.9rem;color:var(--slate-300);">Guard approves or countdown expires &mdash; the drone arms, takes off, and flies autonomously to the GPS coordinate. No joystick required.</p>
+        <p style="font-size:0.9rem;color:var(--slate-300);">Guard approves or countdown expires, the drone arms, takes off, and flies autonomously to the GPS coordinate. No joystick required.</p>
       </div>
       <div style="background:var(--navy-mid);border:1px solid var(--navy-border);border-radius:var(--radius);padding:1.5rem;">
         <p style="font-family:var(--font-mono);font-size:0.75rem;color:var(--orange);margin-bottom:0.5rem;font-weight:600;">04</p>
@@ -92,7 +92,7 @@ seo_title: "Bastion Autonomous Perimeter Security | AI Cameras + Drone Dispatch 
       <div style="background:var(--navy-mid);border:1px solid var(--navy-border);border-radius:var(--radius);padding:1.5rem;">
         <p style="font-family:var(--font-mono);font-size:0.75rem;color:var(--orange);margin-bottom:0.5rem;font-weight:600;">06</p>
         <h4 style="color:var(--white);font-size:1.1rem;margin-bottom:0.5rem;">Evidence</h4>
-        <p style="font-size:0.9rem;color:var(--slate-300);">Every alert generates a timestamped clip, GPS record, and audit log. SHA-256 verified &mdash; admissible as evidence for police and insurance.</p>
+        <p style="font-size:0.9rem;color:var(--slate-300);">Every alert generates a timestamped clip, GPS record, and audit log. SHA-256 verified, admissible as evidence for police and insurance.</p>
       </div>
     </div>
   </div>
@@ -144,7 +144,7 @@ seo_title: "Bastion Autonomous Perimeter Security | AI Cameras + Drone Dispatch 
     <div class="grid-4" style="gap:1.5rem;">
       <div style="background:var(--navy-mid);border:1px solid var(--navy-border);border-radius:var(--radius);padding:1.5rem;">
         <h4 style="color:var(--white);font-size:1rem;margin-bottom:0.5rem;">Construction Companies</h4>
-        <p style="font-size:0.875rem;color:var(--slate-300);">Active job sites with high-value equipment and materials. Theft and vandalism are daily risks &mdash; especially overnight and on weekends.</p>
+        <p style="font-size:0.875rem;color:var(--slate-300);">Active job sites with high-value equipment and materials. Theft and vandalism are daily risks, especially overnight and on weekends.</p>
       </div>
       <div style="background:var(--navy-mid);border:1px solid var(--navy-border);border-radius:var(--radius);padding:1.5rem;">
         <h4 style="color:var(--white);font-size:1rem;margin-bottom:0.5rem;">Industrial Facilities</h4>
@@ -179,7 +179,7 @@ seo_title: "Bastion Autonomous Perimeter Security | AI Cameras + Drone Dispatch 
       </div>
       <div class="card">
         <h4 style="margin-bottom:0.5rem;">Evidence-Admissible</h4>
-        <p style="font-size:0.9rem;color:var(--text-muted);">SHA-256 verified video clips, timestamped GPS records, and operator audit logs. Chain-of-custody export for law enforcement. Video only &mdash; no audio recording.</p>
+        <p style="font-size:0.9rem;color:var(--text-muted);">SHA-256 verified video clips, timestamped GPS records, and operator audit logs. Chain-of-custody export for law enforcement. Video only, no audio recording.</p>
       </div>
     </div>
   </div>

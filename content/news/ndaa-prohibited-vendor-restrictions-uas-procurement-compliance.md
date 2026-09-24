@@ -12,7 +12,7 @@ The National Defense Authorization Act has added UAS-specific restrictions acros
 
 The foundational restriction is Section 848 of the FY2020 NDAA, which prohibits the Department of Defense from operating or procuring unmanned aircraft systems that use covered foreign entity components in flight controller, communication, or critical mission systems. The prohibited entities list includes the major Chinese UAS manufacturers and several component suppliers whose hardware appears throughout the commercial drone supply chain.
 
-Section 889 of the same act extends the restriction to telecommunications and video surveillance equipment from covered entities — relevant to UAS platforms that use commercial off-the-shelf communications payloads, video downlinks, or RF components sourced from covered manufacturers.
+Section 889 of the same act extends the restriction to telecommunications and video surveillance equipment from covered entities, relevant to UAS platforms that use commercial off-the-shelf communications payloads, video downlinks, or RF components sourced from covered manufacturers.
 
 Subsequent authorization cycles have extended these restrictions in scope, clarified enforcement authority, and added verification requirements for contractors and integrators supplying platforms to DoD customers. The trend is toward more specificity, not less, and the assumption that compliance can be inferred from a platform's country of origin is no longer adequate.
 
@@ -30,11 +30,11 @@ Several categories of risk are consistently underestimated in platform procureme
 
 ## What Verification Actually Requires
 
-A credible NDAA compliance claim requires documentation at the component level — not a manufacturer's assertion, not a cleared list entry, and not a domestic assembly location. The documentation should identify critical components by part number and manufacturer, trace each to a domestic or verified non-covered supplier, and be current to the production lot being delivered.
+A credible NDAA compliance claim requires documentation at the component level, not a manufacturer's assertion, not a cleared list entry, and not a domestic assembly location. The documentation should identify critical components by part number and manufacturer, trace each to a domestic or verified non-covered supplier, and be current to the production lot being delivered.
 
 Procurement officers should ask for this documentation before award and include compliance verification requirements in the contract. A platform provider that cannot produce component-level sourcing documentation within a reasonable response window is a platform provider that cannot verify its own supply chain.
 
-The Blue UAS cleared list, maintained by the Defense Innovation Unit, represents a vetted set of platforms that have undergone this verification process. It is the most efficient starting point for procurement. But the cleared list is not a static guarantee — it reflects the platform configuration at the time of evaluation, and platforms evolve. Verifying that a cleared-list platform has not changed materially since its last evaluation is a due diligence step, not an administrative formality.
+The Blue UAS cleared list, maintained by the Defense Innovation Unit, represents a vetted set of platforms that have undergone this verification process. It is the most efficient starting point for procurement. But the cleared list is not a static guarantee, it reflects the platform configuration at the time of evaluation, and platforms evolve. Verifying that a cleared-list platform has not changed materially since its last evaluation is a due diligence step, not an administrative formality.
 
 ## The Practical Standard
 

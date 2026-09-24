@@ -1,6 +1,6 @@
 ---
-title: "FloodWatch — Flood & Disaster Response System | Forge & Flight"
-description: "FloodWatch provides aerial disaster response intelligence for flood events, infrastructure failures, and mass casualty incidents. Seven AI detection classes cover the full disaster response triage picture — from people in the water to structural damage to vehicles and debris."
+title: "FloodWatch: Flood & Disaster Response System | Forge & Flight"
+description: "FloodWatch provides aerial disaster response intelligence for flood events, infrastructure failures, and mass casualty incidents. Seven AI detection classes cover the full disaster response triage picture, from people in the water to structural damage to vehicles and debris."
 ---
 
 <section class="page-hero">
@@ -11,8 +11,8 @@ description: "FloodWatch provides aerial disaster response intelligence for floo
       <span>Floodwatch</span>
     </nav>
     <span class="eyebrow">Emergency Management &middot; Municipalities &middot; FEMA &middot; Red Cross</span>
-    <h1>FloodWatch — Flood &amp; Disaster Response System | Forge &amp; Flight</h1>
-    <p>FloodWatch provides aerial disaster response intelligence for flood events, infrastructure failures, and mass casualty incidents. Seven AI detection classes cover the full disaster response triage picture &mdash; from people in the water to structural damage to vehicles and debris.</p>
+    <h1>FloodWatch: Flood &amp; Disaster Response System | Forge &amp; Flight</h1>
+    <p>FloodWatch provides aerial disaster response intelligence for flood events, infrastructure failures, and mass casualty incidents. Seven AI detection classes cover the full disaster response triage picture, from people in the water to structural damage to vehicles and debris.</p>
     <div class="badge-row">
       <span class="badge">Aether-10</span>
       <span class="badge badge-sam">NDAA &sect;889 Compliant</span>
@@ -29,7 +29,7 @@ description: "FloodWatch provides aerial disaster response intelligence for floo
           <span class="eyebrow">Flood &amp; Disaster Response</span>
           <h2>Real-time intelligence when every minute matters.</h2>
         </div>
-        <p style="color:var(--text-muted);">FloodWatch provides aerial disaster response intelligence for flood events, infrastructure failures, and mass casualty incidents. Seven AI detection classes cover the full disaster response triage picture &mdash; from people in the water to structural damage to vehicles and debris.</p>
+        <p style="color:var(--text-muted);">FloodWatch provides aerial disaster response intelligence for flood events, infrastructure failures, and mass casualty incidents. Seven AI detection classes cover the full disaster response triage picture, from people in the water to structural damage to vehicles and debris.</p>
         <p style="color:var(--text-muted);margin-top:1rem;">Flood extent maps are generated in GeoJSON and updated in real time. Unrescued survivor detections automatically escalate to CRITICAL priority, triggering immediate alert dispatch to incident command. ICS triage codes are assigned automatically by detection class.</p>
         <p style="color:var(--text-muted);margin-top:1rem;">Available on Aether-10 (Group 2) with multi-sensor payload. Integrates natively with AegisEye GCS and ATAK for government-adjacent response operations.</p>
       </div>

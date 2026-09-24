@@ -3,7 +3,7 @@ title: "Why You Should Evaluate UAS Platforms Like a Special Operations Mission"
 date: 2026-03-05
 description: "Special Operations rehearsal methodology applied to UAS procurement. The discipline that prevents operational failure in the field is directly applicable to how agencies evaluate and select drone platforms."
 keywords: "UAS platform evaluation, drone procurement best practices, NDAA UAS selection, defense drone evaluation criteria, UAS operational testing"
-summary: "The rehearsal discipline that prevents operational failure in Special Operations is directly applicable to UAS platform evaluation — and most procurement processes skip it entirely."
+summary: "The rehearsal discipline that prevents operational failure in Special Operations is directly applicable to UAS platform evaluation, and most procurement processes skip it entirely."
 ---
 
 Physical rehearsals at full scale when the environment allowed. Reduced-scale mockups when it didn't. Sand tables when those weren't available. The rehearsal wasn't about memorizing a script or walking through a sequence of events. It was about building a mental model detailed enough that decision points felt familiar when they arrived under pressure.
@@ -18,11 +18,11 @@ And then the platform arrives in the operational environment and the numbers don
 
 ## Evaluating Against Your Mission Profile
 
-The operational equivalent of rehearsal in procurement is evaluation against your actual mission profile — not the vendor's demonstration profile.
+The operational equivalent of rehearsal in procurement is evaluation against your actual mission profile, not the vendor's demonstration profile.
 
-That means: your operators flying the platform, not the vendor's demo pilot. Your payload configuration, not the configuration that shows best endurance numbers. Your operating environment — wind, temperature, altitude, terrain — not the vendor's preferred demo site. Your maintenance personnel performing field repairs, not vendor technicians. Your communication architecture, not the vendor's ground station.
+That means: your operators flying the platform, not the vendor's demo pilot. Your payload configuration, not the configuration that shows best endurance numbers. Your operating environment, wind, temperature, altitude, terrain, not the vendor's preferred demo site. Your maintenance personnel performing field repairs, not vendor technicians. Your communication architecture, not the vendor's ground station.
 
-The value of rehearsal — in operations and in procurement — is what you learn about the gap between assumptions and reality. In platform evaluation done right, you discover payload integration issues that weren't visible in the demo, maintenance requirements that affect operational tempo, operator training curves that affect deployment timelines, battery performance curves in your actual thermal environment, and actual range characteristics under your communication constraints.
+The value of rehearsal, in operations and in procurement, is what you learn about the gap between assumptions and reality. In platform evaluation done right, you discover payload integration issues that weren't visible in the demo, maintenance requirements that affect operational tempo, operator training curves that affect deployment timelines, battery performance curves in your actual thermal environment, and actual range characteristics under your communication constraints.
 
 ## The Cost Comparison That Matters
 

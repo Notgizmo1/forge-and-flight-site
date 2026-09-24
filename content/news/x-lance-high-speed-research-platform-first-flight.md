@@ -12,7 +12,7 @@ The program is conducted entirely from internal company resources. No external d
 
 ## Why This Matters
 
-Most unmanned aircraft development in the commercial and lower-tier defense space focuses on extending endurance, improving payload capacity, and reducing unit cost. High-speed performance represents a different engineering challenge — one that involves different structural requirements, propulsion architectures, and aerodynamic tradeoffs than the low-and-slow envelope that dominates Group 1 through Group 3 UAS development.
+Most unmanned aircraft development in the commercial and lower-tier defense space focuses on extending endurance, improving payload capacity, and reducing unit cost. High-speed performance represents a different engineering challenge, one that involves different structural requirements, propulsion architectures, and aerodynamic tradeoffs than the low-and-slow envelope that dominates Group 1 through Group 3 UAS development.
 
 The company's work in this area is conducted in parallel with its production platform portfolio and does not affect the availability or delivery timeline of any current platform product line.
 

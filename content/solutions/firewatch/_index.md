@@ -1,5 +1,5 @@
 ---
-title: "FireWatch — Aerial Wildfire & Fire Detection System | Forge & Flight"
+title: "FireWatch: Aerial Wildfire & Fire Detection System | Forge & Flight"
 description: "FireWatch runs AI inference on thermal and EO sensor data in real time, detecting fire, smoke, and hotspots with sub-500 millisecond detection-to-alert latency. The moment a detection is confirmed, the gimbal locks on the target and a georeferenced alert fires to operators and incident command."
 ---
 
@@ -11,7 +11,7 @@ description: "FireWatch runs AI inference on thermal and EO sensor data in real 
       <span>Firewatch</span>
     </nav>
     <span class="eyebrow">Fire Agencies &middot; Utilities &middot; Private Land &middot; Insurance</span>
-    <h1>FireWatch — Aerial Wildfire &amp; Fire Detection System | Forge &amp; Flight</h1>
+    <h1>FireWatch: Aerial Wildfire &amp; Fire Detection System | Forge &amp; Flight</h1>
     <p>FireWatch runs AI inference on thermal and EO sensor data in real time, detecting fire, smoke, and hotspots with sub-500 millisecond detection-to-alert latency. The moment a detection is confirmed, the gimbal locks on the target and a georeferenced alert fires to operators and incident command.</p>
     <div class="badge-row">
       <span class="badge">Aether-10 &middot; Vanguard-14</span>
@@ -30,7 +30,7 @@ description: "FireWatch runs AI inference on thermal and EO sensor data in real 
           <h2>Detect it before it spreads.</h2>
         </div>
         <p style="color:var(--text-muted);">FireWatch runs AI inference on thermal and EO sensor data in real time, detecting fire, smoke, and hotspots with sub-500 millisecond detection-to-alert latency. The moment a detection is confirmed, the gimbal locks on the target and a georeferenced alert fires to operators and incident command.</p>
-        <p style="color:var(--text-muted);margin-top:1rem;">Fire perimeter GeoJSON is generated and updated continuously as the aircraft orbits &mdash; giving incident commanders real-time mapping of fire extent and spread direction, delivered directly to AegisEye, ATAK, or any GeoJSON-compatible incident management platform.</p>
+        <p style="color:var(--text-muted);margin-top:1rem;">Fire perimeter GeoJSON is generated and updated continuously as the aircraft orbits, giving incident commanders real-time mapping of fire extent and spread direction, delivered directly to AegisEye, ATAK, or any GeoJSON-compatible incident management platform.</p>
         <p style="color:var(--text-muted);margin-top:1rem;">Available on Aether-10 (Group 2, up to 5-hour endurance) and Vanguard-14 (Group 2/3, up to 12-hour endurance) with thermal and EO sensor payload configurations.</p>
       </div>
       <div>

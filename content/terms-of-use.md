@@ -10,7 +10,7 @@ By accessing forgeandflight.com, you agree to the following terms. If you do not
 
 ## Intellectual Property
 
-All content on this website — including text, graphics, logos, and technical descriptions — is the property of Forge & Flight Holdings, Inc. or its subsidiaries and is protected by applicable intellectual property laws. Reproduction without prior written consent is prohibited.
+All content on this website, including text, graphics, logos, and technical descriptions, is the property of Forge & Flight Holdings, Inc. or its subsidiaries and is protected by applicable intellectual property laws. Reproduction without prior written consent is prohibited.
 
 ## No Warranty
 
