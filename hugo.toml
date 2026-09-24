@@ -1,7 +1,7 @@
 baseURL = "https://forgeandflight.com/"
 languageCode = "en-US"
 title = "Forge & Flight Holdings | Defense Technology & Professional Services"
-enableRobotsTXT = true
+# robots.txt served from static/robots.txt (do not set enableRobotsTXT)
 enableGitInfo = false
 summaryLength = 70
 
